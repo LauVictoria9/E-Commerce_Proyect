@@ -1,9 +1,18 @@
-E-Commerce partes de computadores
-frontend
-react y taildwind 
-backend
-Django, Django Rest Framework 
-BD 
-MYSQL
+# E-Commerce partes de computadores
+## Descripcion 
 
-ejemplos
+Sitio web en el cual se ................
+
+## Flujo de trabajo 
+En el lado del _FrontEnd_
+-react 
+-taildwind 
+En el lado del _BackEnd_
+-Django 
+-Django Rest Framework 
+para el gestor de _BD_
+-MYSQL
+## Colaboradores 
+-Estudiantes Universidad del Valle - Zarzal. Tecnologia en sistemas - 2711
+
+## Instrucciones para poder ejecutar el proyecto 
