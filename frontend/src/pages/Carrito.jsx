@@ -1,10 +1,10 @@
 export default function Carrito() {
 
   {/*Página*/}
-  return <div className="m-0 p-0 box-border	font-sans">
+  return <div className="m-0 p-0 box-border font-sans">
 
 {/*Body*/}
-<div className="flex justify-center items-center	min-h-screen bg-[white]">
+<div className="flex justify-center items-center min-h-screen bg-[white]">
 
 { /* Encabezado de articulos*/ }
 
