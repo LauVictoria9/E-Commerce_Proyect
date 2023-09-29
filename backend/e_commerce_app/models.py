@@ -58,10 +58,5 @@ class Venta_Producto(models.Model):
     nombreMetodo = models.ForeignKey(metodoPago, on_delete=models.CASC)
 
     
-    def __str__(self):
-        return self.user.nombreUser + " " + Producto.nombreProducto +" " + self.cantidadTotal+" " + self.fechaCompra +" " + self.direccionEntrega +" " +  self.metodoPago.nombreMetodo +" " + self.precioTotal
- 
-
-    
-    
-    
+    #def __str__(self):
+        #return self.user.nombreUser + " " + Producto.nombreProducto +" " + self.cantidadTotal+" " + self.fechaCompra +" " + self.direccionEntrega +" " +  self.metodoPago.nombreMetodo +" " + self.precioTotal
