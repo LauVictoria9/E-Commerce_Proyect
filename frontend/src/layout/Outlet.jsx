@@ -58,7 +58,7 @@ export default function Outlet() {
         <div className="flex relative max-w-full">
           <img src={Barra} alt="" className="w-full h-80" />
           <div className="absolute max-w-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            {/* <Slider {...settings}>
+            <Slider {...settings}>
               {itemData3.map((item) => (
                 <div className="h-96 bg-white text-center font-bold text-[#4B0081] item-center overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ">
                   <div className="w-56">
@@ -81,7 +81,7 @@ export default function Outlet() {
                   </div>
                 </div>
               ))}
-            </Slider> */}
+            </Slider>
           </div>
         </div>
         <img
@@ -96,7 +96,7 @@ export default function Outlet() {
         <div className="flex relative max-w-full">
           <img src={Barra} alt="" className="w-full h-80" />
           <div className="absolute max-w-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            {/* <Slider {...settings}>
+            <Slider {...settings}>
               {itemData3.map((item) => (
                 <div className="h-96 bg-white text-center font-bold text-[#4B0081] item-center overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ">
                   <div className="w-56">
@@ -119,7 +119,7 @@ export default function Outlet() {
                   </div>
                 </div>
               ))}
-            </Slider> */}
+            </Slider>
           </div>
         </div>
       </div>
