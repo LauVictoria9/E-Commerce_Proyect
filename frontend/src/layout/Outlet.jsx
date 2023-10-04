@@ -91,7 +91,7 @@ export default function Outlet() {
         />
       </div>
 
-      <div className="flex items-center pt-5 mx-4">
+      <div className="flex items-center pt-5 mx-4 ">
         <img src={Proce} alt="" className="w-full md:w-1/2 h-auto max-w-md" />
         <div className="flex relative max-w-full">
           <img src={Barra} alt="" className="w-full h-80" />
