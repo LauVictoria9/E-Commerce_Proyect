@@ -1,5 +1,5 @@
-// import react from "react";
-// import Slider from "react-slick";
+import react from "react";
+import Slider from "react-slick";
 
 import chasis from "../img/pc.jpg";
 import ch2 from "../img/pc2.jpg";
