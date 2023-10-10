@@ -1,15 +1,15 @@
 import InicioD from "../img/InicioD.jpg";
 import Barra from "../img/Barra.jpg";
-import BarraD from "../img/BarraD.jpg";
+// import BarraD from "../img/BarraD.jpg";
 import Proce from "../img/Procesadores.jpg";
 import Compo from "../img/Componentes.jpg";
 import Elementos from "../img/Elementos.png";
 import Tarjeta from "../img/Tarjetas.jpg";
-import Inicio from "../pages/Inicio";
+// import Inicio from "../pages/Inicio";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { itemData2, itemData3, settings } from "./data";
+import { /*itemData2,*/ itemData3, settings } from "./data";
 import { itemData } from "./data";
 
 export default function Outlet() {
