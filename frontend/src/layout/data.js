@@ -1,6 +1,3 @@
-import react from "react";
-import Slider from "react-slick";
-
 import chasis from "../img/pc.jpg";
 import ch2 from "../img/pc2.jpg";
 import refri from "../img/rl.jpg";
@@ -27,41 +24,6 @@ import amd from "../img/amd.jpg";
 import amd1 from "../img/amd1.jpg";
 import amd2 from "../img/amd2.jpg";
 import amd3 from "../img/amd3.jpg";
-
-export const settings = {
-  dots: true,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialslide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        inicialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 
 export const itemData = [
   {

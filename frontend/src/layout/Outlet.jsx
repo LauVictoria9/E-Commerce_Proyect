@@ -1,128 +1,112 @@
-import InicioD from "../img/InicioD.jpg";
-import Barra from "../img/Barra.jpg";
-import BarraD from "../img/BarraD.jpg";
-import Proce from "../img/Procesadores.jpg";
-import Compo from "../img/Componentes.jpg";
-import Elementos from "../img/Elementos.png";
-import Tarjeta from "../img/Tarjetas.jpg";
-import Inicio from "../pages/Inicio";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { itemData2, itemData3, settings } from "./data";
-import { itemData } from "./data";
+/* Images imports */
+import heroBackgroundImage from "../img/InicioD.jpg";
+import heroImage from "../img/Elementos.png";
+import comboOneImage from "../img/Componentes.jpg";
+import comboTwoImage from "../img/Tarjetas.jpg";
+import comboThreeImage from "../img/Procesadores.jpg";
+
+/* Components imports */
+import Slider from "../components/Slider";
+
+/* Item data temp */
+import { itemData, itemData2, itemData3 } from "./data";
 
 export default function Outlet() {
+  // const [itemDataOne, setItemDataOne] = useState(null);
+  // const [itemDataTwo, setItemDataTwo] = useState(null);
+  // const [itemDataThree, setItemDataThree] = useState(null);
+
+  // const getData = async () => {
+  //   try {
+  //     const request = await fetch("http://localhost:6000/api/products");
+  //     const data = request.json();
+
+  //     data.map((item) => {
+  //       if (item.category == "component") {
+  //         setItemDataOne((previous) => setItemDataOne([...previous, item]));
+  //       }
+  //       if (item.category == "video_card") {
+  //         setItemDataTwo((previous) => setItemDataTwo([...previous, item]));
+  //       }
+  //       if (item.category == "cpu") {
+  //         setItemDataThree((previous) => setItemDataThree([...previous, item]));
+  //       }
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getData();
+  // }, []);
+
   return (
-    <section>
-      <div className="flex relative ">
-        <img src={InicioD} alt="" className="pt-8 max-w-full h-108" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img src={Elementos} alt="" className=" max-w-auto h-auto" />
-        </div>
-      </div>
-      <div className="flex items-center pt-5 mx-4">
-        <img src={Compo} alt="" className="w-full md:w-1/2 h-auto max-w-md " />
-        <div className="flex relative max-w-full">
-          <img src={Barra} alt="" className="w-full h-80" />
-          <div className="absolute max-w-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Slider {...settings}>
-              {itemData.map((item) => (
-                <div className="h-96 bg-white text-center font-bold text-[#4B0081] item-center overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ">
-                  <div className="w-52 ">
-                    <img src={item.linking} alt={item.title} />
-                    <h1>{item.title}</h1>
-                  </div>
-                  <div className="pt-3">
-                    <p>{item.category}</p>
-                    <h3>{item.price}</h3>
-                    <button className="relative w-32 h-12 ">
-                      <img
-                        src={Barra}
-                        alt="Imagen de fondo del botón"
-                        className="absolute inset-0 w-full h-full object-cover py-2 px-2"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center text-white">
-                        Ver más
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </div>
+    <main className="pt-8 pb-16">
+      {/* Hero */}
+      <section className="relative flex justify-center items-center">
+        <img src={heroBackgroundImage} alt="Hero background image." />
 
-      <div className="flex items-center pt-5 mx-4">
-        <div className="flex relative max-w-full">
-          <img src={Barra} alt="" className="w-full h-80" />
-          <div className="absolute max-w-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Slider {...settings}>
-              {itemData3.map((item) => (
-                <div className="h-96 bg-white text-center font-bold text-[#4B0081] item-center overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ">
-                  <div className="w-56">
-                    <img src={item.linking} alt={item.title} />
-                    <h1>{item.title}</h1>
-                  </div>
-                  <div className="pt-0">
-                    <p>{item.category}</p>
-                    <h3>{item.price}</h3>
-                    <button className="relative w-32 h-12 ">
-                      <img
-                        src={Barra}
-                        alt="Imagen de fondo del botón"
-                        className="absolute inset-0 w-full h-full object-cover py-2 px-2"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center text-white">
-                        Ver más
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-        <img
-          src={Tarjeta}
-          alt=""
-          className="w-full md:w-1/2 h-auto max-w-md  "
-        />
-      </div>
+        <img src={heroImage} alt="" className="absolute max-w-auto w-1/2" />
+      </section>
 
-      <div className="flex items-center pt-5 mx-4 ">
-        <img src={Proce} alt="" className="w-full md:w-1/2 h-auto max-w-md" />
-        <div className="flex relative max-w-full">
-          <img src={Barra} alt="" className="w-full h-80" />
-          <div className="absolute max-w-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Slider {...settings}>
-              {itemData3.map((item) => (
-                <div className="h-96 bg-white text-center font-bold text-[#4B0081] item-center overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ">
-                  <div className="w-56">
-                    <img src={item.linking} alt={item.title} />
-                    <h1>{item.title}</h1>
-                  </div>
-                  <div className="pt-0">
-                    <p>{item.category}</p>
-                    <h3>{item.price}</h3>
-                    <button className="relative w-32 h-12 ">
-                      <img
-                        src={Barra}
-                        alt="Imagen de fondo del botón"
-                        className="absolute inset-0 w-full h-full object-cover py-2 px-2"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center text-white">
-                        Ver más
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+      {/* Separator */}
+      <div className="h-8" />
+
+      {/* Content */}
+      <section className="">
+        <div className="flex">
+          {/* Combo image */}
+          <img
+            src={comboOneImage}
+            alt="Components combo image."
+            className="w-1/3 hidden md:inline-block"
+          />
+
+          {/* Slider */}
+          <div className="w-full md:w-2/3 items-center relative flex">
+            <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
+
+            <Slider sliderId="promo_one" data={itemData} />
           </div>
         </div>
-      </div>
-    </section>
+
+        <div className="h-16" />
+
+        <div className="flex">
+          {/* Slider */}
+          <div className="w-full md:w-2/3 items-center relative flex">
+            <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
+
+            <Slider sliderId="promo_two" data={itemData2} />
+          </div>
+
+          {/* Combo image */}
+          <img
+            src={comboTwoImage}
+            alt="Components combo image."
+            className="w-1/3 hidden md:inline-block"
+          />
+        </div>
+
+        <div className="h-16" />
+
+        <div className="flex">
+          {/* Combo image */}
+          <img
+            src={comboThreeImage}
+            alt="Components combo image."
+            className="w-1/3 hidden md:inline-block"
+          />
+
+          {/* Slider */}
+          <div className="w-full md:w-2/3 items-center relative flex">
+            <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
+
+            <Slider sliderId="promo_three" data={itemData3} />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
