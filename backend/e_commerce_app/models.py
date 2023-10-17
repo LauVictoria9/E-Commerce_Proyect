@@ -11,6 +11,7 @@ class tipo_producto(models.Model):
     
     def __str__(self):
         return self.nombre_tipoP +" "   + self.descripcion
+    
 class producto(models.Model):
    nombreProducto = models.CharField(max_length=100)
    detalles = models.CharField(max_length=100)
