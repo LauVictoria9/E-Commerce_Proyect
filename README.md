@@ -1,35 +1,60 @@
-# E-Commerce partes de computadores
-## Descripcion 
+# E-COMMERCER - PERIFERICOS DE COMPUTADORES
+
+## Descripcion
 
 Sitio web en el cual se busca generar una simulacion de un centro de ventas electronico (E-Commerce) con funcionalidades basicas como lo es login, carrito de compras, etc
 
-## Flujo de trabajo 
-#### En el lado del _FrontEnd_
-- React 
-- Taildwind 
+## Flujo De Trabajo
 
-#### En el lado del _BackEnd_
+### _FrontEnd_
+
+- React
+- Taildwind
+
+### _BackEnd_
+
 - Django
-- Django Rest Framework 
+- Django Rest Framework
 
-#### Para el gestor de _BD_
+### _Base De Datos_
+
 - MYSQL
-## Colaboradores 
+
+## Colaboradores
+
 Estudiantes Universidad del Valle - Zarzal. Tecnologia en sistemas - 2711
 
-## Requisitos pa la ejecucion
-- Tener xampp, node y python instalados 
+## Aplicaciones Necesarias
+
+- Xampp - Para poder hacer uso de mysql
+- Node - Principalmente su manejador de paquetes para instalar ciertos paquetes dell lado de frontend
+- Python - Para poder seguir el flujo de trabajo de el lado del backend
+
+## Ejecucion Del Proyecto
+
 - Ejecutar el xampp y inicializar mysql
 - Crear la base de datos ......
 
+## Ejecutar Frontend
 
+Ingresar a la carpeta **_frontend_ (`cd frontend`)** y correr los siguientes comandos:
 
-## Instrucciones para poder ejecutar el proyecto (backend)
-- ejecutar virtualenv con el comando pip install virtualenv en una consola
-- ejecutar virtualenv vmv
-- ir a las opcion de visual llamada view, opcion command palette, escriben intepreter y seleccionan la opcion Python: select intepreter, selecionas el que tenga entre parentesis 'vmv':venv y abres otra terminal 
-Pasarse a la carpeta Backend, para correr los comandos:
--  instalas django y django REST Framework con el siguiente comando pip install django djangorestframework
--  instalas el cliente mysql para realizar la conexion a MYSQL con el siguiente comando pip install mysqlclient
-- python manage.py runserver para correr el servidor
-- python manage.py migrate para realizar las migraciones respectivas
+- Para instalar los paquetes necesarios
+  - `npm install`
+- Correr el servidor de prueba
+  - `npm run dev` y abres la url dada
+
+## Ejecutar Backend
+
+- Crear un entorno virtual dentro de la carpeta principal del proyecto, con los siguiente comandos en la terminal de comandos:
+  - `pip install virtualenv`
+  - `virtualenv venv`
+  - ir a las opcion de visual llamada view, opcion command palette, escriben intepreter y seleccionan la opcion Python: select intepreter, selecionas el que tenga entre parentesis 'venv':venv y abres otra terminal, de esta manera su entorno virtual ya esta activado.
+- Pasarse a la carpeta **_backend (`cd backend`)_** instalar los paquetes correspondientes:
+
+  - `pip install -r requierements.txt`
+
+- Realizar las migraciones a la base de datos, esto creara las tablas correspondientes:
+  - `python manage.py migrate`
+- Luego para correr el servidor de prueba:
+  - `python manage.py runserver` y abres la url dada
