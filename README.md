@@ -50,9 +50,9 @@ Ingresar a la carpeta **_frontend_ (`cd frontend`)** y correr los siguientes com
   - `pip install virtualenv`
   - `virtualenv venv`
   - ir a las opcion de visual llamada view, opcion command palette, escriben intepreter y seleccionan la opcion Python: select intepreter, selecionas el que tenga entre parentesis 'venv':venv y abres otra terminal, de esta manera su entorno virtual ya esta activado.
-- Pasarse a la carpeta **_backend (`cd backend`)_** instalar los paquetes correspondientes:
+- Desde la carpeta raiz del proyecto instalar los paquetes correspondientes:
 
-  - `pip install -r requierements.txt`
+  - `pip install -r requirements.txt`
 
 - Realizar las migraciones a la base de datos, esto creara las tablas correspondientes:
   - `python manage.py migrate`
