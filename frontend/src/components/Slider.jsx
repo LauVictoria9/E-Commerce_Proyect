@@ -4,7 +4,7 @@ import React from "react";
 import Card from "./Card";
 
 /* Icons imports */
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Slider = ({ sliderId, data }) => {
   const handlePreviousButton = () => {
