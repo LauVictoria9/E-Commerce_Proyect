@@ -8,6 +8,7 @@ import Favoritos from "./pages/Favoritos";
 import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
+import InfoProducto from "./pages/InfoProducto";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Inicio />,
+      },
+      {
+        path: "producto/",
+        element: <InfoProducto />,
       },
       {
         path: "favoritos/",
