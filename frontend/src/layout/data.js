@@ -25,6 +25,31 @@ import amd1 from "../img/amd1.jpg";
 import amd2 from "../img/amd2.jpg";
 import amd3 from "../img/amd3.jpg";
 
+import port from "../img/portatil.jpg";
+import port1 from "../img/port1.jpg";
+import port2 from "../img/port2.jpg";
+import port3 from "../img/port3.jpg";
+import port4 from "../img/port4.jpg";
+import port5 from "../img/port5.jpg";
+import port6 from "../img/port6.jpg";
+import port7 from "../img/port7.jpg";
+import port8 from "../img/port8.jpg";
+import port9 from "../img/port9.jpg";
+import port10 from "../img/port10.jpg";
+import port11 from "../img/port11.jpg";
+import port12 from "../img/port12.jpg";
+import port13 from "../img/port13.jpg";
+import port14 from "../img/port14.jpg";
+import port15 from "../img/port15.jpg";
+import port16 from "../img/port16.jpg";
+import port17 from "../img/port17.jpg";
+import port18 from "../img/port18.jpg";
+import port19 from "../img/port19.jpg";
+import port20 from "../img/port20.jpg";
+import port21 from "../img/port21.jpg";
+import port22 from "../img/port22.jpg";
+import port23 from "../img/port23.jpg";
+
 export const itemData = [
   {
     id: 1,
@@ -198,5 +223,180 @@ export const itemData3 = [
     category: "Procesador AMD Ryzen 7 5800X 3.8GHz",
     price: "$2.609.900",
     linking: amd3,
+  },
+];
+
+export const itemDataAsus = [
+  {
+    id: 1,
+    name: "Vivobook",
+    category: "Portátil Asus 15 M513 AMD Ryzen 7 4700U 8GB",
+    price: "$3.500.086",
+    linking: port9,
+  },
+  {
+    id: 2,
+    name: "Zenbook",
+    category: "Portátil Asus UX434FAC-A6116T I5-10210U",
+    price: "$10.973.900",
+    linking: port1,
+  },
+  {
+    id: 3,
+    name: "Notebook",
+    category: "Portátil Asus 13 Core i7 I7-1255U  90NX04T1-M00550",
+    price: "$1.495.000",
+    linking: port8,
+  },
+  {
+    id: 4,
+    name: "General",
+    category: "Portátil Asus X515EA-BR3955 15.6'' Intel Core i3 1115G4",
+    price: "$1.550.000",
+    linking: port3,
+  },
+  {
+    id: 5,
+    name: "Vivobook",
+    category: "Portátil Asus 15 OLED M513UA-L1304 16GB ",
+    price: "$1.699.000",
+    linking: port4,
+  },
+  {
+    id: 6,
+    name: "Notebook",
+    category: "Portátil Asus Zenbook 14 Flip Touch OLED I5-1349p",
+    price: "$7.554.500",
+    linking: port10,
+  },
+  {
+    id: 7,
+    name: "General",
+    category: "Portátil Asus FX517ZC HN059 Core I5 16GB",
+    price: "$4.925.000",
+    linking: port5,
+  },
+  {
+    id: 8,
+    name: "Vivobook",
+    category: "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
+    price: "$2.935.900",
+    linking: port7,
+  },
+];
+export const itemDataAsus1 = [
+  {
+    id: 1,
+    name: "Zenbook",
+    category: "Portátil Asus 15 Core i7-10750H GeForce GTX 1650 Ti",
+    price: "$8.320.394",
+    linking: port2,
+  },
+  {
+    id: 2,
+    name: "General",
+    category: "Portátil Asus X1503ZA-L1316-A6116T Core i5 12500H",
+    price: "$2.899.900",
+    linking: port6,
+  },
+  {
+    id: 3,
+    name: "Zenbook",
+    category: "Portátil Asus Duo 14 UX482 Core i7-116G7 16GB",
+    price: "$6.862.900",
+    linking: port,
+  },
+  {
+    id: 4,
+    name: "Zenbook",
+    category: "Portátil Asus UX325EA Core i5 1135G7 8GB",
+    price: "$1.550.000",
+    linking: port11,
+  },
+  {
+    id: 5,
+    name: "Vivobook",
+    category: "Portátil Asus 15 X1502 Core i5 1260P 8GB ",
+    price: "$1.699.000",
+    linking: port12,
+  },
+  {
+    id: 6,
+    name: "Notebook",
+    category: "Portátil Asus Vivobook 14 X1605ZA-MB029W I5-1235U",
+    price: "$2.120.500",
+    linking: port13,
+  },
+  {
+    id: 7,
+    name: "Zenbook",
+    category: "Portátil Asus 14X UX5401 Core I7 16GB ",
+    price: "$4.625.000",
+    linking: port14,
+  },
+  {
+    id: 8,
+    name: "Vivobook",
+    category: "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
+    price: "$2.935.900",
+    linking: port15,
+  },
+];
+export const itemDataAsus2 = [
+  {
+    id: 1,
+    name: "Zenbook",
+    category: "Portátil Asus Flip 14 UM462DA-AI038T AMD Ryzen 5 3500U  ",
+    price: "$2.558.974",
+    linking: port16,
+  },
+  {
+    id: 2,
+    name: "Zenbook",
+    category: "Portátil Asus Pro Duo Ux581Lv-H2001R Core i7",
+    price: "$10.487.749",
+    linking: port17,
+  },
+  {
+    id: 3,
+    name: "Notebook",
+    category: "Portátil Asus Zenbook 14 Oled UX3402ZA-KM018W",
+    price: "$3.862.900",
+    linking: port18,
+  },
+  {
+    id: 4,
+    name: "Zenbook",
+    category: "Portátil Asus Oled UM5302TA-LV117W AMD Ryzen 6000",
+    price: "$7.640.946",
+    linking: port19,
+  },
+  {
+    id: 5,
+    name: "General",
+    category: "Portátil Asus X415JA-BV2029 Intel Core i3-1005G1",
+    price: "$1.231.000",
+    linking: port20,
+  },
+  {
+    id: 6,
+    name: "Vivobook",
+    category: "Portátil Asus Vivobook Pro 15 AMD Ryzen 5 M3500QC-L1501WS ",
+    price: "$5.120.500",
+    linking: port21,
+  },
+  {
+    id: 7,
+    name: "Vivobook",
+    category: "Portátil Asus S 16X Oled Intel Core i7 8GB  ",
+    price: "$2.285.000",
+    linking: port22,
+  },
+  {
+    id: 8,
+    name: "Vivobook",
+    category: "Portátil Asus Vivobook Go E410KA-BV448W",
+    price: "$2.528.900",
+    linking: port23,
   },
 ];
