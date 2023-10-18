@@ -1,7 +1,12 @@
+
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
-import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa6";
+import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa";
+/*licenciado*/
+import Navbar from "../components/Navbar/Navbar";
+import { BsFillPersonFill } from "react-icons/bs"; 
+import { AiOutlineShoppingCart } from "react-icons/ai"; 
+import { AiFillHeart } from "react-icons/ai";
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
@@ -11,6 +16,7 @@ export default function Header() {
   };
 
   return (
+
     <header className="px-8 py-4 bg-gradient-to-l to-violet-700 from-pink-700 text-white">
       <div className="flex items-center">
         <Link to="/">Logo</Link>
@@ -76,6 +82,15 @@ export default function Header() {
           </div>
         </div>
       </div>
+// licenciado
+//     <header className="h-[10vh]" >
+//       <div className="flex flex-row-reverse my-2">
+//       <BsFillPersonFill className="w-8 h-8"></BsFillPersonFill>
+//       <AiOutlineShoppingCart className="w-8 h-8 mx-2"></AiOutlineShoppingCart>
+//       <AiFillHeart className="w-8 h-8 "></AiFillHeart>
+//       </div>
+//      <Navbar/>
+
     </header>
   );
 }
