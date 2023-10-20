@@ -8,6 +8,9 @@ import Favoritos from "./pages/Favoritos";
 import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
+import SeccionAsus from "./pages/SeccionAsus";
+import InfoProducto from "./pages/InfoProducto";
+
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,10 @@ const router = createBrowserRouter([
         element: <Inicio />,
       },
       {
+        path: "producto/",
+        element: <InfoProducto />,
+      },
+      {
         path: "favoritos/",
         element: <Favoritos />,
       },
@@ -30,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "user/",
         element: <User />,
+      },
+      {
+        path: "SeccionAsus/",
+        element: <SeccionAsus />,
       },
     ],
   },

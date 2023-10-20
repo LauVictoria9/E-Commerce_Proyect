@@ -1,7 +1,17 @@
+/*provicional*/
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
 import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa6";
+//hasta aqui 
+import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa";
+/*licenciado*/
+import Navbar from "../components/Navbar/Navbar";
+import { BsFillPersonFill } from "react-icons/bs"; 
+import { AiOutlineShoppingCart } from "react-icons/ai"; 
+import { AiFillHeart } from "react-icons/ai";
+
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
