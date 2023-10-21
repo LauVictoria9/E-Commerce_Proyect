@@ -9,6 +9,7 @@ import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
+import SeccionComponentes from "./pages/SeccionComponentes";
 import InfoProducto from "./pages/InfoProducto";
 
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "SeccionAsus/",
         element: <SeccionAsus />,
+      },
+      {
+        path: "SeccionComponentes/",
+        element: <SeccionComponentes />,
       },
     ],
   },

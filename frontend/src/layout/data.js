@@ -50,6 +50,33 @@ import port21 from "../img/port21.jpg";
 import port22 from "../img/port22.jpg";
 import port23 from "../img/port23.jpg";
 
+import P1 from "../img/procesador1.png";
+import P2 from "../img/procesador2.png";
+import P3 from "../img/procesador3.png";
+import P4 from "../img/procesador4.png";
+import P5 from "../img/procesador5.png";
+import P6 from "../img/procesador6.png";
+import P7 from "../img/procesador7.png";
+import P8 from "../img/procesador8.png";
+
+import Amd_1 from "../img/Amd_1.png";
+import Amd_2 from "../img/Amd_2.png";
+import Amd_3 from "../img/Amd_3.png";
+import Amd_4 from "../img/Amd_4.png";
+import Amd_5 from "../img/Amd_5.png";
+import Amd_6 from "../img/Amd_6.png";
+import Amd_7 from "../img/Amd_7.png";
+import Amd_8 from "../img/Amd_8.png";
+
+import Intel1 from "../img/Intel1.png";
+import Intel2 from "../img/Intel2.png";
+import Intel3 from "../img/Intel3.png";
+import Intel4 from "../img/Intel4.png";
+import Intel5 from "../img/Intel5.png";
+import Intel6 from "../img/Intel6.png";
+import Intel7 from "../img/Intel7.png";
+import Intel8 from "../img/Intel8.png";
+
 export const itemData = [
   {
     id: 1,
@@ -400,3 +427,178 @@ export const itemDataAsus2 = [
     linking: port23,
   },
 ];
+export const itemDataProcesadores = [
+  {
+    id: 1,
+    name: "AMD Ryzen 7",
+    category: "Procesador AMD Ryzen 7 5800X AM4",
+    price: "$2.044.990",
+    linking: P1,
+  },
+  {
+    id: 2,
+    name: "AMD Ryzen 5",
+    category: "Procesador AMD Ryzen 5 5600X AM4",
+    price: "$1.339.990",
+    linking: P2,
+  },
+  {
+    id: 3,
+    name: "Intel Core I7-12700K",
+    category: "Procesador gamer Intel Core I7-12700K BX8071512700K",
+    price: "$1.695.000",
+    linking: P3,
+  },
+  {
+    id: 4,
+    name: "Intel Core i9-13900K",
+    category: "Procesador gamer Intel Core i9-13900K BX8071513900K",
+    price: "$3.306.000",
+    linking: P4,
+  },
+  {
+    id: 5,
+    name: "AMD Ryzen 9 7900X",
+    category: "Procesador gamer AMD Ryzen 9 7900X 100-100000589WOF",
+    price: "$2.299.000",
+    linking: P5,
+  },
+  {
+    id: 6,
+    name: "AMD Ryzen 5 3600",
+    category: "Procesador gamer AMD Ryzen 5 3600 100-100000031BOX",
+    price: "$635.000",
+    linking: P6,
+  },
+  {
+    id: 7,
+    name: " Intel Core i5-10400",
+    category: "Procesador gamer Intel Core i5-10400 BX8070110400",
+    price: "$669.900",
+    linking: P7,
+  },
+  {
+    id: 8,
+    name: "Intel Pentium G6400",
+    category: "Procesador Intel Pentium G6400 BX80701G6400",
+    price: "$370.000",
+    linking: P8,
+  },
+];
+export const itemDataAmd = [
+  {
+    id: 1,
+    name: "AMD RYZEN 9",
+    category: "PROCESADOR AMD RYZEN 9 7950X3D 5.7 GHZ",
+    price: "$3.637.000",
+    linking: Amd_1,
+  },
+  {
+    id: 2,
+    name: "AMD RYZEN 9",
+    category: "PROCESADOR AMD RYZEN 9 7900 AM5",
+    price: "$2.139.000",
+    linking: Amd_2,
+  },
+  {
+    id: 3,
+    name: "AMD RYZEN 7",
+    category: "PROCESADOR AMD RYZEN 7 7800X3D",
+    price: "$2.096.000",
+    linking: Amd_3,
+  },
+  {
+    id: 4,
+    name: "AMD RYZEN 7",
+    category: "PROCESADOR AMD RYZEN 7 7700 AM5",
+    price: "$1.680.000",
+    linking: Amd_4,
+  },
+  {
+    id: 5,
+    name: "AMD RYZEN 5",
+    category: "PROCESADOR AMD RYZEN 5 7600 AM5",
+    price: "$1.195.000",
+    linking: Amd_5,
+  },
+  {
+    id: 6,
+    name: "AMD RYZEN 5",
+    category: "PROCESADOR AMD RYZEN 5 5600G AM4",
+    price: "$898.000",
+    linking: Amd_6,
+  },
+  {
+    id: 7,
+    name: "AMD RYZEN 3",
+    category: "AMD RYZEN 3 4100 AM4",
+    price: "$524.964",
+    linking: Amd_7,
+  },
+  {
+    id: 8,
+    name: "AMD RYZEN 3",
+    category: "AMD RYZEN 3 3200G - GRAFICA RADEON VEGA",
+    price: "$459.900",
+    linking: Amd_8,
+  },
+];
+export const itemDataIntel = [
+  {
+    id: 1,
+    name: "INTEL CORE I9",
+    category: "PROCESADOR INTEL CORE I9 13900KS SPECIAL EDITION 6.0 GHZ",
+    price: "$3.554.000",
+    linking: Intel1,
+  },
+  {
+    id: 2,
+    name: "INTEL CORE I9",
+    category: "PROCESADOR INTEL CORE I9 13900KF 5.8 GHZ",
+    price: "$2.990.000",
+    linking: Intel2,
+  },
+  {
+    id: 3,
+    name: "INTEL CORE I7",
+    category: "PROCESADOR INTEL CORE I7 13700 BX8071513700",
+    price: "$2.079.000",
+    linking: Intel3,
+  },
+  {
+    id: 4,
+    name: "INTEL CORE I7",
+    category: "PROCESADOR INTEL CORE I7 10700 BX8070110700",
+    price: "$1.259.900",
+    linking: Intel4,
+  },
+  {
+    id: 5,
+    name: "INTEL CORE I5",
+    category: "PROCESADOR INTEL CORE I5-13600K BX8071513600K 5.1GHz",
+    price: "$1.774.800",
+    linking: Intel5,
+  },
+  {
+    id: 6,
+    name: "INTEL CORE I5",
+    category: "PROCESADOR INTEL CORE I5-13400F BX8071513400F 4.6GHz",
+    price: "$5.120.500",
+    linking: Intel6,
+  },
+  {
+    id: 7,
+    name: "INTEL CORE I3",
+    category: "PROCESADOR INTEL CORE I3-13100 4.50 GHZ",
+    price: "$855.000",
+    linking: Intel7,
+  },
+  {
+    id: 8,
+    name: "INTEL CORE I3",
+    category: "PROCESADOR INTEL CORE I3-12100F 4.30 GHZ",
+    price: "$679.000",
+    linking: Intel8,
+  },
+];
+
