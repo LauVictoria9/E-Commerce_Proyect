@@ -77,6 +77,33 @@ import Intel6 from "../img/Intel6.png";
 import Intel7 from "../img/Intel7.png";
 import Intel8 from "../img/Intel8.png";
 
+import T1 from "../img/Tarjetas1.png";
+import T2 from "../img/Tarjetas2.png";
+import T3 from "../img/Tarjetas3.jpg";
+import T4 from "../img/Tarjetas4.jpg";
+import T5 from "../img/Tarjetas5.jpg";
+import T6 from "../img/Tarjetas6.jpg";
+import T7 from "../img/Tarjetas7.jpg";
+import T8 from "../img/Tarjetas8.jpg";
+
+import Nvidea1 from "../img/Nvidea1.png";
+import Nvidea2 from "../img/Nvidea2.png";
+import Nvidea3 from "../img/Nvidea3.png";
+import Nvidea4 from "../img/Nvidea4.png";
+import Nvidea5 from "../img/Nvidea5.png";
+import Nvidea6 from "../img/Nvidea6.png";
+import Nvidea7 from "../img/Nvidea7.png";
+import Nvidea8 from "../img/Nvidea8.png";
+
+import Tarjetas_1 from "../img/Tarjetas_1.png";
+import Tarjetas_2 from "../img/Tarjetas_2.png";
+import Tarjetas_3 from "../img/Tarjetas_3.png";
+import Tarjetas_4 from "../img/Tarjetas_4.png";
+import Tarjetas_5 from "../img/Tarjetas_5.png";
+import Tarjetas_6 from "../img/Tarjetas_6.png";
+import Tarjetas_7 from "../img/Tarjetas_7.png";
+import Tarjetas_8 from "../img/Tarjetas_8.png";
+
 export const itemData = [
   {
     id: 1,
@@ -601,4 +628,177 @@ export const itemDataIntel = [
     linking: Intel8,
   },
 ];
-
+export const itemDataTarjetas = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "INNO3D GEFORCE RTX 4060 TI 16GB",
+    category: "INNO3D GEFORCE RTX 4060 TI 16GB TWIN X2",
+    price: "$2.641.000",
+    linking: T3,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4070",
+    category: "ZOTAC GAMING GeForce RTX 4070 Ti Trinity OC Edición Blanca",
+    price: "$4.849.900",
+    linking: T4,
+  },
+  {
+    id: 5,
+    name: "GIGABYTE GEFORCE RTX 4060 TI EAGLE",
+    category: "GIGABYTE GEFORCE RTX 4060 TI EAGLE 8G",
+    price: "$2.136.000",
+    linking: T5,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4070",
+    category: "ZOTAC GAMING GeForce RTX 4070 OC SPIDER-MAN™: Across the Spider",
+    price: "$3.499.000",
+    linking: T6,
+  },
+  {
+    id: 7,
+    name: "INNO3D GEFORCE GTX 1650 TWIN",
+    category: "INNO3D GEFORCE GTX 1650 TWIN X2 OC 4GB GDDR6",
+    price: "$728.000",
+    linking: T7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4070",
+    category: "ZOTAC GAMING GeForce RTX 4070 TWIN Edge OC 12GB GDDR6X",
+    price: "$3.399.000",
+    linking: T8,
+  },
+];
+export const itemDataNvidia = [
+  {
+    id: 1,
+    name: "GEFORCE RTX 4090",
+    category: "ROG STRIX GEFORCE RTX 4090 24GB GDDR6X",
+    price: "$9.910.000",
+    linking: Nvidea1,
+  },
+  {
+    id: 2,
+    name: "NVIDIA GEFORCE RTX 4090",
+    category: "INNO3D NVIDIA GEFORCE RTX 4090 24GB ICHILL FROSTBITE ULTRA",
+    price: "$9.512.000",
+    linking: Nvidea2,
+  },
+  {
+    id: 3,
+    name: "NVIDIA GEFORCE RTX 4090",
+    category: "INNO3D NVIDIA GEFORCE RTX 4090 X3 24GB OC WHITE",
+    price: "$8.528.000",
+    linking: Nvidea3,
+  },
+  {
+    id: 4,
+    name: "ASUS GAMING RTX 4080",
+    category: "ASUS ROG STRIX GAMING RTX 4080 16G WHITE",
+    price: "$7.489.000",
+    linking: Nvidea4,
+  },
+  {
+    id: 5,
+    name: "ASUS GEFORCE RTX 4080",
+    category: "ASUS GEFORCE RTX 4080 16GB GDDR6X NOCTUA OC EDITION",
+    price: "$7.693.000",
+    linking: Nvidea5,
+  },
+  {
+    id: 6,
+    name: "NVIDIA GEFORCE RTX 4080",
+    category: "NVIDIA GEFORCE RTX 4080 XLR8 GAMING UPRISING GDDR6X 16GB",
+    price: "$6.944.000",
+    linking: Nvidea6,
+  },
+  {
+    id: 7,
+    name: "NVIDIA GEFORCE RTX 4070",
+    category: "INNO3D NVIDIA GEFORCE RTX 4070 TI X3 OC 12GB",
+    price: "$4.375.000",
+    linking: Nvidea7,
+  },
+  {
+    id: 8,
+    name: "ASUS TUF GAMING RTX 4070",
+    category: "ASUS TUF GAMING RTX 4070 12GB GDDR6X",
+    price: "$3.305.000",
+    linking: Nvidea8,
+  },
+];
+export const itemDataTarjetas1 = [
+  {
+    id: 1,
+    name: "ZOTAC GAMING GeForce RTX 3070",
+    category: "ZOTAC GAMING GeForce RTX 3070 Twin Edge 8GB GDDR6",
+    price: "$2.899.000",
+    linking: Tarjetas_1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4060",
+    category: "ZOTAC GAMING GeForce RTX 4060 Ti 8GB Twin Edge",
+    price: "$2.199.000",
+    linking: Tarjetas_2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 3060",
+    category: "ZOTAC GAMING GeForce RTX 3060 Twin Edge 12GB G6",
+    price: "$2.079.000",
+    linking: Tarjetas_3,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 3060",
+    category: "ZOTAC GAMING GeForce RTX 3060 Twin Edge 8GB GDDR6",
+    price: "$1.499.000",
+    linking: Tarjetas_4,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 3050",
+    category: "ZOTAC GAMING GeForce RTX 3050 Twin Edge 8GB GDDR6",
+    price: "$1.299.000",
+    linking: Tarjetas_5,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce GTX 1650",
+    category: "ZOTAC GAMING GeForce GTX 1650 OC 4GB GDDR6",
+    price: "$859.000",
+    linking: Tarjetas_6,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING INNO3D GEFORCE GTX 1650",
+    category: "INNO3D GEFORCE GTX 1650 TWIN X2 OC 4GB GDDR6",
+    price: "$728.000",
+    linking: Tarjetas_7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce GT 1030",
+    category: "ZOTAC GeForce GT 1030 2GB GDDR5 HDMI/VGA Low Profile",
+    price: "$459.900",
+    linking: Tarjetas_8,
+  },
+];

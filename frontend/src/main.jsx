@@ -10,6 +10,7 @@ import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
 import SeccionComponentes from "./pages/SeccionComponentes";
+import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
 
 
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "SeccionComponentes/",
         element: <SeccionComponentes />,
+      },
+      {
+        path: "SeccionTarjetasG/",
+        element: <SeccionTarjetasG />,
       },
     ],
   },
