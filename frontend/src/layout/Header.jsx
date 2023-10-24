@@ -1,7 +1,15 @@
+/*provicional*/
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
 import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa6";
+//hasta aqui es provicional
+
+/*licenciado*/
+// import Navbar from "../components/Navbar/Navbar";
+// import { BsFillPersonFill } from "react-icons/bs"; 
+// import { AiOutlineShoppingCart } from "react-icons/ai"; 
+// import { AiFillHeart } from "react-icons/ai";
+
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
@@ -64,6 +72,7 @@ export default function Header() {
             >
               Perfil
             </Link>
+<<<<<<< HEAD
             <Link
               to={"/SeccionAsus"}
               className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
@@ -77,12 +86,25 @@ export default function Header() {
               Sección Acer
             </Link>
 
+=======
+>>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
             <button className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out">
               Salir
             </button>
           </div>
         </div>
       </div>
+
+      {/* // licenciado
+//     <header className="h-[10vh]" >
+//       <div className="flex flex-row-reverse my-2">
+//       <BsFillPersonFill className="w-8 h-8"></BsFillPersonFill>
+//       <AiOutlineShoppingCart className="w-8 h-8 mx-2"></AiOutlineShoppingCart>
+//       <AiFillHeart className="w-8 h-8 "></AiFillHeart>
+//       </div>
+//      <Navbar/>
+
+      </header> */}
     </header>
   );
 }

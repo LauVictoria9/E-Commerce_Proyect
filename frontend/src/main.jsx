@@ -9,7 +9,14 @@ import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
+<<<<<<< HEAD
 import SeccionAcer from "./pages/SeccionAcer";
+=======
+import SeccionComponentes from "./pages/SeccionComponentes";
+import SeccionTarjetasG from "./pages/SeccionTarjetasG";
+import InfoProducto from "./pages/InfoProducto";
+
+>>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
 
 const router = createBrowserRouter([
   {
@@ -20,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Inicio />,
+      },
+      {
+        path: "producto/",
+        element: <InfoProducto />,
       },
       {
         path: "favoritos/",
@@ -38,8 +49,17 @@ const router = createBrowserRouter([
         element: <SeccionAsus />,
       },
       {
+<<<<<<< HEAD
         path: "SeccionAcer/",
         element: <SeccionAcer />,
+=======
+        path: "SeccionComponentes/",
+        element: <SeccionComponentes />,
+      },
+      {
+        path: "SeccionTarjetasG/",
+        element: <SeccionTarjetasG />,
+>>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
       },
     ],
   },
