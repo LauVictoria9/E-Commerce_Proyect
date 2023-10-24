@@ -9,6 +9,7 @@ import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
+import SeccionAcer from "./pages/SeccionAcer";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "SeccionAsus/",
         element: <SeccionAsus />,
+      },
+      {
+        path: "SeccionAcer/",
+        element: <SeccionAcer />,
       },
     ],
   },

@@ -1,19 +1,20 @@
 import React from "react";
-import Asus from "../img/asusImage.png";
+import AcerImage from "../img/acer.png";
+
 import AsusPortatilImage from "../img/asusPortatil.jpg";
 
 /* Components imports */
 import Slider from "../components/Slider";
 
 /* Item data temp */
-import { itemDataAsus, itemDataAsus1, itemDataAsus2 } from "../layout/data";
+import { itemDataAcer, itemDataAcer1, itemDataAcer2 } from "../layout/data";
 
-export default function SeccionAsus() {
+export default function SeccionAcer() {
   return (
     <main className="pt-8 pb-16 ">
       <section className="relative flex justify-center items-center">
         <div className="bg-clr-two w-full h-96" />
-        <img src={Asus} alt="" className="absolute max-w-auto w-1/2" />
+        <img src={AcerImage} alt="" className="absolute max-w-auto w-1/2" />
       </section>
 
       <div className="h-8" />
@@ -31,7 +32,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-2/3 items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_one" data={itemDataAsus} />
+            <Slider sliderId="promo_one" data={itemDataAcer} />
           </div>
         </div>
 
@@ -42,7 +43,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-4/% items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_two" data={itemDataAsus1} />
+            <Slider sliderId="promo_two" data={itemDataAcer1} />
           </div>
         </div>
         <div className="h-16" />
@@ -52,7 +53,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-4/% items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_three" data={itemDataAsus2} />
+            <Slider sliderId="promo_three" data={itemDataAcer2} />
           </div>
         </div>
       </section>

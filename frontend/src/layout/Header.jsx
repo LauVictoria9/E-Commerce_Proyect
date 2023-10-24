@@ -53,7 +53,7 @@ export default function Header() {
             } z-10 text-center bg-gradient-to-br to-violet-700 from-pink-700 flex-col font-medium rounded-md -bottom-32 overflow-hidden`}
           >
             <Link
-              to={"/favoritos"}
+              to={"/Favoritos"}
               className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
             >
               Favoritos
@@ -70,6 +70,13 @@ export default function Header() {
             >
               Sección
             </Link>
+            <Link
+              to={"/SeccionAcer"}
+              className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Sección Acer
+            </Link>
+
             <button className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out">
               Salir
             </button>
