@@ -13,7 +13,6 @@ import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,15 +40,15 @@ const router = createBrowserRouter([
         element: <User />,
       },
       {
-        path: "SeccionAsus/",
+        path: "seccion-asus/",
         element: <SeccionAsus />,
       },
       {
-        path: "SeccionComponentes/",
+        path: "seccion-componentes/",
         element: <SeccionComponentes />,
       },
       {
-        path: "SeccionTarjetasG/",
+        path: "seccion-tarjetas-graficas/",
         element: <SeccionTarjetasG />,
       },
     ],

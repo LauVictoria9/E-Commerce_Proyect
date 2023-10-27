@@ -1,4 +1,3 @@
-import React from "react";
 import BannerAI from "../img/ProcesadoresB.png";
 import Procesadores from "../img/Procesadores.jpg";
 
@@ -6,7 +5,11 @@ import Procesadores from "../img/Procesadores.jpg";
 import Slider from "../components/Slider";
 
 /* Item data temp */
-import { itemDataProcesadores, itemDataAmd, itemDataIntel } from "../layout/data";
+import {
+  itemDataProcesadores,
+  itemDataAmd,
+  itemDataIntel,
+} from "../layout/data";
 
 export default function SeccionAsus() {
   return (

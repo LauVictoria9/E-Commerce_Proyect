@@ -80,7 +80,10 @@ export default function Favoritos() {
 
           <div className="flex flex-col gap-y-4">
             {favorites.map((item, index) => (
-              <div className="border relative flex justify-between items-center rounded-md">
+              <div
+                key={index}
+                className="border relative flex justify-between items-center rounded-md mb-10"
+              >
                 <div className="absolute top-0 left-0 h-2 rounded-full w-full bg-gradient-to-l from-violet-700 to-pink-700" />
 
                 <div className="w-96 h-64"></div>
