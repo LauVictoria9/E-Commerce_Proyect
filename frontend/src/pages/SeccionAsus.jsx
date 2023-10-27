@@ -52,7 +52,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-4/% items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_two" data={itemDataAsus2} />
+            <Slider sliderId="promo_three" data={itemDataAsus2} />
           </div>
         </div>
       </section>
