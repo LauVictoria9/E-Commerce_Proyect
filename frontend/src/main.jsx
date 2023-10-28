@@ -10,7 +10,8 @@ import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
 import InfoProducto from "./pages/InfoProducto";
-
+import SeccionFP from "./pages/SeccionFP";
+import SeccionRL from "./pages/SeccionRL";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "SeccionAsus/",
         element: <SeccionAsus />,
+      },
+      {
+        path: "SeccionFP/",
+        element: <SeccionFP />,
+      },
+      {
+        path: "SeccionRL/",
+        element: <SeccionRL />,
       },
     ],
   },

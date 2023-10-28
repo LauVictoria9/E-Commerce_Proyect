@@ -6,10 +6,9 @@ import { FaCartShopping, FaMagnifyingGlass } from "react-icons/fa6";
 
 /*licenciado*/
 // import Navbar from "../components/Navbar/Navbar";
-// import { BsFillPersonFill } from "react-icons/bs"; 
-// import { AiOutlineShoppingCart } from "react-icons/ai"; 
+// import { BsFillPersonFill } from "react-icons/bs";
+// import { AiOutlineShoppingCart } from "react-icons/ai";
 // import { AiFillHeart } from "react-icons/ai";
-
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
@@ -65,6 +64,18 @@ export default function Header() {
               className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
             >
               Favoritos
+            </Link>
+            <Link
+              to={"/SeccionAsus"}
+              className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Seccion Asus
+            </Link>
+            <Link
+              to={"/SeccionFP"}
+              className="px-4 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Seccion FP
             </Link>
             <Link
               to={"/User"}
