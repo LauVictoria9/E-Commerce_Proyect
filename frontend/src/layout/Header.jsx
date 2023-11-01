@@ -7,9 +7,9 @@ import { AiFillHeart } from "react-icons/ai";
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
-	@@ -19,76 +13,108 @@ export default function Header() {
-  };
-
+  function handleClick() {
+    setShowProfileOptions(!showProfileOptions);
+  }
   return (
     <header>
       <section className="flex justify-end gap-x-4 py-2 px-5">

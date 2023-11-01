@@ -16,7 +16,6 @@ import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,17 +47,16 @@ const router = createBrowserRouter([
         element: <SeccionAsus />,
       },
       {
-        path: "SeccionAcer/",
+        path: "seccion-acer/",
         element: <SeccionAcer />,
       },
       {
-        path: "SeccionComponentes/",
+        path: "seccion-componentes/",
         element: <SeccionComponentes />,
       },
       {
         path: "seccion-tarjetas-graficas/",
         element: <SeccionTarjetasG />,
-
       },
       {
         path: "SeccionLenovo/",
