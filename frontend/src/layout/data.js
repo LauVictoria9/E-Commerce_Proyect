@@ -50,6 +50,30 @@ import port21 from "../img/port21.jpg";
 import port22 from "../img/port22.jpg";
 import port23 from "../img/port23.jpg";
 
+<<<<<<< HEAD
+import porta from "../img/porta.jpg";
+import porta1 from "../img/porta1.jpg";
+import porta2 from "../img/porta2.jpg";
+import porta3 from "../img/porta3.jpg";
+import porta4 from "../img/porta4.jpg";
+import porta5 from "../img/porta5.jpg";
+import porta6 from "../img/porta6.jpg";
+import porta7 from "../img/porta7.jpg";
+import porta8 from "../img/porta8.jpg";
+import porta9 from "../img/porta9.jpg";
+import porta10 from "../img/porta10.jpg";
+import porta11 from "../img/porta11.jpg";
+import porta12 from "../img/porta12.jpg";
+import porta13 from "../img/porta13.jpg";
+import porta14 from "../img/porta14.jpg";
+import porta15 from "../img/porta15.jpg";
+import porta16 from "../img/porta16.jpg";
+import porta17 from "../img/porta17.jpg";
+import porta18 from "../img/porta18.jpg";
+import porta19 from "../img/porta19.jpg";
+import porta20 from "../img/porta20.jpg";
+import porta21 from "../img/porta21.jpg";
+=======
 import P1 from "../img/procesador1.png";
 import P2 from "../img/procesador2.png";
 import P3 from "../img/procesador3.png";
@@ -103,6 +127,7 @@ import Tarjetas_5 from "../img/Tarjetas_5.png";
 import Tarjetas_6 from "../img/Tarjetas_6.png";
 import Tarjetas_7 from "../img/Tarjetas_7.png";
 import Tarjetas_8 from "../img/Tarjetas_8.png";
+>>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
 
 import lenovo1 from "../img/lenovo1.png";
 import lenovo2 from "../img/lenovo2.png";
@@ -474,6 +499,166 @@ export const itemDataAsus2 = [
     linking: port23,
   },
 ];
+<<<<<<< HEAD
+export const itemDataAcer = [
+  {
+    id: 1,
+    name: "General",
+    category: "Portátil ACER Aspire 3 Intel Core i5 1035G1 4 GB  ",
+    price: "$1.998.974",
+    linking: porta,
+  },
+  {
+    id: 2,
+    name: "General",
+    category: "Portátil Acer Aspire 5 celeron ICDN 4 GB",
+    price: "$1.195.749",
+    linking: porta1,
+  },
+  {
+    id: 3,
+    name: "General",
+    category: "Portátil Acer A314-36P-37D7 Core I3 8 GB",
+    price: "$1.916.779",
+    linking: porta2,
+  },
+  {
+    id: 4,
+    name: "General",
+    category: "Portátil Acer A315-54P Core I3 8 GB Hdd ",
+    price: "$1.299.000",
+    linking: porta3,
+  },
+  {
+    id: 5,
+    name: "General",
+    category: "Portátil Acer Aspire 3 Core I5 1135G7 8 GB",
+    price: "$2.259.900",
+    linking: porta4,
+  },
+  {
+    id: 6,
+    name: "General",
+    category: "Portátil Acer Aspire 5 A515-45-R6HW AMD Ryzen 3 5300U ",
+    price: "$2.120.500",
+    linking: porta5,
+  },
+  {
+    id: 7,
+    name: "Vivobook",
+    category: "Portátil Acer Aspire 3 A3155951BE Core I5",
+    price: "$2.220.000",
+    linking: porta6,
+  },
+  {
+    id: 8,
+    name: "Vivobook",
+    category: "Portátil Acer Aspire 3 A315595E Core I3",
+    price: "$2.763.900",
+    linking: porta7,
+  },
+];
+export const itemDataAcer1 = [
+  {
+    id: 1,
+    name: "General",
+    category: "Portátil Acer A315-58-59SW Intel Core i5 8GB  ",
+    price: "$1.934.974",
+    linking: porta15,
+  },
+  {
+    id: 2,
+    name: "General",
+    category: "Portátil Acer Vero Intel Core I5 1235U 8 GB",
+    price: "$ 2.119.000",
+    linking: porta16,
+  },
+  {
+    id: 3,
+    name: "General",
+    category: "Portátil Acer Aspire Slim Essential Core I5 8 GB",
+    price: "$2.432.971",
+    linking: porta10,
+  },
+  {
+    id: 4,
+    name: "General",
+    category: "Portátil Acer Aspire Core I5 1235U 8 GB FHD ",
+    price: "$1.299.000",
+    linking: porta11,
+  },
+  {
+    id: 5,
+    name: "General",
+    category: "Portátil Acer TravelMate TMP214-53-50UV Core I5",
+    price: "$4.134.900",
+    linking: porta12,
+  },
+  {
+    id: 6,
+    name: "General",
+    category: "Portátil Acer Aspire Vero VP Core I5 8 GB ",
+    price: "$2.699.500",
+    linking: porta13,
+  },
+  {
+    id: 7,
+    name: "General",
+    category: "Portátil Acer Aspire 3 A315-59-30E9 Core I3",
+    price: "$2.089.000",
+    linking: porta14,
+  },
+  {
+    id: 8,
+    name: "General",
+    category: "Portátil Acer Aspire Core I5 1035G1 8 GB",
+    price: "$2.159.900",
+    linking: porta17,
+  },
+];
+export const itemDataAcer2 = [
+  {
+    id: 1,
+    name: "General",
+    category: "Portátil Acer AMD Ryzen 7 5700U 36 GB  ",
+    price: "$4.818.974",
+    linking: porta8,
+  },
+  {
+    id: 2,
+    name: "General",
+    category: "Portátil Acer Aspire 5 A515-45-R2K8 Ryzen 7 5700",
+    price: "$ 3.375.900",
+    linking: porta18,
+  },
+  {
+    id: 3,
+    name: "General",
+    category: "Portátil Acer A314 Celeron N4000  8 GB",
+    price: "$1.232.971",
+    linking: porta9,
+  },
+  {
+    id: 4,
+    name: "General",
+    category: "Portátil Acer Slim Core I5 1035G1 20 GB ",
+    price: "$2.539.900",
+    linking: porta19,
+  },
+  {
+    id: 5,
+    name: "General",
+    category: "Portátil Acer Aspire Core I5 1035G1 8 GB",
+    price: "$3.358.900",
+    linking: porta20,
+  },
+  {
+    id: 6,
+    name: "General",
+    category: "Portátil Acer Swift X 557C Core I5 16 GB ",
+    price: "$7.999.500",
+    linking: porta21,
+=======
 export const itemDataProcesadores = [
   {
     id: 1,
@@ -820,6 +1005,7 @@ export const itemDataTarjetas1 = [
     category: "ZOTAC GeForce GT 1030 2GB GDDR5 HDMI/VGA Low Profile",
     price: "$459.900",
     linking: Tarjetas_8,
+>>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
   },
 ];
   export const itemDataLenovo = [

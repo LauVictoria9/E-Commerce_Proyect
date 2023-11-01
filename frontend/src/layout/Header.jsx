@@ -7,9 +7,7 @@ import { AiFillHeart } from "react-icons/ai";
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
-
-  const handleClick = () => {
-    setShowProfileOptions(!showProfileOptions);
+	@@ -19,76 +13,108 @@ export default function Header() {
   };
 
   return (
