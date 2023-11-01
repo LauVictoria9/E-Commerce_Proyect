@@ -9,14 +9,13 @@ import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
-<<<<<<< HEAD
 import SeccionAcer from "./pages/SeccionAcer";
-=======
+import SeccionLenovo from "./pages/SeccionLenovo";
+import SeccionHP from "./pages/SeccionHP";
 import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
 
->>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
 
 const router = createBrowserRouter([
   {
@@ -45,21 +44,29 @@ const router = createBrowserRouter([
         element: <User />,
       },
       {
-        path: "SeccionAsus/",
+        path: "seccion-asus/",
         element: <SeccionAsus />,
       },
       {
-<<<<<<< HEAD
         path: "SeccionAcer/",
         element: <SeccionAcer />,
-=======
+      },
+      {
         path: "SeccionComponentes/",
         element: <SeccionComponentes />,
       },
       {
-        path: "SeccionTarjetasG/",
+        path: "seccion-tarjetas-graficas/",
         element: <SeccionTarjetasG />,
->>>>>>> 47b9ff1930d10c74e9f5c4b6aaffe58273c4b87c
+
+      },
+      {
+        path: "SeccionLenovo/",
+        element: <SeccionLenovo />,
+      },
+      {
+        path: "SeccionHP/",
+        element: <SeccionHP />,
       },
     ],
   },

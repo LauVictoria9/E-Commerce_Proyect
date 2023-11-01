@@ -1,4 +1,3 @@
-import React from "react";
 import BannerAI from "../img/ProcesadoresB.png";
 import Procesadores from "../img/Procesadores.jpg";
 
@@ -6,7 +5,11 @@ import Procesadores from "../img/Procesadores.jpg";
 import Slider from "../components/Slider";
 
 /* Item data temp */
-import { itemDataProcesadores, itemDataAmd, itemDataIntel } from "../layout/data";
+import {
+  itemDataProcesadores,
+  itemDataAmd,
+  itemDataIntel,
+} from "../layout/data";
 
 export default function SeccionAsus() {
   return (
@@ -52,7 +55,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-4/% items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_two" data={itemDataIntel} />
+            <Slider sliderId="promo_three" data={itemDataIntel} />
           </div>
         </div>
       </section>

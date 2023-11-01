@@ -1,4 +1,3 @@
-import React from "react";
 import Asus from "../img/asusImage.png";
 import AsusPortatilImage from "../img/asusPortatil.jpg";
 
