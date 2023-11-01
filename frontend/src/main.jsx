@@ -9,6 +9,8 @@ import Carrito from "./pages/Carrito";
 import User from "./pages/User";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
+import SeccionLenovo from "./pages/SeccionLenovo";
+import SeccionHP from "./pages/SeccionHP";
 import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: "SeccionTarjetasG/",
         element: <SeccionTarjetasG />,
+      },
+      {
+        path: "SeccionLenovo/",
+        element: <SeccionLenovo />,
+      },
+      {
+        path: "SeccionHP/",
+        element: <SeccionHP />,
       },
     ],
   },

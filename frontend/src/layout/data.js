@@ -104,6 +104,26 @@ import Tarjetas_6 from "../img/Tarjetas_6.png";
 import Tarjetas_7 from "../img/Tarjetas_7.png";
 import Tarjetas_8 from "../img/Tarjetas_8.png";
 
+import lenovo1 from "../img/lenovo1.png";
+import lenovo2 from "../img/lenovo2.png";
+import lenovo3 from "../img/lenovo3.png";
+import lenovo4 from "../img/lenovo4.png";
+import lenovo5 from "../img/lenovo5.png";
+import lenovo6 from "../img/lenovo6.png";
+import lenovo7 from "../img/lenovo7.png";
+import lenovo8 from "../img/lenovo8.png";
+
+import hp1 from "../img/hp1.png";
+//import hp2 from "../img/hp2.png";
+//import hp3 from "../img/hp3.png";
+//import hp4 from "../img/hp4.png";
+//import hp5 from "../img/hp5.png";
+//import hp6 from "../img/hp6.png";
+//import hp7 from "../img/hp7.png";
+//import hp8 from "../img/hp8.png";
+
+
+
 export const itemData = [
   {
     id: 1,
@@ -802,3 +822,351 @@ export const itemDataTarjetas1 = [
     linking: Tarjetas_8,
   },
 ];
+  export const itemDataLenovo = [
+    {
+      id: 1,
+      name: "IdeaPad G",
+      category: "Portátil IdeaPad Gaming 3 7ma Gen ",
+      price: "$6.676.099",
+      linking: lenovo1,
+    },
+    {
+      id: 2,
+      name: "IdeaPad 1",
+      category: "Portátil Lenovo IdeaPad 1 AMD Ryzen 3 7320U , 8GB RAM, 256GB SSD",
+      price: "$2.261,63",
+      linking: lenovo2,
+    },
+    {
+      id: 3,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo IdeaPad 3 AMD Ryzen 7 5700U, 8GB RAM, 512GB SSD",
+      price: "$2.070.428",
+      linking: lenovo3,
+    },
+    {
+      id: 4,
+      name: "IdeaPad 3i",
+      category: "Portátil Lenovo IdeaPad 3i Intel Celeron N4500, 4GB RAM, 64GB eMMC",
+      price: "$1.550.000",
+      linking: lenovo4,
+    },
+    {
+      id: 5,
+      name: "IdeaPad G3",
+      category: "Portátil Lenovo IdeaPad Gaming 3 15ACH6 AMD Ryzen 5 5600H/16 GB/512 GB SSD/RTX3050 ",
+      price: "$2.804.448",
+      linking: lenovo5,
+    },
+    {
+      id: 6,
+      name: "Thinkpad",
+      category: "Portátil LENOVO THINKPAD E14 GEN 4 RYZEN 5",
+      price: "$2.799.000",
+      linking: lenovo6,
+    },
+    {
+      id: 7,
+      name: "IdeaPad S3",
+      category: "Portátil Lenovo IdeaPad S340 i7, 8 GB, 256 GB SSD",
+      price: "$2.928.460",
+      linking: lenovo7,
+    },
+    {
+      id: 8,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo Ideapad 3 15ITL6 Intel Core i7 1165G7 8GB 512GB SSD ",
+      price: "$2.935.900",
+      linking: lenovo8,
+    },
+  ];
+  export const itemDataLenovo1 = [
+    {
+      id: 1,
+      name: "IdeaPad G",
+      category: "Portátil IdeaPad Gaming 3 7ma Gen ",
+      price: "$6.676.099",
+      linking: lenovo1,
+    },
+    {
+      id: 2,
+      name: "IdeaPad 1",
+      category: "Portátil Lenovo IdeaPad 1 AMD Ryzen 3 7320U , 8GB RAM, 256GB SSD",
+      price: "$2.261,63",
+      linking: lenovo2,
+    },
+    {
+      id: 3,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo IdeaPad 3 AMD Ryzen 7 5700U, 8GB RAM, 512GB SSD",
+      price: "$2.070.428",
+      linking: lenovo3,
+    },
+    {
+      id: 4,
+      name: "IdeaPad 3i",
+      category: "Portátil Lenovo IdeaPad 3i Intel Celeron N4500, 4GB RAM, 64GB eMMC",
+      price: "$1.550.000",
+      linking: lenovo4,
+    },
+    {
+      id: 5,
+      name: "IdeaPad G3",
+      category: "Portátil Lenovo IdeaPad Gaming 3 15ACH6 AMD Ryzen 5 5600H/16 GB/512 GB SSD/RTX3050 ",
+      price: "$2.804.448",
+      linking: lenovo5,
+    },
+    {
+      id: 6,
+      name: "Thinkpad",
+      category: "Portátil LENOVO THINKPAD E14 GEN 4 RYZEN 5",
+      price: "$2.799.000",
+      linking: lenovo6,
+    },
+    {
+      id: 7,
+      name: "IdeaPad S3",
+      category: "Portátil Lenovo IdeaPad S340 i7, 8 GB, 256 GB SSD",
+      price: "$2.928.460",
+      linking: lenovo7,
+    },
+    {
+      id: 8,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo Ideapad 3 15ITL6 Intel Core i7 1165G7 8GB 512GB SSD ",
+      price: "$2.935.900",
+      linking: lenovo8,
+    },
+  ];
+  export const itemDataLenovo2 = [
+    {
+      id: 1,
+      name: "IdeaPad G",
+      category: "Portátil IdeaPad Gaming 3 7ma Gen ",
+      price: "$6.676.099",
+      linking: lenovo1,
+    },
+    {
+      id: 2,
+      name: "IdeaPad 1",
+      category: "Portátil Lenovo IdeaPad 1 AMD Ryzen 3 7320U , 8GB RAM, 256GB SSD",
+      price: "$2.261,63",
+      linking: lenovo2,
+    },
+    {
+      id: 3,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo IdeaPad 3 AMD Ryzen 7 5700U, 8GB RAM, 512GB SSD",
+      price: "$2.070.428",
+      linking: lenovo3,
+    },
+    {
+      id: 4,
+      name: "IdeaPad 3i",
+      category: "Portátil Lenovo IdeaPad 3i Intel Celeron N4500, 4GB RAM, 64GB eMMC",
+      price: "$1.550.000",
+      linking: lenovo4,
+    },
+    {
+      id: 5,
+      name: "IdeaPad G3",
+      category: "Portátil Lenovo IdeaPad Gaming 3 15ACH6 AMD Ryzen 5 5600H/16 GB/512 GB SSD/RTX3050 ",
+      price: "$2.804.448",
+      linking: lenovo5,
+    },
+    {
+      id: 6,
+      name: "Thinkpad",
+      category: "Portátil LENOVO THINKPAD E14 GEN 4 RYZEN 5",
+      price: "$2.799.000",
+      linking: lenovo6,
+    },
+    {
+      id: 7,
+      name: "IdeaPad S3",
+      category: "Portátil Lenovo IdeaPad S340 i7, 8 GB, 256 GB SSD",
+      price: "$2.928.460",
+      linking: lenovo7,
+    },
+    {
+      id: 8,
+      name: "IdeaPad 3",
+      category: "Portátil Lenovo Ideapad 3 15ITL6 Intel Core i7 1165G7 8GB 512GB SSD ",
+      price: "$2.935.900",
+      linking: lenovo8,
+    },
+  ];
+  export const itemDataHP = [
+    {
+      id: 1,
+      name: "HP 15",
+      category: "Portátil HP 15-ef2519la AMD Ryzen 5 8GB",
+      price: "$3.500.086",
+      linking: hp1,
+    },
+    {
+      id: 2,
+      name: "Pavilion G",
+      category: "Portatil Hp Pavilion Gaming 15-dk1505la I5 10300h",
+      price: "$2.999.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_722629-MLU71495580321_092023-F.webp",
+    },
+    {
+      id: 3,
+      name: "Victus 16",
+      category: "Laptop Gamer Hp Victus 16-d0504la Memoria Ram 8 Gb",
+      price: "$3.199.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_962770-MLM54029806942_022023-F.webp",
+    },
+    {
+      id: 4,
+      name: "Victus 15",
+      category: "Portátil HP VICTUS 15 15-fa1093dx azul Intel Core i5 8GB de RAM 512GB SSD, NVIDIA GeForce RTX 3050 144 Hz",
+      price: "$3.800.865",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_822561-MLU69824429131_062023-F.webp",
+    },
+    {
+      id: 5,
+      name: "Pavilion",
+      category: "Laptop HP Pavilion 15-EH1021LA AMD Ryzen 7 16GB RAM 512GB SSD",
+      price: "$2.699.000",
+      linking: "https://elektra.vtexassets.com/arquivos/ids/3829317/28010591.jpg?v=638297546429330000",
+    },
+    {
+      id: 6,
+      name: "HP 14LQ",
+      category: "Portátil HP 14-fq1004la Ryzen 3 8GB RAM 512 GB SSD",
+      price: "$3.499.000",
+      linking: "https://d34vmoxq6ylzee.cloudfront.net/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/z/azure_69a13la_1_1.png",
+    },
+    {
+      id: 7,
+      name: "Pavilion",
+      category: "Portátil HP Pavilion DV2014TU Intel Core i5 12th Gen, 14 inch, 16GB, 512GB",
+      price: "$4.925.000",
+      linking: "https://media.croma.com/image/upload/v1664414470/Croma%20Assets/Computers%20Peripherals/Laptop/Images/259500_0_bz4aoj.png",
+    },
+    {
+      id: 8,
+      name: "G8",
+      category: "Portátil HP 255 G8 Laptop 15 Ryzen 5 3500U 8GB 256GB SSD",
+      price: "$2.935.900",
+      linking: "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
+    },
+  ];
+  export const itemDataHP1 = [
+    {
+      id: 1,
+      name: "HP 15",
+      category: "Portátil HP 15-ef2519la AMD Ryzen 5 8GB",
+      price: "$3.500.086",
+      linking: hp1,
+    },
+    {
+      id: 2,
+      name: "Pavilion G",
+      category: "Portatil Hp Pavilion Gaming 15-dk1505la I5 10300h",
+      price: "$2.999.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_722629-MLU71495580321_092023-F.webp",
+    },
+    {
+      id: 3,
+      name: "Victus 16",
+      category: "Laptop Gamer Hp Victus 16-d0504la Memoria Ram 8 Gb",
+      price: "$3.199.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_962770-MLM54029806942_022023-F.webp",
+    },
+    {
+      id: 4,
+      name: "Victus 15",
+      category: "Portátil HP VICTUS 15 15-fa1093dx azul Intel Core i5 8GB de RAM 512GB SSD, NVIDIA GeForce RTX 3050 144 Hz",
+      price: "$3.800.865",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_822561-MLU69824429131_062023-F.webp",
+    },
+    {
+      id: 5,
+      name: "Pavilion",
+      category: "Laptop HP Pavilion 15-EH1021LA AMD Ryzen 7 16GB RAM 512GB SSD",
+      price: "$2.699.000",
+      linking: "https://elektra.vtexassets.com/arquivos/ids/3829317/28010591.jpg?v=638297546429330000",
+    },
+    {
+      id: 6,
+      name: "HP 14LQ",
+      category: "Portátil HP 14-fq1004la Ryzen 3 8GB RAM 512 GB SSD",
+      price: "$3.499.000",
+      linking: "https://d34vmoxq6ylzee.cloudfront.net/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/z/azure_69a13la_1_1.png",
+    },
+    {
+      id: 7,
+      name: "Pavilion",
+      category: "Portátil HP Pavilion DV2014TU Intel Core i5 12th Gen, 14 inch, 16GB, 512GB",
+      price: "$4.925.000",
+      linking: "https://media.croma.com/image/upload/v1664414470/Croma%20Assets/Computers%20Peripherals/Laptop/Images/259500_0_bz4aoj.png",
+    },
+    {
+      id: 8,
+      name: "G8",
+      category: "Portátil HP 255 G8 Laptop 15 Ryzen 5 3500U 8GB 256GB SSD",
+      price: "$2.935.900",
+      linking: "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
+    },
+  ];
+  export const itemDataHP2 = [
+    {
+      id: 1,
+      name: "HP 15",
+      category: "Portátil HP 15-ef2519la AMD Ryzen 5 8GB",
+      price: "$3.500.086",
+      linking: hp1,
+    },
+    {
+      id: 2,
+      name: "Pavilion G",
+      category: "Portatil Hp Pavilion Gaming 15-dk1505la I5 10300h",
+      price: "$2.999.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_722629-MLU71495580321_092023-F.webp",
+    },
+    {
+      id: 3,
+      name: "Victus 16",
+      category: "Laptop Gamer Hp Victus 16-d0504la Memoria Ram 8 Gb",
+      price: "$3.199.000",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_962770-MLM54029806942_022023-F.webp",
+    },
+    {
+      id: 4,
+      name: "Victus 15",
+      category: "Portátil HP VICTUS 15 15-fa1093dx azul Intel Core i5 8GB de RAM 512GB SSD, NVIDIA GeForce RTX 3050 144 Hz",
+      price: "$3.800.865",
+      linking: "https://http2.mlstatic.com/D_NQ_NP_2X_822561-MLU69824429131_062023-F.webp",
+    },
+    {
+      id: 5,
+      name: "Pavilion",
+      category: "Laptop HP Pavilion 15-EH1021LA AMD Ryzen 7 16GB RAM 512GB SSD",
+      price: "$2.699.000",
+      linking: "https://elektra.vtexassets.com/arquivos/ids/3829317/28010591.jpg?v=638297546429330000",
+    },
+    {
+      id: 6,
+      name: "HP 14LQ",
+      category: "Portátil HP 14-fq1004la Ryzen 3 8GB RAM 512 GB SSD",
+      price: "$3.499.000",
+      linking: "https://d34vmoxq6ylzee.cloudfront.net/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/z/azure_69a13la_1_1.png",
+    },
+    {
+      id: 7,
+      name: "Pavilion",
+      category: "Portátil HP Pavilion DV2014TU Intel Core i5 12th Gen, 14 inch, 16GB, 512GB",
+      price: "$4.925.000",
+      linking: "https://media.croma.com/image/upload/v1664414470/Croma%20Assets/Computers%20Peripherals/Laptop/Images/259500_0_bz4aoj.png",
+    },
+    {
+      id: 8,
+      name: "G8",
+      category: "Portátil HP 255 G8 Laptop 15 Ryzen 5 3500U 8GB 256GB SSD",
+      price: "$2.935.900",
+      linking: "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
+    },
+  ];
