@@ -15,6 +15,7 @@ import SeccionHP from "./pages/SeccionHP";
 import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
+import ProductosEnsayo from "./pages/ProductosEnsayo";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "SeccionHP/",
         element: <SeccionHP />,
+      },
+      {
+        path: "productos/",
+        element: <ProductosEnsayo />,
       },
     ],
   },
