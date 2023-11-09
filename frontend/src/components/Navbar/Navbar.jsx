@@ -43,7 +43,7 @@ const Navbar = () => {
           </li>
           <NavLinks />
         </ul> */}
-      <img src={Logo} alt="logo" className="h-20  " />
+      <Link to="/"><img src={Logo} alt="logo" className="h-20"/></Link>
       {/* </section> */}
     </nav>
   );
