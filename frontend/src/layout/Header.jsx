@@ -29,16 +29,16 @@ export default function Header() {
           >
             <div className="absolute top-[-12px] right-[6px] w-0 h-0  border-l-[8px] border-r-[8px] border-b-[12px] border-transparent  border-b-black"></div>
             <Link
-              to={"/iniciar sesion"}
-              className="px-6 py-2 w-full hover:bg-black/25 transition-colors duration-200 ease-in-out"
+              //to={"/iniciar sesion"}
+              //className="px-6 py-2 w-full hover:bg-black/25 transition-colors duration-200 ease-in-out"
             >
-              Iniciar sesion
+              
             </Link>
             <Link
               to={"/User"}
               className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
             >
-              Registrarse
+              Acceder
             </Link>
             <button className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out">
               Cerrar Sesion
