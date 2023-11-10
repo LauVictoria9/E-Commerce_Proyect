@@ -37,12 +37,6 @@ export default function Carrito() {
     </div>
     </section>
 
-
-
-
-
-
-
       {/*Lista de articulos en el carrito*/}
       <section className="w-[90vw] flex flex-col md:flex-row justify-center gap-x-8 items-center justify-self-center">
         {/* <div className="flex items-center justify-center p-5 md:w-1/2"> */}
@@ -51,9 +45,8 @@ export default function Carrito() {
             Carro (0 artículos)
           </h1>
 
-
-
           {/* Articulo 1*/}
+
           <div className="rounded-2xl w-full h-2 bg-gradient-to-r from-[#6A61D9] via-[#824EA3] to-[#F46ED8]" />
           <div className="flex flex-col gap-y-2 rounded-lg shadow-lg md:flex-row justify-center gap-x-[5%] p-4">
             <div className="flex flex-col items-center justify-center md:flex-row  gap-x-[5%] text-center">
@@ -108,9 +101,8 @@ export default function Carrito() {
             </div>
           </div>
 
-
-
            {/* Articulo 2*/}
+
           <div className="rounded-2xl w-full h-2 bg-gradient-to-r from-[#6A61D9] via-[#824EA3] to-[#F46ED8]" />
           <div className="flex flex-col gap-y-2 rounded-lg shadow-lg md:flex-row justify-center gap-x-[5%] p-4">
             <div className="flex flex-col items-center justify-center md:flex-row  gap-x-[5%] text-center">
@@ -150,6 +142,7 @@ export default function Carrito() {
                 min="0"
                 value="0"
               />
+
 
               <button
                 onClick={() => {
@@ -167,6 +160,7 @@ export default function Carrito() {
 
 
            {/* Articulo 3*/}
+
           <div className="rounded-2xl w-full h-2 bg-gradient-to-r from-[#6A61D9] via-[#824EA3] to-[#F46ED8]" />
           <div className="flex flex-col gap-y-2 rounded-lg shadow-lg md:flex-row justify-center gap-x-[5%] p-4">
             <div className="flex flex-col items-center justify-center md:flex-row  gap-x-[5%] text-center">
@@ -224,13 +218,6 @@ export default function Carrito() {
         {/* </div> */}
 
 
-
-
-
-
-
-
-
         {/*Resumen de compra*/}
 
         <section className="w-[75%] md:w-[30%] rounded-lg shadow-lg flex md:self-start justify-center p-5 my-16">
@@ -266,14 +253,10 @@ export default function Carrito() {
                 Continuar compra
             </Link>
             
+
           </div>
         </section>
       </section>
     </div>
   );
 }
-
-
-
-
-

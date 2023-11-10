@@ -1,34 +1,53 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 
-# Create your models here.
+
+class Rol(models.Model):
+    tipoDeUsuario = models.CharField(max_length=100)
+    def __str__(self):
+        return self.tipoDeUsuario
+
+class User(AbstractUser):
+    telefonoUser = models.CharField(max_length=100)
+    direccion = models.CharField(max_length=100)
+    email = models.EmailField(max_length=151, unique=True)
+    rol = models.ForeignKey(Rol,on_delete=models.CASCADE, null=True)
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username','password']
+    def __str__(self):
+        return self.first_name + "" + self.last_name or ""
+
+
+class TipoProducto(models.Model):
+    tipoProducto = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=100)
+    def __str__(self):
+        return self.tipoProducto 
+    
 class Producto(models.Model):
-  nombre = models.CharField(max_length=100)
-  descripcion = models.CharField(max_length=100)
-  precio = models.IntegerField()
-  
-  def __str__(self):
-        return self.nombre
+    nombre = models.CharField(max_length=100)
+    detalles = models.CharField(max_length=100)
+    precio = models.IntegerField()
+    cantidad = models.IntegerField()
+    imagen = models.ImageField(upload_to='productos/',max_length=255, null=True, blank=True)
+    tipoProducto = models.ForeignKey(TipoProducto, on_delete=models.CASCADE)
+    def __str__(self):
+            return self.nombre
 
 class MetodoPago(models.Model):
     nombre = models.CharField(max_length=200)
     descripcion = models.CharField(max_length=200)
-    
     def __str__(self):
-        return self.nombre
+        return self.nombre+" "+self.descripcion
 
 class Venta(models.Model):
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
-    cantidad = models.IntegerField()
-    precio_total = models.IntegerField()
-    metodo_pago = models.ForeignKey(MetodoPago, on_delete=models.CASCADE)
-    fecha = models.DateField(auto_now_add=True)
+    cantidadTotal =models.IntegerField()
+    fecha = models.DateField()
+    direccionEntrega = models.CharField(max_length=100)
+    precioTotal = models.IntegerField()
+    metodoPago = models.ForeignKey(MetodoPago, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.usuario.username + " " + Producto.nombre 
- 
-class Cat_producto(models.Model):
-    descripcion = models.CharField(max_length=100)
-    
-    
+        return self.usuario.first_name + " " + Producto.nombre +" " + self.cantidadTotal+" " + self.fecha + "" +  self.metodoPago.nombre +" " + self.precioTotal
