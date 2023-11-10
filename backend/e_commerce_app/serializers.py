@@ -2,10 +2,20 @@ from rest_framework import serializers
 from . import models
 from django.contrib.auth.models import User
 
+class TipoProductoSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = models.TipoProducto
+    fields = ('id','tipoProducto','descripcion')
+
 class ProductoSerializer(serializers.ModelSerializer):
   class Meta:
     model = models.Producto
-    fields = ('id','nombre','descripcion','precio')
+    fields = ('id','nombre','detalles','precio','cantidad','imagen','tipoProducto')
+
+class RolSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = models.Rol
+    fields = ('id','tipoDeUsuario')
 
 class UsuarioSerializer(serializers.ModelSerializer):
   class Meta:
@@ -20,6 +30,6 @@ class MetodoPagoSerializer(serializers.ModelSerializer):
 class VentaSerializer(serializers.ModelSerializer):
   class Meta:
     model = models.Venta
-    fields = ('id','usuario','producto','cantidad', 'precio_total','metodo_pago')
+    fields = ('id','usuario','producto','cantidadTotal', 'direccionEntrega','precioTotal', 'metodoPago')
     read_only_fields = ('fecha',)
 

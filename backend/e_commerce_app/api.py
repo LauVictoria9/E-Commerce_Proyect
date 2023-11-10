@@ -1,15 +1,24 @@
 from rest_framework import viewsets,  permissions
 from . import models
-from django.contrib.auth.models import User
 from . import serializers
+
+class TipoProductoViewSet(viewsets.ModelViewSet):
+  queryset = models.TipoProducto.objects.all()
+  permission_classes = [permissions.AllowAny]
+  serializer_class = serializers.TipoProductoSerializer
 
 class ProductoViewSet(viewsets.ModelViewSet):
   queryset = models.Producto.objects.all()
   permission_classes = [permissions.AllowAny]
   serializer_class = serializers.ProductoSerializer
 
+class RolViewSet(viewsets.ModelViewSet):
+  queryset = models.Rol.objects.all()
+  permission_classes = [permissions.AllowAny]
+  serializer_class = serializers.RolSerializer
+
 class UsuarioViewSet(viewsets.ModelViewSet):
-  queryset = User.objects.all()
+  queryset = models.User.objects.all()
   permission_classes = [permissions.AllowAny]
   serializer_class = serializers.UsuarioSerializer
 
