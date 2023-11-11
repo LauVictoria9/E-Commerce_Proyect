@@ -15,7 +15,10 @@ import SeccionHP from "./pages/SeccionHP";
 import SeccionComponentes from "./pages/SeccionComponentes";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
+import SeccionFP from "./pages/SeccionFP";
+import SeccionRL from "./pages/SeccionRL";
 import ProductosEnsayo from "./pages/ProductosEnsayo";
+
 
 const router = createBrowserRouter([
   {
@@ -48,6 +51,14 @@ const router = createBrowserRouter([
         element: <SeccionAsus />,
       },
       {
+        path: "SeccionFP/",
+        element: <SeccionFP />,
+      },
+      {
+        path: "SeccionRL/",
+        element: <SeccionRL />,
+      },
+      {
         path: "seccion-acer/",
         element: <SeccionAcer />,
       },
@@ -70,6 +81,7 @@ const router = createBrowserRouter([
       {
         path: "productos/",
         element: <ProductosEnsayo />,
+
       },
     ],
   },
