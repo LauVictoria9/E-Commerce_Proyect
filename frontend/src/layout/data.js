@@ -76,7 +76,7 @@ import rl22 from "../img/rl22.png";
 import rl23 from "../img/rl23.png";
 import rl24 from "../img/rl24.png";
 
-import fp1 from "../img/fp1.png";
+// import fp1 from "../img/fp1.png";
 import fp2 from "../img/fp2.png";
 import fp3 from "../img/fp3.png";
 import fp4 from "../img/fp4.png";
@@ -919,6 +919,8 @@ export const itemDataFP2 = [
       "Fuente de poder para PC Apevia Jupiter Series ATX-JP600W 600W",
     price: "$279.900",
     linking: fp24,
+  },
+];
 
 export const itemDataAcer = [
   {
