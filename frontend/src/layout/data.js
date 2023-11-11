@@ -195,7 +195,23 @@ import hp1 from "../img/hp1.png";
 //import hp7 from "../img/hp7.png";
 //import hp8 from "../img/hp8.png";
 
+import Chasis1 from "../img/Chasis1.png";
+import Chasis2 from "../img/Chasis2.png";
+import Chasis3 from "../img/Chasis3.png";
+import Chasis4 from "../img/Chasis4.png";
+import Chasis5 from "../img/Chasis5.png";
+import Chasis6 from "../img/Chasis6.png";
+import Chasis7 from "../img/Chasis7.png";
+import Chasis8 from "../img/Chasis8.png";
 
+import Monitor1 from "../img/Monitor1.png";
+import Monitor2 from "../img/Monitor2.png";
+import Monitor3 from "../img/Monitor3.png";
+import Monitor4 from "../img/Monitor4.png";
+import Monitor5 from "../img/Monitor5.png";
+import Monitor6 from "../img/Monitor6.png";
+import Monitor7 from "../img/Monitor7.png";
+import Monitor8 from "../img/Monitor8.png";
 export const itemData = [
   {
     id: 1,
@@ -1816,5 +1832,353 @@ export const itemDataHP2 = [
     linking:
       "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
 
+  },
+];
+export const itemDataMonitores = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: Monitor1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor3,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor4,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor5,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor6,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor8,
+  },
+];
+export const itemDataMonitores1 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataMonitores2 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataChasis = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: Chasis1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis3,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis4,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis5,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis6,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis8,
+  },
+];
+export const itemDataChasis1 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataChasis2 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
   },
 ];
