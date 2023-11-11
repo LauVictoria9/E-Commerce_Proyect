@@ -18,6 +18,9 @@ import InfoProducto from "./pages/InfoProducto";
 import SeccionFP from "./pages/SeccionFP";
 import SeccionRL from "./pages/SeccionRL";
 import ProductosEnsayo from "./pages/ProductosEnsayo";
+import SeccionChasis from "./pages/SeccionChasis";
+import SeccionMonitores from "./pages/SeccionMonitores";
+
 
 
 const router = createBrowserRouter([
@@ -82,6 +85,14 @@ const router = createBrowserRouter([
         path: "productos/",
         element: <ProductosEnsayo />,
 
+      },
+      {
+        path: "SeccionChasis/",
+        element: <SeccionChasis />,
+      },
+      {
+        path: "SeccionMonitores/",
+        element: <SeccionMonitores />,
       },
     ],
   },
