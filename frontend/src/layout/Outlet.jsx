@@ -65,7 +65,7 @@ export default function Outlet() {
 
           {/* Slider */}
           <div className="w-full md:w-2/3 items-center relative flex">
-            <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
+            <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5 " />
 
             <Slider sliderId="promo_one" data={itemData} />
           </div>

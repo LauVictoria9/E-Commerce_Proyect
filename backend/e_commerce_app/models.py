@@ -1,62 +1,53 @@
 from django.db import models
-from django.contrib.auth.models import User
-from datetime  import datetime
+from django.contrib.auth.models import AbstractUser
 
 
-# Create your models here.
-
-class tipo_producto(models.Model):
-    tipo_producto = models.CharField(max_length=100)
-    descripcion = models.CharField(max_length=100)
-    
-    def __str__(self):
-        return self.nombre_tipoP +" "   + self.descripcion
-class producto(models.Model):
-   nombreProducto = models.CharField(max_length=100)
-   detalles = models.CharField(max_length=100)
-   precio = models.IntegerField(max_length=100)
-   cantidadProducto = models.IntegerField(max_length=100)
-   #imagen
-   tipo_producto = models.ForeignKey(tipo_producto, on_delete=models.CASCADE)
-   def __str__(self):
-        return self.tipo_producto.tipo_producto + " " + self.nombreProducto + " " + self.detalles + " " + self.precio + " " + self.cantidadProducto 
-    
-    
-
-class rol(models.Model):
+class Rol(models.Model):
     tipoDeUsuario = models.CharField(max_length=100)
     def __str__(self):
         return self.tipoDeUsuario
 
-#preguntar ahora usuario
-class user(models.Model):
-    tipoDeUsuario = models.ForeignKey(rol, on_delete=models.CASCADE)
-    nombreUser = models.CharField(max_length=100)
-    apellidoUser = models.CharField(max_length=100)
-    DireccionUser = models.CharField(max_length=100)
+class User(AbstractUser):
     telefonoUser = models.CharField(max_length=100)
-    password= models.CharField(max_length=100)     
+    direccion = models.CharField(max_length=100)
+    email = models.EmailField(max_length=151, unique=True)
+    rol = models.ForeignKey(Rol,on_delete=models.CASCADE, null=True)
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username','password']
     def __str__(self):
-        return self.rol.tipoDeUsuario # aqui se debe cambiar
+        return self.first_name + "" + self.last_name or ""
 
-    
-    #tambien para mirar metodoPago
-class metodoPago(models.Model):
-    nombreMetodo = models.CharField(max_length=200)
-    descripcionMetodo = models.CharField(max_length=200)
-    
+
+class TipoProducto(models.Model):
+    tipoProducto = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=100)
     def __str__(self):
-        return self.nombreMetodo+" "+self.descripcionMetodo
+        return self.tipoProducto 
+    
+class Producto(models.Model):
+    nombre = models.CharField(max_length=100)
+    detalles = models.CharField(max_length=100)
+    precio = models.IntegerField()
+    cantidad = models.IntegerField()
+    imagen = models.ImageField(upload_to='productos/',max_length=255, null=True, blank=True)
+    tipoProducto = models.ForeignKey(TipoProducto, on_delete=models.CASCADE)
+    def __str__(self):
+            return self.nombre
 
-class Venta_Producto(models.Model):
-    nombreUser = models.ForeignKey(user, on_delete=models.CASC)
-    nombreProducto = models.ForeignKey(producto, on_delete=models.CASCADE)
-    cantidadTotal =models.IntegerField(max_length=100)
-    fechaCompra = models.DateField()
+class MetodoPago(models.Model):
+    nombre = models.CharField(max_length=200)
+    descripcion = models.CharField(max_length=200)
+    def __str__(self):
+        return self.nombre+" "+self.descripcion
+
+class Venta(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+    cantidadTotal =models.IntegerField()
+    fecha = models.DateField()
     direccionEntrega = models.CharField(max_length=100)
-    precioTotal = models.IntegerField(max_length= 150)
-    nombreMetodo = models.ForeignKey(metodoPago, on_delete=models.CASC)
+    precioTotal = models.IntegerField()
+    metodoPago = models.ForeignKey(MetodoPago, on_delete=models.CASCADE)
 
-    
-    #def __str__(self):
-        #return self.user.nombreUser + " " + Producto.nombreProducto +" " + self.cantidadTotal+" " + self.fechaCompra +" " + self.direccionEntrega +" " +  self.metodoPago.nombreMetodo +" " + self.precioTotal
+    def __str__(self):
+        return self.usuario.first_name + " " + Producto.nombre +" " + self.cantidadTotal+" " + self.fecha + "" +  self.metodoPago.nombre +" " + self.precioTotal
