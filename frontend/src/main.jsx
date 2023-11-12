@@ -12,7 +12,7 @@ import SeccionAsus from "./pages/SeccionAsus";
 import SeccionAcer from "./pages/SeccionAcer";
 import SeccionLenovo from "./pages/SeccionLenovo";
 import SeccionHP from "./pages/SeccionHP";
-import SeccionComponentes from "./pages/SeccionComponentes";
+import SeccionProcesadores from "./pages/SeccionProcesadores";
 import SeccionTarjetasG from "./pages/SeccionTarjetasG";
 import InfoProducto from "./pages/InfoProducto";
 import SeccionFP from "./pages/SeccionFP";
@@ -54,45 +54,45 @@ const router = createBrowserRouter([
         element: <SeccionAsus />,
       },
       {
-        path: "SeccionFP/",
-        element: <SeccionFP />,
-      },
-      {
-        path: "SeccionRL/",
-        element: <SeccionRL />,
-      },
-      {
         path: "seccion-acer/",
         element: <SeccionAcer />,
       },
       {
-        path: "seccion-componentes/",
-        element: <SeccionComponentes />,
+        path: "seccion-procesadores/",
+        element: <SeccionProcesadores/>,
       },
       {
         path: "seccion-tarjetas-graficas/",
         element: <SeccionTarjetasG />,
       },
       {
-        path: "SeccionLenovo/",
+        path: "Seccion-lenovo/",
         element: <SeccionLenovo />,
       },
       {
-        path: "SeccionHP/",
+        path: "Seccion-hp/",
         element: <SeccionHP />,
+      },
+      {
+        path: "Seccion-fuentesP/",
+        element: <SeccionFP />,
+      },
+      {
+        path: "Seccion-refrigeracion-liquida/",
+        element: <SeccionRL />,
+      },
+      {
+        path: "Seccion-Monitores/",
+        element: <SeccionMonitores />,
+      },
+      {
+        path: "Seccion-Chasis/",
+        element: <SeccionChasis />,
       },
       {
         path: "productos/",
         element: <ProductosEnsayo />,
 
-      },
-      {
-        path: "SeccionChasis/",
-        element: <SeccionChasis />,
-      },
-      {
-        path: "SeccionMonitores/",
-        element: <SeccionMonitores />,
       },
     ],
   },
