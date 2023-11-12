@@ -23,17 +23,17 @@ const NavLinks = () => {
             </h1>
             <div className="group">
               <div className="absolute top-[32px] left-full z-30  px-1 hidden group-hover:block hover:block ">
-                <div className="py-3 bg-black"></div>
+                <div className="py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
                 <div className="bg-white border-2 border-black  px-4 pt-3 pb-6">
                   {menuPrincipal.datos.map((datoMenu) => (
                     <div key={datoMenu.id} className="flex flex-col gap-y-3">
-                      <h3 className="text-xl text-clr-one font-semibold mb-2">
+                      <h3 className="text-xl text-clr-one font-bold mb-2">
                         {datoMenu.Head}
                       </h3>
                       {datoMenu.links.map((link) => (
                         <li
                           key={link.id}
-                          className="bg-gray-100 text-clr-one font-medium pl-4  text-sm  border-l-4 border-clr-one "
+                          className="bg-gray-100 text-clr-one font-bold pl-4  text-base  border-l-4 border-purple-800"
                         >
                           <Link
                             to={link.link}
@@ -42,20 +42,20 @@ const NavLinks = () => {
                             {link.name}
                             <p>&gt;</p>
                             {link.submenu && (
-                              <div className="absolute left-[100%] hidden  group-hover/submenu:block pl-4">
-                                <div className="bg-white border-2 border-black  px-4 pt-3 pb-6">
+                              <div className="absolute left-[100%] hidden  group-hover/submenu:block pl-5">
+                                <div className="bg-white border-2 border-black  px-4 pt-5 pb-6">
                                   {link.subdatos.map((subDato) => (
                                     <div
                                       key={subDato.id}
                                       className="flex flex-col gap-y-3"
                                     >
-                                      <h3 className="text-xl text-clr-one font-semibold mb-2">
+                                      <h3 className="text-xl text-clr-one font-bold mb-2">
                                         {subDato.Head}
                                       </h3>
                                       {subDato.sublinks.map((sublinks) => (
                                         <li
                                           key={sublinks.id}
-                                          className="bg-gray-100 text-clr-one font-medium pl-4  text-sm  border-l-4 border-clr-one"
+                                          className="bg-white-100 text-clr-one font-bold pl-4  text-base  border-l-4 border-purple-800"
                                         >
                                           {console.log(link.link)}
                                           <Link
