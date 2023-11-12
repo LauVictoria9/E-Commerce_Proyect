@@ -7,7 +7,7 @@ const Card = ({ item }) => {
       <img
         src={item.linking}
         alt={item.title}
-        className="group-hover:scale-110 transition-transform duration-200 ease-in-out"
+        className="group-hover:scale-110 transition-transform duration-200 ease-in-out object-contain h-48 w-full"
       />
 
       {/* Card content */}

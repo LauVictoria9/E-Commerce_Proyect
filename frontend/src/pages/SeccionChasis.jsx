@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Lenovo from "../img/LenovoImage.png";
 import LenovoPortatilImage from "../img/AsusPortatil.jpg";
 
@@ -8,7 +8,7 @@ import Slider from "../components/Slider";
 /* Item data temp */
 import { itemDataChasis, itemDataChasis1, itemDataChasis2 } from "../layout/data";
 
-export default function SeccionLenovo() {
+export default function SeccionChasis() {
   return (
     <main className="pt-8 pb-16 ">
       <section className="relative flex justify-center items-center">
