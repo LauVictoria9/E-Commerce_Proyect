@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../../img/Logo.png";
 import NavLinks from "./NavLinks";
-import { AiOutlineSearch } from "react-icons/ai";
+import Search from "./Search";
 
 const Navbar = () => {
   // const [open, setOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
             onClick={() => setOpen(!open)}
           >
             romero
-            <ion-icon name={`${open ? "close" : "menu"}`}>romero</ion-icon>
+            <ion-icon name={${open ? "close" : "menu"}}>romero</ion-icon>
           </div>
         </div> */}
       <ul className="flex items-center justify-center gap-x-6">
@@ -24,9 +24,7 @@ const Navbar = () => {
           <NavLinks />
         </li>
         <li className="h-min">
-          <Link to="/">
-            <AiOutlineSearch className="w-10 h-10"></AiOutlineSearch>
-          </Link>
+            <Search/>
         </li>
       </ul>
       {/* Mobile nav */}
