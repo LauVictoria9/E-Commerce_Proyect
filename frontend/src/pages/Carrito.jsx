@@ -28,7 +28,7 @@ export default function Carrito() {
             </p>
             <Link
               to={"/"}
-              className="px-2 md:px-3 py-1.5 rounded-lg bg-clr-two text-white hover:bg-[#824EA3] font-semibold"
+              className="px-2 md:px-3 py-1.5 rounded-lg text-white bg-clr-two hover:bg-gradient-to-br group from-clr-one via-clr-two to-clr-three font-semibold"
             >
               Ver artículos
             </Link>
@@ -245,7 +245,7 @@ export default function Carrito() {
 
             <Link
               to={"/"}
-              className="w-full bg-[#6A61D9] text-white py-2 px-4 rounded-lg hover:bg-[#9660fa] focus:outline-none focus:bg-blue-500 mt-4 font-semibold"
+              className="w-full text-white py-2 px-4 rounded-lg bg-clr-two hover:bg-gradient-to-br group from-clr-one via-clr-two to-clr-three font-semibold"
             >
               Continuar compra
             </Link>
