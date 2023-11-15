@@ -269,7 +269,6 @@ export const itemData = [
     linking: fp1,
   },
 ];
-
 export const itemData2 = [
   {
     id: 1,
@@ -329,7 +328,6 @@ export const itemData2 = [
     linking: t4,
   },
 ];
-
 export const itemData3 = [
   {
     id: 1,
@@ -447,7 +445,6 @@ export const itemDataAsus = [
     linking: port7,
   },
 ];
-
 export const itemDataAsus1 = [
   {
     id: 1,
@@ -506,7 +503,6 @@ export const itemDataAsus1 = [
     linking: port15,
   },
 ];
-
 export const itemDataAsus2 = [
   {
     id: 1,
@@ -995,7 +991,6 @@ export const itemDataAcer = [
     linking: porta7,
   },
 ];
-
 export const itemDataAcer1 = [
   {
     id: 1,
@@ -1054,7 +1049,6 @@ export const itemDataAcer1 = [
     linking: porta17,
   },
 ];
-
 export const itemDataAcer2 = [
   {
     id: 1,
@@ -1099,7 +1093,6 @@ export const itemDataAcer2 = [
     linking: porta21,
   },
 ];
-
 export const itemDataProcesadores = [
   {
     id: 1,
@@ -1158,7 +1151,6 @@ export const itemDataProcesadores = [
     linking: P8,
   },
 ];
-
 export const itemDataAmd = [
   {
     id: 1,
@@ -1217,7 +1209,6 @@ export const itemDataAmd = [
     linking: Amd_8,
   },
 ];
-
 export const itemDataIntel = [
   {
     id: 1,
@@ -1276,7 +1267,6 @@ export const itemDataIntel = [
     linking: Intel8,
   },
 ];
-
 export const itemDataTarjetas = [
   {
     id: 1,
@@ -1335,7 +1325,6 @@ export const itemDataTarjetas = [
     linking: T8,
   },
 ];
-
 export const itemDataNvidia = [
   {
     id: 1,
@@ -1394,7 +1383,6 @@ export const itemDataNvidia = [
     linking: Nvidea8,
   },
 ];
-
 export const itemDataTarjetas1 = [
   {
     id: 1,
@@ -1453,7 +1441,6 @@ export const itemDataTarjetas1 = [
     linking: Tarjetas_8,
   },
 ];
-
 export const itemDataLenovo = [
   {
     id: 1,
@@ -1516,7 +1503,6 @@ export const itemDataLenovo = [
     linking: lenovo8,
   },
 ];
-
 export const itemDataLenovo1 = [
   {
     id: 1,
@@ -1579,7 +1565,6 @@ export const itemDataLenovo1 = [
     linking: lenovo8,
   },
 ];
-
 export const itemDataLenovo2 = [
   {
     id: 1,
@@ -1642,7 +1627,6 @@ export const itemDataLenovo2 = [
     linking: lenovo8,
   },
 ];
-
 export const itemDataHP = [
   {
     id: 1,
@@ -1710,7 +1694,6 @@ export const itemDataHP = [
       "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
   },
 ];
-
 export const itemDataHP1 = [
   {
     id: 1,
@@ -1778,7 +1761,6 @@ export const itemDataHP1 = [
       "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
   },
 ];
-
 export const itemDataHP2 = [
   {
     id: 1,
