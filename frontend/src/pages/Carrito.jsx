@@ -3,39 +3,39 @@ import { Link } from "react-router-dom";
 export default function Carrito() {
   return (
     <div className="font-sans flex flex-col items-center gap-y-10 py-8 ">
-
       {/* Encabezado de articulos */}
-<section className=" h-[80vh] justify-self-center flex justify-center items-center">
-<div className="  flex flex-col md:flex-row gap-x-6 w-[85%] md:w-[70%] lg:w-[60%] h-min items-center justify-center px-16 py-8 rounded-lg shadow-lg">
-  {/* <div className="flex flex-col md:flex-row items-center md:px-5 lg:px-10 xl:px-20 2xl:px-32 md:pt-10 md:pb-20 text-center overflow-hidden border-b-2 rounded-lg border-slate-400"> */}
-  {/* <div className="pl-5 md:pl-20 pr-5"> */}
-  <div className="bg-[#cecdcd] flex justify-center items-center w-[8rem] md:w-[100%] max-w-[10rem] p-5 rounded-[50%] overflow-hidden drop-shadow-xl hover:drop-shadow-2xl">
-    <img
-      src="https://media.discordapp.net/attachments/885630750244868136/1172248051361005718/1699556085973.png?ex=655fa012&is=654d2b12&hm=f7484016699701d924f64d5b9ec47223a83f8bc4980c9f9fb65bb42ce5fc4360&="
-      alt="Un carrito de compras."
-    />
-  </div>
-  {/* </div> */}
+      <section className=" h-[80vh] justify-self-center flex justify-center items-center">
+        <div className="  flex flex-col md:flex-row gap-x-6 w-[85%] md:w-[70%] lg:w-[60%] h-min items-center justify-center px-16 py-8 rounded-lg shadow-lg">
+          {/* <div className="flex flex-col md:flex-row items-center md:px-5 lg:px-10 xl:px-20 2xl:px-32 md:pt-10 md:pb-20 text-center overflow-hidden border-b-2 rounded-lg border-slate-400"> */}
+          {/* <div className="pl-5 md:pl-20 pr-5"> */}
+          <div className="bg-gradient-to-br group from-clr-one via-clr-two to-clr-three flex justify-center items-center w-[8rem] md:w-[100%] max-w-[10rem] p-5 rounded-[50%] overflow-hidden drop-shadow-xl hover:drop-shadow-2xl">
+            <img
+              className="invert group-hover:scale-110 transition duration-300 ease-out"
+              src="https://media.discordapp.net/attachments/885630750244868136/1172248051361005718/1699556085973.png?ex=655fa012&is=654d2b12&hm=f7484016699701d924f64d5b9ec47223a83f8bc4980c9f9fb65bb42ce5fc4360&="
+              alt="Un carrito de compras."
+            />
+          </div>
+          {/* </div> */}
 
-  <div className="text-center text-clip">
-    <h2 className="text-2xl md:text-3xl font-bold text-[#6A61D9] px-3 py-3">
-      No tienes ningún artículo
-    </h2>
-    <p className="px-3 py-5 pb-10 text-sm md:text-base">
-      En este momento no tienes ningún artículo en el carrito, cuando
-      agregues o quieras comprar un artículo de tu interés, aparecerá
-      aquí.
-    </p>
-    <Link
-      to={"/"}
-      className="px-2 md:px-3 py-1.5 rounded-lg bg-[#6A61D9] text-white hover:bg-[#824EA3] font-semibold"
-    >
-      Ver artículos
-    </Link>
-  </div>
-  {/* </div> */}
-    </div>
-    </section>
+          <div className="text-center text-clip">
+            <h2 className="bg-clip-text text-transparent bg-gradient-to-br group from-clr-one via-clr-two to-clr-three text-2xl md:text-3xl font-bold text-[#6A61D9] px-3 py-3">
+              No tienes ningún artículo
+            </h2>
+            <p className="px-3 py-5 pb-10 text-sm md:text-base">
+              En este momento no tienes ningún artículo en el carrito, cuando
+              agregues o quieras comprar un artículo de tu interés, aparecerá
+              aquí.
+            </p>
+            <Link
+              to={"/"}
+              className="px-2 md:px-3 py-1.5 rounded-lg bg-clr-two text-white hover:bg-[#824EA3] font-semibold"
+            >
+              Ver artículos
+            </Link>
+          </div>
+          {/* </div> */}
+        </div>
+      </section>
 
       {/*Lista de articulos en el carrito*/}
       <section className="w-[90vw] flex flex-col md:flex-row justify-center gap-x-8 items-center justify-self-center">
@@ -101,7 +101,7 @@ export default function Carrito() {
             </div>
           </div>
 
-           {/* Articulo 2*/}
+          {/* Articulo 2*/}
 
           <div className="rounded-2xl w-full h-2 bg-gradient-to-r from-[#6A61D9] via-[#824EA3] to-[#F46ED8]" />
           <div className="flex flex-col gap-y-2 rounded-lg shadow-lg md:flex-row justify-center gap-x-[5%] p-4">
@@ -143,7 +143,6 @@ export default function Carrito() {
                 value="0"
               />
 
-
               <button
                 onClick={() => {
                   const input = document.querySelector(".quantity-input");
@@ -158,8 +157,7 @@ export default function Carrito() {
             </div>
           </div>
 
-
-           {/* Articulo 3*/}
+          {/* Articulo 3*/}
 
           <div className="rounded-2xl w-full h-2 bg-gradient-to-r from-[#6A61D9] via-[#824EA3] to-[#F46ED8]" />
           <div className="flex flex-col gap-y-2 rounded-lg shadow-lg md:flex-row justify-center gap-x-[5%] p-4">
@@ -217,7 +215,6 @@ export default function Carrito() {
         </section>
         {/* </div> */}
 
-
         {/*Resumen de compra*/}
 
         <section className="w-[75%] md:w-[30%] rounded-lg shadow-lg flex md:self-start justify-center p-5 my-16">
@@ -247,13 +244,11 @@ export default function Carrito() {
             </div>
 
             <Link
-               to={"/"}
-               className="w-full bg-[#6A61D9] text-white py-2 px-4 rounded-lg hover:bg-[#9660fa] focus:outline-none focus:bg-blue-500 mt-4 font-semibold"
+              to={"/"}
+              className="w-full bg-[#6A61D9] text-white py-2 px-4 rounded-lg hover:bg-[#9660fa] focus:outline-none focus:bg-blue-500 mt-4 font-semibold"
             >
-                Continuar compra
+              Continuar compra
             </Link>
-            
-
           </div>
         </section>
       </section>
