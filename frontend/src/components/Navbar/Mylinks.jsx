@@ -6,19 +6,20 @@ export const menu = [
     datos: [
       {
         id: "dato1",
-        Head: "!Bienvenidos¡",
+        Head: "¡Bienvenidos!",
         links: [
           {
             id: "link1",
             name: "Computadores",
-            link: "seccion-asus/",
             submenu: true,
             subdatos: [
               {
-                Head: "!Computadores¡",
+                Head: "Portatiles",
                 sublinks: [
-                  { name: "portatiles", link: "/romero" },
-                  { name: "convertibles 2 en 1", link: "/arias" },
+                  { name: "ASUS", link: "/seccion-asus/" },
+                  { name: "ACER", link: "/seccion-acer" },
+                  { name: "HP", link: "/seccion-hp/" },
+                  { name: "LENOVO", link: "/seccion-lenovo/" },
                 ],
               },
             ],
@@ -26,17 +27,32 @@ export const menu = [
           {
             id: "link2",
             name: "Componentes",
-            link: "seccion-componentes/",
+            submenu: true,
+            subdatos: [
+              {
+                Head: "",
+                sublinks: [
+                  { name: "Procesadores", link: "/seccion-procesadores/" },
+                  { name: "Tarjetas Graficas", link: "/seccion-tarjetas-graficas/" },
+                  { name: "Fuentes de Poder", link: "/seccion-fuentesP/" },
+                  { name: "Refrigeracion Liquida", link: "/seccion-refrigeracion-liquida/" },
+                ],
+              },
+            ],
           },
           {
             id: "link3",
             name: "Zona Gamer",
-            link: "seccion-tarjetas-graficas/",
-          },
-          {
-            id: "link4",
-            name: "Ofertas",
-            link: "/",
+            submenu: true,
+            subdatos: [
+              {
+                Head: "",
+                sublinks: [
+                  { name: "Monitores", link: "/seccion-Monitores/" },
+                  { name: "Chasis", link: "/seccion-Chasis" },
+                ],
+              },
+            ],
           },
         ],
       },

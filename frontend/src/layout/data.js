@@ -50,6 +50,56 @@ import port21 from "../img/port21.jpg";
 import port22 from "../img/port22.jpg";
 import port23 from "../img/port23.jpg";
 
+import rl0 from "../img/rl0.png";
+import rl2 from "../img/rl2.png";
+import rl3 from "../img/rl3.png";
+import rl4 from "../img/rl4.png";
+import rl5 from "../img/rl5.png";
+import rl6 from "../img/rl6.png";
+import rl7 from "../img/rl7.png";
+import rl8 from "../img/rl8.png";
+import rl9 from "../img/rl9.png";
+import rl10 from "../img/rl10.png";
+import rl11 from "../img/rl11.png";
+import rl12 from "../img/rl12.png";
+import rl13 from "../img/rl13.png";
+import rl14 from "../img/rl14.png";
+import rl15 from "../img/rl15.png";
+import rl16 from "../img/rl16.png";
+import rl17 from "../img/rl17.png";
+import rl18 from "../img/rl18.png";
+import rl19 from "../img/rl19.png";
+import rl20 from "../img/rl20.png";
+import rl21 from "../img/rl21.png";
+import rl22 from "../img/rl22.png";
+import rl23 from "../img/rl23.png";
+import rl24 from "../img/rl24.png";
+
+// import fp1 from "../img/fp1.png";
+import fp2 from "../img/fp2.png";
+import fp3 from "../img/fp3.png";
+import fp4 from "../img/fp4.png";
+import fp5 from "../img/fp5.png";
+import fp6 from "../img/fp6.png";
+import fp7 from "../img/fp7.png";
+import fp8 from "../img/fp8.png";
+import fp9 from "../img/fp9.png";
+import fp10 from "../img/fp10.png";
+import fp11 from "../img/fp11.png";
+import fp12 from "../img/fp12.png";
+import fp13 from "../img/fp13.png";
+import fp14 from "../img/fp14.png";
+import fp15 from "../img/fp15.png";
+import fp16 from "../img/fp16.png";
+import fp17 from "../img/fp17.png";
+import fp18 from "../img/fp18.png";
+import fp19 from "../img/fp19.png";
+import fp20 from "../img/fp20.png";
+import fp21 from "../img/fp21.png";
+import fp22 from "../img/fp22.png";
+import fp23 from "../img/fp23.png";
+import fp24 from "../img/fp24.png";
+
 import porta from "../img/porta.jpg";
 import porta1 from "../img/porta1.jpg";
 import porta2 from "../img/porta2.jpg";
@@ -144,6 +194,23 @@ import hp1 from "../img/hp1.png";
 //import hp7 from "../img/hp7.png";
 //import hp8 from "../img/hp8.png";
 
+import Chasis1 from "../img/Chasis1.png";
+import Chasis2 from "../img/Chasis2.png";
+import Chasis3 from "../img/Chasis3.png";
+import Chasis4 from "../img/Chasis4.png";
+import Chasis5 from "../img/Chasis5.png";
+import Chasis6 from "../img/Chasis6.png";
+import Chasis7 from "../img/Chasis7.png";
+import Chasis8 from "../img/Chasis8.png";
+
+import Monitor1 from "../img/Monitor1.png";
+import Monitor2 from "../img/Monitor2.png";
+import Monitor3 from "../img/Monitor3.png";
+import Monitor4 from "../img/Monitor4.png";
+import Monitor5 from "../img/Monitor5.png";
+import Monitor6 from "../img/Monitor6.png";
+import Monitor7 from "../img/Monitor7.png";
+import Monitor8 from "../img/Monitor8.png";
 export const itemData = [
   {
     id: 1,
@@ -496,6 +563,377 @@ export const itemDataAsus2 = [
     category: "Portátil Asus Vivobook Go E410KA-BV448W",
     price: "$2.528.900",
     linking: port23,
+  },
+];
+
+export const itemDataRL = [
+  {
+    id: 1,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Fuente Refrigeracion Liquida Coolmoon Fancooler Rgb Pc 120mm",
+    price: "$189.900",
+    linking: rl0,
+  },
+  {
+    id: 2,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Fuente De Refrigeración Líquida Gamemax Icechill 240-rainbow",
+    price: "$309.000",
+    linking: rl2,
+  },
+  {
+    id: 3,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeracion Liquida Corsair H100 Rgb 240mm",
+    price: "$608.000",
+    linking: rl3,
+  },
+  {
+    id: 4,
+    name: "Fuente de Refrigeracion Liquida ",
+    category:
+      "Refrigerador líquido para CPU CORSAIR iCUE LINK H150i LCD – White",
+    price: "$1.200.000",
+    linking: rl4,
+  },
+  {
+    id: 5,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "iCUE H100i ELITE CAPELLIX XT Liquid CPU Cooler, White",
+    price: "$958.989",
+    linking: rl5,
+  },
+  {
+    id: 6,
+    name: "Fuente de Refrigeracion Liquida ",
+    category:
+      "Refrigerador líquido para CPU con pantalla iCUE H170i ELITE LCD XT",
+    price: "$1.770.140",
+    linking: rl6,
+  },
+  {
+    id: 7,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigerador líquido para CPU iCUE H100x RGB ELITE",
+    price: "$605.746",
+    linking: rl7,
+  },
+  {
+    id: 8,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigerador líquido para CPU iCUE LINK H115i RGB AIO",
+    price: "$1.151.311",
+    linking: rl8,
+  },
+];
+export const itemDataRL1 = [
+  {
+    id: 1,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración líquida de CPU iCUE H115i ELITE CAPELLIX XT",
+    price: "$1.063.654",
+    linking: rl9,
+  },
+  {
+    id: 2,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Módulo de pantalla LCD iCUE LINK – Black",
+    price: "$431.741",
+    linking: rl10,
+  },
+  {
+    id: 3,
+    name: "Fuente de Refrigeracion Liquida ",
+    category:
+      "iCUE LINK H150i AIO Cooler - Black and QX120 Triple Fan Kit Bundle",
+    price: "$1.740.049",
+    linking: rl11,
+  },
+  {
+    id: 4,
+    name: "Fuente de Refrigeracion Liquida ",
+    category:
+      "iCUE LINK H100i AIO Cooler - Black and QX120 Triple Fan Kit Bundle",
+    price: "$1.565.608",
+    linking: rl12,
+  },
+  {
+    id: 5,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "iCUE H150i RGB ELITE Liquid CPU Cooler",
+    price: "$955.064",
+    linking: rl13,
+  },
+  {
+    id: 6,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigerador líquido para CPU iCUE LINK H100i RGB AIO, blanco",
+    price: "$1.051.007",
+    linking: rl14,
+  },
+  {
+    id: 7,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigerador líquido para CPU iCUE H60x RGB ELITE",
+    price: "$449.185",
+    linking: rl15,
+  },
+  {
+    id: 8,
+    name: "Fuente de Refrigeracion Liquida ",
+    category:
+      "Kit de actualización del refrigerador iCUE ELITE CPU LCD Display, hielo",
+    price: "$501.518",
+    linking: rl16,
+  },
+];
+export const itemDataRL2 = [
+  {
+    id: 1,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración Liquida Cooler Masterliquid Ml 120l V2 Rgb",
+    price: "$360.000",
+    linking: rl17,
+  },
+  {
+    id: 2,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Fuente Refrigeracion Liquida Coolmoon Fancooler Rgb Pc 240mm",
+    price: "$299.900",
+    linking: rl18,
+  },
+  {
+    id: 3,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración Liquida Cooler Master Ml240l V2 Rgb Master",
+    price: "$519.900",
+    linking: rl19,
+  },
+  {
+    id: 4,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeracion Liquida Ml240l V2 Argb White Edition",
+    price: "$515.000",
+    linking: rl20,
+  },
+  {
+    id: 5,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración Líquida Argb 240mm Iris X2 Blanca Intel, Amd",
+    price: "$516.600",
+    linking: rl21,
+  },
+  {
+    id: 6,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración Liquida Alseye 120mm",
+    price: "$189.000",
+    linking: rl22,
+  },
+  {
+    id: 7,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Refrigeración Liquida Msi Mag Coreliquid C360",
+    price: "$832.000",
+    linking: rl23,
+  },
+  {
+    id: 8,
+    name: "Fuente de Refrigeracion Liquida ",
+    category: "Fuente De Refrigeración Líquida Gamemax Icechill 240-rainbow",
+    price: "$309.000",
+    linking: rl24,
+  },
+];
+export const itemDataFP = [
+  {
+    id: 1,
+    name: "Fuente de poder  ",
+    category:
+      "HX1000i Fully Modular Ultra-Low Noise Platinum ATX 1000 Watt PC Power Supply ",
+    price: "$1.146.513",
+    linking: fp1,
+  },
+  {
+    id: 2,
+    name: "Fuente de poder  ",
+    category: "SF-L Series SF850L Fully Modular Low-Noise SFX Power Supply ",
+    price: "$740.938",
+    linking: fp2,
+  },
+  {
+    id: 3,
+    name: "Fuente de poder  ",
+    category:
+      "CX Series CX650F RGB: fuente de alimentación RGB totalmente modular, 650 vatios, 80 PLUS Bronze (EU)",
+    price: "$413.861",
+    linking: fp3,
+  },
+  {
+    id: 4,
+    name: "Fuente de poder  ",
+    category:
+      "Fuente de alimentación ATX totalmente modular y silenciosa RMe Series RM750e",
+    price: "$653.717",
+    linking: fp4,
+  },
+  {
+    id: 5,
+    name: "Fuente de poder",
+    category:
+      "CX-M Series CX650M — Fuente de alimentación ATX semimodular 650 W con certificación 80 PLUS Bronze ",
+    price: "$392.056",
+    linking: fp5,
+  },
+  {
+    id: 6,
+    name: "Fuente de poder ",
+    category:
+      "Fuente de alimentación ATX completamente modular 80 PLUS Gold RM1000x SHIFT ",
+    price: "$902.296",
+    linking: fp6,
+  },
+  {
+    id: 7,
+    name: "Fuente de poder  ",
+    category:
+      "Fuente de alimentación HX1500i para PC de 1500 vatios, ATX, completamente modular y ultrasilenciosa ",
+    price: "$1.591.338",
+    linking: fp7,
+  },
+  {
+    id: 8,
+    name: "Fuente de poder  ",
+    category:
+      "RM White Series™ RM850: Fuente de alimentación ATX de 850 vatios completamente modular con certificación 80 PLUS Gold",
+    price: "$740.938",
+    linking: fp8,
+  },
+];
+export const itemDataFP1 = [
+  {
+    id: 1,
+    name: "Fuente de poder  ",
+    category:
+      "RMx Series RM750x: fuente de alimentación ATX de 750 vatios completamente modular con certificación 80 PLUS Gold ",
+    price: "$762.743",
+    linking: fp9,
+  },
+  {
+    id: 2,
+    name: "Fuente de poder  ",
+    category:
+      "VS Series VS500, 500 W, certificación 80 PLUS, fuente de alimentación ATX no modular ",
+    price: "$900.000",
+    linking: fp10,
+  },
+  {
+    id: 3,
+    name: "Fuente de poder  ",
+    category:
+      "CX Series CX750F RGB: fuente de alimentación RGB totalmente modular, 750 vatios, 80 PLUS Bronze ",
+    price: "$435.000",
+    linking: fp11,
+  },
+  {
+    id: 4,
+    name: "Fuente de poder  ",
+    category:
+      "Fuentes de alimentación ATX HXi Series™ HX1200i de alto rendimiento de 1200 W y certificación 80 PLUS® PLATINUM",
+    price: "$1.212.278",
+    linking: fp12,
+  },
+  {
+    id: 5,
+    name: "Fuente de poder",
+    category:
+      "RMi Series™ RM1000i Special Edition — 1000 Watt 80 PLUS® Gold Certified Fully Modular PSU",
+    price: "$1.094.792",
+    linking: fp13,
+  },
+  {
+    id: 6,
+    name: "Fuente de poder ",
+    category:
+      "CS Series™ Modular CS850M – Fuente de alimentación de 850 Watt con certificación 80 PLUS® Gold",
+    price: "$7663.19",
+    linking: fp14,
+  },
+  {
+    id: 7,
+    name: "Fuente de poder  ",
+    category: "VS Series VS550 — Fuente de alimentación de 550 vatios ",
+    price: "$505.000",
+    linking: fp15,
+  },
+  {
+    id: 8,
+    name: "Fuente de poder  ",
+    category:
+      "RM Series™ RM1000 — Fuente de alimentación completamente modular de 1000 W con certificación 80 PLUS® Gold",
+    price: "$732.216",
+    linking: fp16,
+  },
+];
+export const itemDataFP2 = [
+  {
+    id: 1,
+    name: "Fuente de poder  ",
+    category:
+      "Fuente De Poder 1000w 80+gold Gigabyte Full Modular Ud1000gm Color Negro",
+    price: "$799.500",
+    linking: fp17,
+  },
+  {
+    id: 2,
+    name: "Fuente de poder  ",
+    category: "Fuente De Poder 850 80+ Gold Redragon Full Modular Rgb Pci5",
+    price: "$690.000",
+    linking: fp18,
+  },
+  {
+    id: 3,
+    name: "Fuente de poder  ",
+    category: "Fuente De Poder Modular Certificada 850w 80 Plus Gold Psu007",
+    price: "$665.681",
+    linking: fp19,
+  },
+  {
+    id: 4,
+    name: "Fuente de poder  ",
+    category: "Fuente De Poder 850w 80+gold Rgb Redragon Blanco Modular",
+    price: "$897.900",
+    linking: fp20,
+  },
+  {
+    id: 5,
+    name: "Fuente de poder",
+    category: "Fuente De Poder Segotep 850w 80+plus Gold Blancla Y Negra",
+    price: "$890.000",
+    linking: fp21,
+  },
+  {
+    id: 6,
+    name: "Fuente de poder ",
+    category:
+      "Fuente de poder para PC XPG Core Reactor 850 850W negra 100V/240V",
+    price: "$588.900",
+    linking: fp22,
+  },
+  {
+    id: 7,
+    name: "Fuente de poder  ",
+    category:
+      "Fuente de poder para PC Aerocool Advanced Technologies Cylon 700W 700W black 200V - 240V",
+    price: "$359.910",
+    linking: fp23,
+  },
+  {
+    id: 8,
+    name: "Fuente de poder  ",
+    category: "Fuente de poder para PC Apevia Jupiter Series ATX-JP600W 600W",
+    price: "$279.900",
+    linking: fp24,
   },
 ];
 
@@ -1406,5 +1844,353 @@ export const itemDataHP2 = [
     price: "$2.935.900",
     linking:
       "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
+  },
+];
+export const itemDataMonitores = [
+  {
+    id: 1,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$2.641.000",
+    linking: Monitor1,
+  },
+  {
+    id: 2,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor2,
+  },
+  {
+    id: 3,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor3,
+  },
+  {
+    id: 4,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor4,
+  },
+  {
+    id: 5,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor5,
+  },
+  {
+    id: 6,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor6,
+  },
+  {
+    id: 7,
+    name: "MONITOR MSI 16`",
+    category: "MONITOR MSI 16 PULGADAS 165HZ ",
+    price: "$8.899.000",
+    linking: Monitor7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Monitor8,
+  },
+];
+export const itemDataMonitores1 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataMonitores2 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataChasis = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: Chasis1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis3,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis4,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis5,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis6,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis7,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: Chasis8,
+  },
+];
+export const itemDataChasis1 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+];
+export const itemDataChasis2 = [
+  {
+    id: 1,
+    name: "ASUS DUAL GEFORCE RTX 4060 TI",
+    category: "ASUS DUAL GEFORCE RTX 4060 TI OC EDITION 16GB GDDR6",
+    price: "$2.641.000",
+    linking: T1,
+  },
+  {
+    id: 2,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 3,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 4,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 5,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 6,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 7,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
+  },
+  {
+    id: 8,
+    name: "ZOTAC GAMING GeForce RTX 4090",
+    category: "ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X",
+    price: "$8.899.000",
+    linking: T2,
   },
 ];
