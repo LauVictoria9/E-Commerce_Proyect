@@ -14,11 +14,11 @@ export const menu = [
             submenu: true,
             subdatos: [
               {
-                Head: "Computadores",
+                Head: "",
                 sublinks: [
                   {
                     id: "subLink1",
-                    Head: "Portatiles",
+                    Head: "",
                     name: "Portatiles",
                     submenu: true,
                     ultimosLinks: [
@@ -46,7 +46,7 @@ export const menu = [
                   },
                   {
                     id: "subLink2",
-                    Head: "2 en 1",
+                    Head: "",
                     name: "2 en 1",
                     submenu: true,
                     ultimosLinks: [
