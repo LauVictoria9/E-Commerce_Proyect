@@ -57,12 +57,36 @@ const NavLinks = () => {
                                           key={sublinks.id}
                                           className="bg-white-100 text-clr-one font-bold pl-4  text-base  border-l-4 border-purple-800"
                                         >
-                                          {console.log(link.link)}
                                           <Link
                                             to={sublinks.link}
-                                            className="hover:text-primary flex justify-between gap-x-10 relative"
+                                            className="hover:text-primary flex justify-between gap-x-10 relative group/sublinks"
                                           >
                                             {sublinks.name}
+                                            {sublinks.submenu ? (
+                                              <p>&gt;</p>
+                                            ) : null}
+                                            {sublinks.submenu && (
+                                              <div className="absolute left-[100%] hidden group-hover/sublinks:block pl-5">
+                                                <div className="bg-white border-2 border-black  px-4 pt-5 pb-6">
+                                                  <h3>{sublinks.Head}</h3>
+                                                  {sublinks.ultimosLinks.map(
+                                                    (ultimoLink) => (
+                                                      <li
+                                                        key={ultimoLink.id}
+                                                        className="bg-white-100 text-clr-one font-bold pl-4  text-base  border-l-4 border-purple-800"
+                                                      >
+                                                        <Link
+                                                          to={ultimoLink.link}
+                                                          className="hover:text-primary flex justify-between gap-x-10 relative group/ultimoLink"
+                                                        >
+                                                          {ultimoLink.name}
+                                                        </Link>
+                                                      </li>
+                                                    )
+                                                  )}
+                                                </div>
+                                              </div>
+                                            )}
                                           </Link>
                                         </li>
                                       ))}
