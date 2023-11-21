@@ -2215,4 +2215,5 @@ export const itemDataChasis2 = [
     price: "$799.000",
     linking: Chasis24,
   },
-];  
+]; 
+ 
