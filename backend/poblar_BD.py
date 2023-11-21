@@ -38,6 +38,20 @@ tiposProducto = [
         "tipoProducto": "portatil",
         "descripcion": "portatil facil de llevar a todas partes",
     },
+    {
+        "tipoProducto": "chasis",
+        "descripcion": "chasis para que montes todas tus partes de pc",
+    },
+    {
+        "tipoProducto": "fuente de poder",
+        "descripcion": "fuente de poder para que tu pc tenga energia",
+    },
+    
+    {
+        "tipoProducto": "refrigeracion liquida",
+        "descripcion": "refrigeracion liquida para que tu pc no se caliente",
+    },
+    
 ]
 
 
@@ -60,7 +74,7 @@ productos = [
         "precio": 580000,
         "cantidad": 12,
         "rutaImagen": "./media/productos/img/pc2.jpg",
-        "tipoProducto": "coolermaster",
+        "tipoProducto": "chasis",
     },
     {
         "nombre": "Refrigeración líquida H100 240 RGB - CORSAIR",
@@ -293,7 +307,7 @@ productos = [
         "precio": 3500086,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port9.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus UX434FAC-A6116T I5-10210U",
@@ -303,7 +317,7 @@ productos = [
         "precio": 10973900,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port1.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 13 Core i7 I7-1255U  90NX04T1-M00550",
@@ -313,7 +327,7 @@ productos = [
         "precio": 1495000,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port8.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus X515EA-BR3955 15.6'' Intel Core i3 1115G4",
@@ -323,7 +337,7 @@ productos = [
         "precio": 1550000,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port3.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 15 OLED M513UA-L1304 16GB ",
@@ -333,7 +347,7 @@ productos = [
         "precio": 1699000,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port4.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus Zenbook 14 Flip Touch OLED I5-1349p",
@@ -343,7 +357,7 @@ productos = [
         "precio": 7554500,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port10.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus FX517ZC HN059 Core I5 16GB",
@@ -353,7 +367,7 @@ productos = [
         "precio": 4925000,
         "cantidad": 11,
         "rutaImagen": "./media/productos/img/port5.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
@@ -363,7 +377,7 @@ productos = [
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port7.jpg",
-        "tipoProducto": "Portátil",
+        "tipoProducto": "portátil",
     },
     # ITEM ASUS 2
     {
@@ -374,7 +388,7 @@ productos = [
         "precio": 8320394,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port2.jpg",
-        "tipoProducto": "Gaming",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus X1503ZA-L1316-A6116T Core i5 12500H",
@@ -384,7 +398,7 @@ productos = [
         "precio": 2899900,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port6.jpg",
-        "tipoProducto": "Multimedia",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus Duo 14 UX482 Core i7-116G7 16GB",
@@ -394,7 +408,7 @@ productos = [
         "precio": 6862900,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/portatil.jpg",
-        "tipoProducto": "Productividad",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus UX325EA Core i5 1135G7 8GB",
@@ -404,7 +418,7 @@ productos = [
         "precio": 1550000,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port11.jpg",
-        "tipoProducto": "Estudiantes",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 15 X1502 Core i5 1260P 8GB ",
@@ -414,7 +428,7 @@ productos = [
         "precio": 1699000,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port12.jpg",
-        "tipoProducto": "Oficina",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus Vivobook 14 X1605ZA-MB029W I5-1235U",
@@ -424,7 +438,7 @@ productos = [
         "precio": 2120500,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port13.jpg",
-        "tipoProducto": "Portabilidad",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 14X UX5401 Core I7 16GB ",
@@ -434,7 +448,7 @@ productos = [
         "precio": 4625000,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port14.jpg",
-        "tipoProducto": "Rendimiento",
+        "tipoProducto": "portátil",
     },
     {
         "nombre": "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
@@ -444,7 +458,7 @@ productos = [
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/port15.jpg",
-        "tipoProducto": "Entretenimiento",
+        "tipoProducto": "portátil",
     },
     # ITEM ASUS 3
     {
