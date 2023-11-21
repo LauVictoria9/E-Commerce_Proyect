@@ -1,6 +1,6 @@
 // import React from "react";
-import Lenovo from "../img/LenovoImage.png";
-import LenovoPortatilImage from "../img/AsusPortatil.jpg";
+import Logo from "../img/Logochasis.png";
+import ChasisImage from "../img/Componentes.jpg";
 
 /* Components imports */
 import Slider from "../components/Slider";
@@ -13,7 +13,7 @@ export default function SeccionChasis() {
     <main className="pt-8 pb-16 ">
       <section className="relative flex justify-center items-center">
         <div className="bg-clr-two w-full h-96" />
-        <img src={Lenovo} alt="" className="absolute max-w-auto w-1/2" />
+        <img src={Logo} alt="" className="absolute max-w-auto w-1/2 object-scale-down " />
       </section>
 
       <div className="h-8" />
@@ -22,9 +22,9 @@ export default function SeccionChasis() {
         <div className="flex">
           {/* Combo image */}
           <img
-            src={LenovoPortatilImage}
+            src={ChasisImage}
             alt="Components combo image."
-            className="w-1/3 hidden md:inline-block"
+            className="w-1/3 hidden md:inline-block  "
           />
 
           {/* Slider */}

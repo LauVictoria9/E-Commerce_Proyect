@@ -1,6 +1,6 @@
 //import React from "react";
 import Monitor from "../img/LogoMonitorMsi.png";
-import MonitorLogoImg from "../img/Monitor5.png";
+import MonitorLogoImg from "../img/componentes.jpg";
 
 /* Components imports */
 import Slider from "../components/Slider";
