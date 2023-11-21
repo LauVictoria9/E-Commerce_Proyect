@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
+import Destacado from "../components/Navbar/Destacado"
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
@@ -12,13 +13,17 @@ export default function Header() {
   }
   return (
     <header>
-      <section className="flex justify-end gap-x-4 py-2 px-5">
+        <section className="flex justify-end gap-x-4 py-2 px-5">
+        <Link to="/">
+        <Destacado/>
+        </Link>
+        <p className="border-l-2 border-black"></p>
         <Link to="favoritos">
-          <AiFillHeart className="w-7 h-7 "></AiFillHeart>
+          <AiFillHeart className="w-7 h-7 my-2"></AiFillHeart>
         </Link>
         <p className="border-l-2 border-black"></p>
         <Link to="carrito">
-          <AiOutlineShoppingCart className="w-7 h-7"></AiOutlineShoppingCart>
+          <AiOutlineShoppingCart className="w-7 h-7 my-2"></AiOutlineShoppingCart>
         </Link>
         <p className="border-l-2 border-black"></p>
         <button onClick={handleClick} className="relative">

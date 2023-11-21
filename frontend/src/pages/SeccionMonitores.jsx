@@ -8,12 +8,12 @@ import Slider from "../components/Slider";
 /* Item data temp */
 import { itemDataMonitores, itemDataMonitores1, itemDataMonitores2 } from "../layout/data";
 
-export default function SeccionLenovo() {
+export default function SeccionMonitores() {
   return (
     <main className="pt-8 pb-16 ">
       <section className="relative flex justify-center items-center">
         <div className="bg-clr-two w-full h-96" />
-        <img src={Monitor} alt="" className="absolute max-w-auto w-1/2" />
+        <img src={Monitor} alt="" className="absolute max-w-auto w-1/2 object-scale-down " />
       </section>
 
       <div className="h-8" />

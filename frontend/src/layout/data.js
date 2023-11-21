@@ -50,7 +50,6 @@ import port21 from "../img/port21.jpg";
 import port22 from "../img/port22.jpg";
 import port23 from "../img/port23.jpg";
 
-
 import rl0 from "../img/rl0.png";
 import rl2 from "../img/rl2.png";
 import rl3 from "../img/rl3.png";
@@ -918,32 +917,28 @@ export const itemDataFP2 = [
   {
     id: 2,
     name: "Fuente de poder  ",
-    category:
-      "Fuente De Poder 850 80+ Gold Redragon Full Modular Rgb Pci5",
+    category: "Fuente De Poder 850 80+ Gold Redragon Full Modular Rgb Pci5",
     price: "$690.000",
     linking: fp18,
   },
   {
     id: 3,
     name: "Fuente de poder  ",
-    category:
-      "Fuente De Poder Modular Certificada 850w 80 Plus Gold Psu007",
+    category: "Fuente De Poder Modular Certificada 850w 80 Plus Gold Psu007",
     price: "$665.681",
     linking: fp19,
   },
   {
     id: 4,
     name: "Fuente de poder  ",
-    category:
-      "Fuente De Poder 850w 80+gold Rgb Redragon Blanco Modular",
+    category: "Fuente De Poder 850w 80+gold Rgb Redragon Blanco Modular",
     price: "$897.900",
     linking: fp20,
   },
   {
     id: 5,
     name: "Fuente de poder",
-    category:
-      "Fuente De Poder Segotep 850w 80+plus Gold Blancla Y Negra",
+    category: "Fuente De Poder Segotep 850w 80+plus Gold Blancla Y Negra",
     price: "$890.000",
     linking: fp21,
   },
@@ -958,15 +953,15 @@ export const itemDataFP2 = [
   {
     id: 7,
     name: "Fuente de poder  ",
-    category: "Fuente de poder para PC Aerocool Advanced Technologies Cylon 700W 700W black 200V - 240V",
+    category:
+      "Fuente de poder para PC Aerocool Advanced Technologies Cylon 700W 700W black 200V - 240V",
     price: "$359.910",
     linking: fp23,
   },
   {
     id: 8,
     name: "Fuente de poder  ",
-    category:
-      "Fuente de poder para PC Apevia Jupiter Series ATX-JP600W 600W",
+    category: "Fuente de poder para PC Apevia Jupiter Series ATX-JP600W 600W",
     price: "$279.900",
     linking: fp24,
   },
@@ -1865,7 +1860,6 @@ export const itemDataHP2 = [
     price: "$2.935.900",
     linking:
       "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
-
   },
 ];
 export const itemDataMonitores = [
@@ -2215,5 +2209,6 @@ export const itemDataChasis2 = [
     price: "$799.000",
     linking: Chasis24,
   },
+
 ]; 
- 
+
