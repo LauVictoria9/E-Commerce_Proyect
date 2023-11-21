@@ -52,12 +52,12 @@ export const menu = [
                     ultimosLinks: [
                       {
                         id: "ultimoLink2.1",
-                        name: "Esteban",
+                        name: "Asus",
                         link: "/seccion-asus/",
                       },
                       {
                         id: "ultimoLink2.2",
-                        name: "Esteban",
+                        name: "HP",
                         link: "/seccion-acer",
                       },
                     ],
