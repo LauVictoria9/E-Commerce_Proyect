@@ -19,6 +19,7 @@ class ProductoSerializer(serializers.ModelSerializer):
             "detalles",
             "caracteristicas",
             "precio",
+            "oferta",
             "cantidad",
             "imagen",
             "tipoProducto",

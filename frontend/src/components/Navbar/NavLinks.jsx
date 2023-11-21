@@ -67,7 +67,7 @@ const NavLinks = () => {
                                             ) : null}
                                             {sublinks.submenu && (
                                               <div className="absolute left-[100%] hidden group-hover/sublinks:block pl-5">
-                                                <div className="bg-white border-2 border-black  px-4 pt-5 pb-6">
+                                                <div className="bg-white border-2 border-black  px-4 pt-5 pb-6 flex flex-col gap-y-3">
                                                   <h3>{sublinks.Head}</h3>
                                                   {sublinks.ultimosLinks.map(
                                                     (ultimoLink) => (
