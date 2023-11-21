@@ -22,25 +22,15 @@ class producto(models.Model):
         return self.tipo_producto.tipo_producto + " " + self.nombreProducto + " " + self.detalles + " " + self.precio + " " + self.cantidadProducto 
     
     
-
-class rol(models.Model):
+#esto se espera
+"""class rol(models.Model):
     tipoDeUsuario = models.CharField(max_length=100)
     def __str__(self):
-        return self.tipoDeUsuario
-
-#preguntar ahora usuario
-class user(models.Model):
-    tipoDeUsuario = models.ForeignKey(rol, on_delete=models.CASCADE)
-    nombreUser = models.CharField(max_length=100)
-    apellidoUser = models.CharField(max_length=100)
-    DireccionUser = models.CharField(max_length=100)
-    telefonoUser = models.CharField(max_length=100)
-    password= models.CharField(max_length=100)     
-    def __str__(self):
-        return self.rol.tipoDeUsuario # aqui se debe cambiar
+        return self.tipoDeUsuario"""
 
     
     #tambien para mirar metodoPago
+    #para una api
 class metodoPago(models.Model):
     nombreMetodo = models.CharField(max_length=200)
     descripcionMetodo = models.CharField(max_length=200)
@@ -48,8 +38,8 @@ class metodoPago(models.Model):
     def __str__(self):
         return self.nombreMetodo+" "+self.descripcionMetodo
 
-class Venta_Producto(models.Model):
-    nombreUser = models.ForeignKey(user, on_delete=models.CASC)
+class Factura(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
     nombreProducto = models.ForeignKey(producto, on_delete=models.CASCADE)
     cantidadTotal =models.IntegerField(max_length=100)
     fechaCompra = models.DateField()
