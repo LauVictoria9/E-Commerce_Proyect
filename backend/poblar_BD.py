@@ -48,17 +48,17 @@ usuarios = [
 tiposProducto = [
     {"tipoProducto": "grafica", "descripcion": "grafica de video"},
     {"tipoProducto": "monitor", "descripcion": "monitor de calidad"},
-    {"tipoProducto": "procesador", "descripcion": "procesador increible"},
-    {
-        "tipoProducto": "portatil",
-        "descripcion": "portatil facil de llevar a todas partes",
-    },
-    {
-        "tipoProducto": "chasis",
-        "descripcion": "chasis para que montes todas tus partes de pc",
-    },
-    {"tipoProducto": "refrigeracion liquida", "descripcion": "refrigeracion increible"},
-    {"tipoProducto": "fuente de poder", "descripcion": "fuente eficiente"},
+
+    {"tipoProducto": "procesador", "descripcion": "procesador increible"},   
+    {"tipoProducto": "portatil","descripcion": "portatil facil de llevar a todas partes",},
+    {"tipoProducto": "chasis","descripcion": "chasis para que montes todas tus partes de pc",},
+    {"tipoProducto": "refrigeracion liquida", "descripcion": "refrigeracion increible"}, 
+    {"tipoProducto": "fuente de poder", "descripcion": "fuente eficiente"}, 
+    # {"tipoProducto": "memoria ram", "descripcion": "memoria ram de calidad"}, 
+    # {"tipoProducto": "almacenamiento", "descripcion": "almacenamiento de calidad"}, 
+    # {"tipoProducto": "accesorios", "descripcion": "accesorios para tu pc"}, 
+    # {"tipoProducto": "otros", "descripcion": "otros productos"},
+    {"tipoProducto": "convertibles", "descripcion": "portatil muy util para todo tipo de trabajos"}
 ]
 
 productos = [
@@ -2715,6 +2715,90 @@ productos = [
         "rutaImagen": "productos/img/Chasis24.png",
         "tipoProducto": "chasis",
     },
+
+    # ..::// item Convertibles Asus || Slider 1 //::..
+    {
+        "nombre": "Portatil Asus Vivobook Flip 14 Convertible Tactil 14 Fhd 360",
+        "marca": "Asus",
+        "detalles": "Portátil y convertible 2 en 1 con cuatro modos de visualización: tableta, tienda de campaña, soporte y portátil.",
+        "caracteristicas": "Asus VivoBook Flip 14 J401MA J401MA-OS04T 14'' Touchscreen Convertible Notebook - Full HD - 1920 x 1080 - Intel Celeron N4020 Dual-core (2 Core) 1.10 GHz - 4 GB RAM - 64 GB Flash Memory - Light Gray - Intel Chip - Windows 10 Home in S mode - Intel UHD Grap",
+        "precio":2009990,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus1.jpg",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Portatil Asus Vivobook Go 14 Flip Convertible Tactil J1400ka",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Celeron N4500 de 1.1 GHz (caché de 13.1 ft, hasta 2.8 GHz, 2 núcleos) y gráficos Intel UHD, Windows 11 Home en modo S, Microsoft 365 Personal 1 año incluido, 64 GB eMMC y 4 GB DDR4X RAM",
+        "caracteristicas": "ASUS VivoBook Go 14 Flip Thin and Light 2 en 1, 14 pulgadas HD Touch, CPU Intel Celeron N4500, gráficos UHD, 4 GB de RAM, 64 GB eMMC, NumberPad, Windows 11 Home en modo S, azul silencioso, J1400KA-DS02T",
+        "precio":2279403,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus2.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus VivoBook Flip 14 TP412UA",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Core i5-8250U de 8va generación, pantalla táctil Full HD de 14 pulgadas, 8 GB de RAM DDR4, 256 GB SSD, gráficos integrados Intel UHD 620, bisagra 360°, Windows 10 Home, lector de huellas digitales.",
+        "caracteristicas": "Asus VivoBook Flip 14, diseño delgado y versátil, modo tablet gracias a su pantalla giratoria, teclado retroiluminado, puerto USB-C, lector de tarjetas microSD, color plata estelar, modelo TP412UA-DB51T.",
+        "precio":2600000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus3.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus ZenBook Flip 15 UX561UD",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Core i7-8550U de 8va generación, pantalla táctil 4K UHD de 15.6 pulgadas con tecnología NanoEdge, 16 GB de RAM DDR4, 512 GB SSD PCIe, gráficos dedicados NVIDIA GeForce GTX 1050, bisagra 360°, Windows 10 Pro, lector de huellas digitales.",
+        "caracteristicas": "Asus ZenBook Flip 15, diseño premium en aluminio, lápiz óptico incluido, teclado retroiluminado, puertos USB-C con Thunderbolt 3, HDMI, lector de tarjetas SD, sonido Harman Kardon, color gris estrella, modelo UX561UD-E2024T.",
+        "precio":3024000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus4.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus Chromebook Flip C434TA",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Core m3-8100Y de 8va generación, pantalla táctil Full HD de 14 pulgadas con bisel delgado NanoEdge, 8 GB de RAM LPDDR3, 64 GB eMMC, Chrome OS, bisagra 360°, teclado retroiluminado, lector de huellas digitales.",
+        "caracteristicas": "Asus Chromebook Flip, diseño elegante y duradero en aluminio, larga duración de batería, puertos USB-C, soporte para lápiz óptico (se vende por separado), altavoces estéreo, color plata, modelo C434TA-DSM4T.",
+        "precio":2774000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus5.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus ROG Flow X13",
+        "marca": "Asus",
+        "detalles": "Procesador AMD Ryzen 9 5900HS de 8 núcleos y 16 hilos, pantalla táctil Full HD de 13.4 pulgadas con soporte para lápiz óptico, 16 GB de RAM LPDDR4X, 1 TB SSD PCIe NVMe, gráficos dedicados NVIDIA GeForce GTX 1650, Windows 10 Home, conectividad Wi-Fi 6.",
+        "caracteristicas": "Asus ROG Flow X13, diseño ultraportátil y potente, compatible con eGPU ROG XG Mobile (vendido por separado), teclado retroiluminado RGB, puerto USB-C con carga rápida y DisplayPort 1.4, lector de tarjetas microSD, color blanco galáctico, modelo GX301.",
+        "precio":10000000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus6.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus ZenBook Flip S UX371EA",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Core i7-1165G7 de 11va generación, pantalla táctil OLED 4K de 13.3 pulgadas con bisel delgado NanoEdge, 16 GB de RAM LPDDR4X, 1 TB SSD PCIe NVMe, gráficos Intel Iris Xe, Windows 10 Pro, lector de huellas digitales, lápiz óptico incluido.",
+        "caracteristicas": "Asus ZenBook Flip S, diseño ultradelgado y ligero de 1.2 kg, bisagra ErgoLift 360°, teclado retroiluminado, conectividad Thunderbolt 4, Wi-Fi 6, lector de tarjetas microSD, color jade negro, modelo UX371EA-XH77T.",
+        "precio":8500000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus7.png",
+        "tipoProducto": "convertibles",
+    },
+    {
+        "nombre": "Asus VivoBook Flip 14 TP470EA",
+        "marca": "Asus",
+        "detalles": "Procesador Intel Core i7-1165G7 de 11va generación, pantalla táctil Full HD de 14 pulgadas con bisel delgado NanoEdge, 12 GB de RAM DDR4, 512 GB SSD PCIe, gráficos Intel Iris Xe, Windows 11 Home, lector de huellas digitales.",
+        "caracteristicas": "Asus VivoBook Flip 14, diseño versátil con bisagra 360°, teclado retroiluminado, conectividad USB-C, HDMI, Wi-Fi 6, lector de tarjetas microSD, color plateado, modelo TP470EA-DB71T.",
+        "precio":5500000,
+        "cantidad": random.randint(10, 30),
+        "rutaImagen": "./media/productos/img/ConvertibleAsus8.png",
+        "tipoProducto": "convertibles",
+    },
+    
+    # ..::// item Convertibles Asus || Slider 2 //::..
 ]
 
 

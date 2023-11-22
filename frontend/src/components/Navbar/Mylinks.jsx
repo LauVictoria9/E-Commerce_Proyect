@@ -53,12 +53,12 @@ export const menu = [
                       {
                         id: "ultimoLink2.1",
                         name: "Asus",
-                        link: "/seccion-asus/",
+                        link: "/seccion-convertible-asus/",
                       },
                       {
                         id: "ultimoLink2.2",
                         name: "HP",
-                        link: "/seccion-acer",
+                        link: "/seccion-convertible-hp/",
                       },
                     ],
                   },
