@@ -622,7 +622,7 @@ export const itemDataRL = [
     id: 4,
     name: "Fuente de Refrigeracion Liquida ",
     category:
-      "Refrigerador líquido para CPU CORSAIR iCUE LINK H150i LCD – White",
+      "Refrigerador líquido para CPU CORSAIR iCUE LINK H150i LCD - White",
     price: "$1.200.000",
     linking: rl4,
   },
@@ -886,7 +886,7 @@ export const itemDataFP1 = [
     name: "Fuente de poder ",
     category:
       "CS Series™ Modular CS850M – Fuente de alimentación de 850 Watt con certificación 80 PLUS® Gold",
-    price: "$7663.19",
+    price: "$766.319",
     linking: fp14,
   },
   {
