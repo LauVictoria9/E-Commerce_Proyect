@@ -5,10 +5,16 @@ from django.conf import settings
 from e_commerce_app.views import LoginView, LogoutView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('e_commerce_app.urls')),
+    path("admin/", admin.site.urls),
+    path("", include("e_commerce_app.urls")),
 ]
 
-urlpatterns +=[
-  re_path(r'^media/(?P<path>.*)$',serve, {'document_root': settings.MEDIA_ROOT,})
+urlpatterns += [
+    re_path(
+        r"^media/(?P<path>.*)$",
+        serve,
+        {
+            "document_root": settings.MEDIA_ROOT,
+        },
+    )
 ]
