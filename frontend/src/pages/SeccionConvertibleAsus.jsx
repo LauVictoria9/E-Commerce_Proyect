@@ -5,7 +5,7 @@ import AsusPortatilImage from "../img/asusPortatil.jpg";
 import Slider from "../components/Slider";
 
 /* Item data temp */
-import { itemDataAsus, itemDataAsus1, itemDataAsus2 } from "../layout/data";
+import { itemDataAsus, itemDataAsus1, itemDataAsus2, itemDataConvertibleAsus } from "../layout/data";
 
 export default function SeccionAsus() {
   return (
@@ -30,7 +30,7 @@ export default function SeccionAsus() {
           <div className="w-full md:w-2/3 items-center relative flex">
             <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
 
-            <Slider sliderId="promo_one" data={itemDataAsus} />
+            <Slider sliderId="promo_one" data={itemDataConvertibleAsus} />
           </div>
         </div>
 
