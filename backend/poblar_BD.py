@@ -2484,7 +2484,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis1.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis CAELUM",
         "marca": "Caelum",
@@ -2494,7 +2494,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis2.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis RockStart 2 ",
         "marca": "Gamemax",
@@ -2504,7 +2504,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis3.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis XPG CRUISER SUPER",
         "marca": "XPG",
@@ -2514,7 +2514,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis4.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis Redragon",
         "marca": "Redragon",
@@ -2524,7 +2524,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis5.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis Corsair",
         "marca": "Corsair",
@@ -2534,7 +2534,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis6.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis ATX",
         "marca": "ATX",
@@ -2544,7 +2544,7 @@ productos = [
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis7.png",
         "tipoProducto": "chasis",
-    }
+    },
     {
         "nombre": "Chasis Cougar",
         "marca": "Cougar",
@@ -2571,7 +2571,7 @@ productos = [
         "marca": "",
         "detalles": "",
         "caracteristicas": " ",
-        "precio":,
+        "precio":900000,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis10.png",
         "tipoProducto": "chasis",
@@ -2591,7 +2591,7 @@ productos = [
         "marca": "MSI",
         "detalles": "Chasis MSI 400 con diseño sin herramientas para facilitar el mantenimiento",
         "caracteristicas": "Diseño sin herramientas para facilitar el mantenimiento, ofreciendo una solución conveniente y accesible para realizar cambios y actualizaciones en los componentes de la PC sin necesidad de herramientas adicionales.",
-        "precio":,
+        "precio":584000,
         "cantidad": random.randint(10, 30),
         "rutaImagen": "./media/productos/img/Chasis12.png",
         "tipoProducto": "chasis",
@@ -2717,8 +2717,8 @@ productos = [
         "rutaImagen": "./media/productos/img/Chasis24.png",
         "tipoProducto": "chasis",
     },
-    
 ]
+
 
 
 if __name__ == "__main__":
