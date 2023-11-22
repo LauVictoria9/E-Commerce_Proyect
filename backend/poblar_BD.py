@@ -38,6 +38,7 @@ tiposProducto = [
         "tipoProducto": "portatil",
         "descripcion": "portatil facil de llevar a todas partes",
     },
+    {"tipoProducto": "convertible", "descripcion": "portatil para todo tipo de trabajos"}
 ]
 
 
