@@ -9,6 +9,21 @@ from e_commerce_app import models
 
 tiposUsuario = [{"tipo": "usuario"}, {"tipo": "administrador"}]
 
+metodosPago = [
+    {
+        "nombre": "efectivo",
+        "descripcion": "monedas y billetes que se usan como medio de cambio.",
+    },
+    {
+        "nombre": "tarjeta de debito",
+        "descripcion": "medio que permite realizar pagos y obtener rescurson con cargo directo a una cuenta de deposito",
+    },
+    {
+        "nombre": "tarjeta de credito",
+        "descripcion": "permite realizar compras y pagar bienes o servicios mediante un límite de crédito otorgado por una entidad financiera.",
+    },
+]
+
 usuarios = [
     {
         "nombreUsuario": "romero",
@@ -33,6 +48,7 @@ usuarios = [
 tiposProducto = [
     {"tipoProducto": "grafica", "descripcion": "grafica de video"},
     {"tipoProducto": "monitor", "descripcion": "monitor de calidad"},
+
     {"tipoProducto": "procesador", "descripcion": "procesador increible"},   
     {"tipoProducto": "portatil","descripcion": "portatil facil de llevar a todas partes",},
     {"tipoProducto": "chasis","descripcion": "chasis para que montes todas tus partes de pc",},
@@ -43,9 +59,7 @@ tiposProducto = [
     # {"tipoProducto": "accesorios", "descripcion": "accesorios para tu pc"}, 
     # {"tipoProducto": "otros", "descripcion": "otros productos"},
     {"tipoProducto": "convertibles", "descripcion": "portatil muy util para todo tipo de trabajos"}
-    
 ]
-
 
 productos = [
     # menú
@@ -56,7 +70,7 @@ productos = [
         "caracteristicas": "Frecuencia de actualización: 144 Hz, HDR10, Ángulo de visión amplio",
         "precio": 8399000,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/moni.jpg",
+        "rutaImagen": "productos/img/moni.jpg",
         "tipoProducto": "monitor",
     },
     {
@@ -66,7 +80,7 @@ productos = [
         "caracteristicas": "Soporte para refrigeración líquida, Panel frontal con iluminación RGB",
         "precio": 580000,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/pc2.jpg",
+        "rutaImagen": "productos/img/pc2.jpg",
         "tipoProducto": "chasis",
     },
     {
@@ -76,7 +90,7 @@ productos = [
         "caracteristicas": "Radiador de 240 mm, Compatible con socket de CPU: Intel LGA 115X/1200/2066, AMD AM4",
         "precio": 580000,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/rl.jpg",
+        "rutaImagen": "productos/img/rl.jpg",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -86,7 +100,7 @@ productos = [
         "caracteristicas": "Conectores: 1 x 24 pines ATX, 1 x 4+4 pines EPS12V, 2 x PCIe 6+2 pines, Protecciones de seguridad",
         "precio": 200000,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/fuente.jpg",
+        "rutaImagen": "productos/img/fuente.jpg",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -96,7 +110,7 @@ productos = [
         "caracteristicas": "Resolución: Full HD (1920 x 1080), Tecnología de panel: VA, Tiempo de respuesta: 1 ms",
         "precio": 1218200,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/moni1.jpg",
+        "rutaImagen": "productos/img/moni1.jpg",
         "tipoProducto": "monitor",
     },
     {
@@ -106,7 +120,7 @@ productos = [
         "caracteristicas": "Compatibilidad con placas base ATX, Micro-ATX, Mini-ITX, Espacio para múltiples unidades de almacenamiento",
         "precio": 1019900,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/pc.jpg",
+        "rutaImagen": "productos/img/pc.jpg",
         "tipoProducto": "chasis",
     },
     {
@@ -116,7 +130,7 @@ productos = [
         "caracteristicas": "Bomba de alta eficiencia, Mangueras flexibles y duraderas",
         "precio": 3418200,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/rl1.jpg",
+        "rutaImagen": "productos/img/rl1.jpg",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -126,7 +140,7 @@ productos = [
         "caracteristicas": "Diseño modular completo, Ventilador silencioso con tecnología de rodamientos de rifle",
         "precio": 1890000,
         "cantidad": 12,
-        "rutaImagen": "./media/productos/img/fuente1.jpg",
+        "rutaImagen": "productos/img/fuente1.jpg",
         "tipoProducto": "fuente de poder",
     },
     # item data 2
@@ -137,7 +151,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 4.0, Salidas de vídeo: HDMI, DisplayPort. Tecnología de enfriamiento avanzada para un funcionamiento más fresco y silencioso.",
         "precio": 1500000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t8.jpg",
+        "rutaImagen": "productos/img/t8.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -147,7 +161,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 4.0, Salidas de vídeo: HDMI, DisplayPort. Refrigeración avanzada para un rendimiento óptimo y una larga vida útil.",
         "precio": 1699000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t1.jpg",
+        "rutaImagen": "productos/img/t1.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -157,7 +171,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 4.0, Salidas de vídeo: HDMI, DisplayPort. Diseño elegante y rendimiento confiable.",
         "precio": 1480000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t2.jpg",
+        "rutaImagen": "productos/img/t2.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -167,7 +181,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 4.0, Salidas de vídeo: HDMI, DisplayPort. Rendimiento estable y eficiente para disfrutar de los juegos actuales.",
         "precio": 1590000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t3.jpg",
+        "rutaImagen": "productos/img/t3.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -177,7 +191,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 3.0, Salidas de vídeo: HDMI, DisplayPort. Diseño compacto y eficiente en consumo de energía.",
         "precio": 775000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t5.jpg",
+        "rutaImagen": "productos/img/t5.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -187,7 +201,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 3.0, Salidas de vídeo: HDMI, DisplayPort. Diseño resistente y eficaz en la disipación del calor.",
         "precio": 2660000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t6.jpg",
+        "rutaImagen": "productos/img/t6.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -197,7 +211,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 3.0, Salidas de vídeo: HDMI, DisplayPort. Diseño compacto y refrigeración avanzada.",
         "precio": 2890000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t7.jpg",
+        "rutaImagen": "productos/img/t7.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -207,7 +221,7 @@ productos = [
         "caracteristicas": "Interfaz: PCI Express 3.0, Salidas de vídeo: HDMI, DisplayPort. Rendimiento confiable y bajo consumo de energía.",
         "precio": 800000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/t4.jpg",
+        "rutaImagen": "productos/img/t4.jpg",
         "tipoProducto": "grafica",
     },
     # ITEM 3
@@ -218,7 +232,7 @@ productos = [
         "caracteristicas": "TDP de 65W, socket LGA 1700, compatible con DDR4-3200. Tecnología Intel Turbo Boost 2.0 para un rendimiento mejorado.",
         "precio": 764000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/i5.jpg",
+        "rutaImagen": "productos/img/i5.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -228,7 +242,7 @@ productos = [
         "caracteristicas": "TDP de 65W, socket AM4, compatible con DDR4-3200. Tecnología Precision Boost 2 para un rendimiento optimizado en diversas cargas de trabajo.",
         "precio": 528000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/amd2.jpg",
+        "rutaImagen": "productos/img/amd2.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -238,7 +252,7 @@ productos = [
         "caracteristicas": "TDP de 65W, socket LGA 1200, compatible con DDR4-3200. Arquitectura Intel Rocket Lake para un rendimiento mejorado.",
         "precio": 1495000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/i7.jpg",
+        "rutaImagen": "productos/img/i7.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -248,7 +262,7 @@ productos = [
         "caracteristicas": "TDP de 105W, socket AM4, compatible con DDR4-2933. Tecnología Precision Boost 2 para un rendimiento dinámico y eficiente.",
         "precio": 1418000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/amd.jpg",
+        "rutaImagen": "productos/img/amd.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -258,7 +272,7 @@ productos = [
         "caracteristicas": "TDP de 65W, socket LGA 1151, compatible con DDR4-2666. Tecnología Intel Turbo Boost 2.0 para un rendimiento mejorado.",
         "precio": 1699000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/i52.jpg",
+        "rutaImagen": "productos/img/i52.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -268,7 +282,7 @@ productos = [
         "caracteristicas": "TDP de 65W, socket AM4, compatible con DDR4-2933. Arquitectura Zen+ para un rendimiento eficiente.",
         "precio": 899000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/amd1.jpg",
+        "rutaImagen": "productos/img/amd1.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -278,7 +292,7 @@ productos = [
         "caracteristicas": "TDP de 125W, socket LGA 1700, compatible con DDR4-4800. Tecnología Intel Turbo Boost Max 3.0 para un rendimiento excepcional.",
         "precio": 3890000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/i9.jpg",
+        "rutaImagen": "productos/img/i9.jpg",
         "tipoProducto": "procesador",
     },
     {
@@ -288,7 +302,7 @@ productos = [
         "caracteristicas": "TDP de 105W, socket AM4, compatible con DDR4-3200. Arquitectura Zen 3 para un rendimiento excepcional.",
         "precio": 2609900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/amd3.jpg",
+        "rutaImagen": "productos/img/amd3.jpg",
         "tipoProducto": "procesador",
     },
     # ITEM ASUS
@@ -299,9 +313,8 @@ productos = [
         "caracteristicas": "Procesador AMD Ryzen 7 4700U, 8GB de RAM, pantalla de 15 pulgadas, almacenamiento SSD, peso ligero y diseño elegante.",
         "precio": 3500086,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port9.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port9.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus UX434FAC-A6116T I5-10210U",
@@ -310,8 +323,8 @@ productos = [
         "caracteristicas": "Procesador Intel Core i5-10210U, memoria RAM adecuada para multitarea, pantalla de alta resolución, almacenamiento SSD rápido y diseño ultradelgado.",
         "precio": 10973900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port1.jpg",
-        "tipoProducto": "portátil",
+        "rutaImagen": "productos/img/port1.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 13 Core i7 I7-1255U  90NX04T1-M00550",
@@ -320,10 +333,8 @@ productos = [
         "caracteristicas": "Procesador Intel Core i7 I7-1255U, memoria RAM adecuada para multitarea, diseño compacto y resistente, almacenamiento rápido y eficiente.",
         "precio": 1495000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port8.jpg",
-
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port8.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus X515EA-BR3955 15.6'' Intel Core i3 1115G4",
@@ -332,9 +343,8 @@ productos = [
         "caracteristicas": "Procesador Intel Core i3 1115G4, pantalla de 15.6 pulgadas, diseño versátil y almacenamiento adecuado para tareas cotidianas.",
         "precio": 1550000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port3.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port3.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 15 OLED M513UA-L1304 16GB ",
@@ -343,9 +353,8 @@ productos = [
         "caracteristicas": "Pantalla OLED de alta calidad, 16GB de RAM para multitarea, diseño elegante y almacenamiento rápido.",
         "precio": 1699000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port4.jpg",
-
-        "tipoProducto": "portátil",
+        "rutaImagen": "productos/img/port4.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus Zenbook 14 Flip Touch OLED I5-1349p",
@@ -354,9 +363,8 @@ productos = [
         "caracteristicas": "Pantalla táctil OLED, procesador potente, diseño convertible, almacenamiento rápido y eficiente.",
         "precio": 7554500,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port10.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port10.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus FX517ZC HN059 Core I5 16GB",
@@ -365,9 +373,8 @@ productos = [
         "caracteristicas": "Procesador Core i5, 16GB de RAM, diseño robusto y resistente, almacenamiento adecuado.",
         "precio": 4925000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/port5.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port5.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
@@ -376,9 +383,8 @@ productos = [
         "caracteristicas": "Procesador AMD Ryzen 7 3700U, diseño ligero, almacenamiento adecuado y pantalla de calidad.",
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port7.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port7.jpg",
+        "tipoProducto": "portatil",
     },
     # ITEM ASUS 2
     {
@@ -388,9 +394,8 @@ productos = [
         "caracteristicas": "Procesador potente con gráficos dedicados para juegos y edición de video",
         "precio": 8320394,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port2.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port2.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus X1503ZA-L1316-A6116T Core i5 12500H",
@@ -399,9 +404,8 @@ productos = [
         "caracteristicas": "Diseño compacto y ligero ideal para tareas diarias",
         "precio": 2899900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port6.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port6.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus Duo 14 UX482 Core i7-116G7 16GB",
@@ -410,9 +414,8 @@ productos = [
         "caracteristicas": "Versátil con capacidad multitarea avanzada",
         "precio": 6862900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/portatil.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/portatil.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus UX325EA Core i5 1135G7 8GB",
@@ -421,9 +424,8 @@ productos = [
         "caracteristicas": "Portátil ultraligero con un rendimiento eficiente",
         "precio": 1550000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port11.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port11.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 15 X1502 Core i5 1260P 8GB ",
@@ -432,9 +434,8 @@ productos = [
         "caracteristicas": "Rendimiento equilibrado para uso diario",
         "precio": 1699000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port12.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port12.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus Vivobook 14 X1605ZA-MB029W I5-1235U",
@@ -443,9 +444,8 @@ productos = [
         "caracteristicas": "Diseño delgado y compacto, ideal para portabilidad",
         "precio": 2120500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port13.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port13.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 14X UX5401 Core I7 16GB ",
@@ -454,9 +454,8 @@ productos = [
         "caracteristicas": "Potencia y rendimiento óptimos para uso intensivo",
         "precio": 4625000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port14.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port14.jpg",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Asus 14 M413 AMD Ryzen 7 3700U ",
@@ -465,9 +464,8 @@ productos = [
         "caracteristicas": "Procesador potente y gráficos integrados",
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port15.jpg",
-        "tipoProducto": "portátil",
-
+        "rutaImagen": "productos/img/port15.jpg",
+        "tipoProducto": "portatil",
     },
     # ITEM ASUS 3
     {
@@ -477,7 +475,7 @@ productos = [
         "caracteristicas": "Rendimiento eficiente para tareas diarias y portabilidad",
         "precio": 2558974,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port16.jpg",
+        "rutaImagen": "productos/img/port16.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -487,7 +485,7 @@ productos = [
         "caracteristicas": "Potencia y versatilidad para multitarea avanzada",
         "precio": 10487749,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port17.jpg",
+        "rutaImagen": "productos/img/port17.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -497,7 +495,7 @@ productos = [
         "caracteristicas": "Imágenes vibrantes y rendimiento eficiente",
         "precio": 3862900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port18.jpg",
+        "rutaImagen": "productos/img/port18.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -507,7 +505,7 @@ productos = [
         "caracteristicas": "Experiencia visual envolvente con alto rendimiento",
         "precio": 7640946,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port19.jpg",
+        "rutaImagen": "productos/img/port19.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -517,7 +515,7 @@ productos = [
         "caracteristicas": "Rendimiento básico para tareas cotidianas",
         "precio": 1231000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port20.jpg",
+        "rutaImagen": "productos/img/port20.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -527,7 +525,7 @@ productos = [
         "caracteristicas": "Rendimiento óptimo para profesionales creativos",
         "precio": 5120500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port21.jpg",
+        "rutaImagen": "productos/img/port21.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -537,7 +535,7 @@ productos = [
         "caracteristicas": "Experiencia visual impresionante y rendimiento eficaz",
         "precio": 2285000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port22.jpg",
+        "rutaImagen": "productos/img/port22.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -547,7 +545,7 @@ productos = [
         "caracteristicas": "Portabilidad y rendimiento básico para uso cotidiano",
         "precio": 2528900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/port23.jpg",
+        "rutaImagen": "productos/img/port23.jpg",
         "tipoProducto": "portatil",
     },
     # ITEM ACER
@@ -558,7 +556,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 3 con procesador Intel Core i5 1035G1 ofrece un rendimiento rápido y eficiente para tus tareas diarias. Con una pantalla HD de 15.6 pulgadas y un almacenamiento sólido de 512GB SSD, este portátil proporciona una gran capacidad de almacenamiento y visualización nítida. Es ideal para multitarea y uso cotidiano.",
         "precio": 1998974,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta.jpg",
+        "rutaImagen": "productos/img/porta.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -568,7 +566,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 5 con procesador Intel Celeron ofrece un rendimiento confiable para tareas básicas. Con una pantalla HD de 14 pulgadas y un almacenamiento rápido de 256GB SSD, este portátil es liviano y versátil, ideal para la productividad diaria y el entretenimiento ligero.",
         "precio": 1195749,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta1.jpg",
+        "rutaImagen": "productos/img/porta1.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -578,7 +576,7 @@ productos = [
         "caracteristicas": "El portátil Acer A314-36P-37D7 con procesador Intel Core i3 ofrece un rendimiento equilibrado para tareas diarias. Con una pantalla HD de 14 pulgadas y un almacenamiento rápido de 256GB SSD, este portátil es perfecto para tareas de oficina y uso cotidiano.",
         "precio": 1916779,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta2.jpg",
+        "rutaImagen": "productos/img/porta2.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -588,7 +586,7 @@ productos = [
         "caracteristicas": "El portátil Acer A315-54P con procesador Intel Core i3 ofrece un rendimiento básico para tareas diarias. Con una pantalla HD de 15.6 pulgadas y un amplio almacenamiento de 1TB HDD, es una opción sólida para el uso cotidiano y el entretenimiento ligero.",
         "precio": 1299000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta3.jpg",
+        "rutaImagen": "productos/img/porta3.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -598,7 +596,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 3 con procesador Intel Core i5 1135G7 ofrece un rendimiento eficiente para multitarea. Con una pantalla Full HD de 15.6 pulgadas y un almacenamiento rápido de 512GB SSD, este portátil es ideal para tareas intensivas y productividad diaria.",
         "precio": 2259900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta4.jpg",
+        "rutaImagen": "productos/img/porta4.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -608,7 +606,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 5 con procesador AMD Ryzen 3 5300U ofrece un rendimiento sólido para tareas diarias. Con una pantalla HD de 15.6 pulgadas y un almacenamiento rápido de 256GB SSD, este portátil es una buena opción para tareas escolares y de oficina en casa.",
         "precio": 2120500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta5.jpg",
+        "rutaImagen": "productos/img/porta5.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -618,7 +616,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 3 con procesador Intel Core i5 y 1TB de almacenamiento HDD es ideal para el almacenamiento de datos extenso. Con una pantalla HD de 14 pulgadas, es adecuado para tareas multimedia y de oficina.",
         "precio": 2220000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta6.jpg",
+        "rutaImagen": "productos/img/porta6.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -628,7 +626,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 3 con procesador Intel Core i3 ofrece un rendimiento básico para tareas diarias. Con una pantalla HD de 15.6 pulgadas y un almacenamiento rápido de 256GB SSD, es ideal para uso cotidiano y tareas escolares.",
         "precio": 2763900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta7.jpg",
+        "rutaImagen": "productos/img/porta7.jpg",
         "tipoProducto": "portatil",
     },
     # ITEM ACER 2
@@ -639,7 +637,7 @@ productos = [
         "caracteristicas": "El portátil Acer A315-58-59SW con procesador Intel Core i5 y 8GB de RAM ofrece un rendimiento sólido para multitarea. Con una pantalla Full HD de 15.6 pulgadas y un almacenamiento rápido de 512GB SSD, este portátil es adecuado para tareas diarias y entretenimiento.",
         "precio": 1934974,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta15.jpg",
+        "rutaImagen": "productos/img/porta15.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -649,7 +647,7 @@ productos = [
         "caracteristicas": "El portátil Acer Vero con procesador Intel Core i5 ofrece un rendimiento eficiente. Con una pantalla HD de 14 pulgadas y almacenamiento de 256GB SSD, este portátil es una opción ecológica y versátil para tareas diarias.",
         "precio": 2119000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta16.jpg",
+        "rutaImagen": "productos/img/porta16.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -659,7 +657,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire Slim Essential con procesador Intel Core i5 y 1TB de almacenamiento HDD es una opción equilibrada para el uso diario. Con una pantalla HD de 15.6 pulgadas, es ideal para la productividad y el entretenimiento.",
         "precio": 2432971,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta10.jpg",
+        "rutaImagen": "productos/img/porta10.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -669,7 +667,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire con procesador Intel Core i5 ofrece un rendimiento óptimo. Con una pantalla Full HD de 14 pulgadas y un almacenamiento rápido de 512GB SSD, es adecuado para multitarea y entretenimiento multimedia.",
         "precio": 1299000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta11.jpg",
+        "rutaImagen": "productos/img/porta11.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -679,7 +677,7 @@ productos = [
         "caracteristicas": "El portátil Acer TravelMate TMP214-53-50UV con procesador Intel Core i5 ofrece un rendimiento potente. Con una pantalla HD de 14 pulgadas y un almacenamiento de 512GB SSD, este portátil es ideal para la productividad empresarial y la movilidad.",
         "precio": 4134900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta12.jpg",
+        "rutaImagen": "productos/img/porta12.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -689,7 +687,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire Vero VP con procesador Intel Core i5 ofrece un rendimiento eficiente. Con una pantalla HD de 15.6 pulgadas y un almacenamiento de 256GB SSD, este portátil es una opción sostenible y versátil para tareas diarias.",
         "precio": 2699500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta13.jpg",
+        "rutaImagen": "productos/img/porta13.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -699,7 +697,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 3 con procesador Intel Core i3 y 1TB de almacenamiento HDD es adecuado para tareas diarias. Con una pantalla Full HD de 15.6 pulgadas, es una opción equilibrada para el uso cotidiano y el entretenimiento.",
         "precio": 2089000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta14.jpg",
+        "rutaImagen": "productos/img/porta14.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -709,7 +707,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire con procesador Intel Core i5 ofrece un rendimiento óptimo. Con una pantalla Full HD de 15.6 pulgadas y un almacenamiento rápido de 512GB SSD, es adecuado para multitarea y productividad.",
         "precio": 2159900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta17.jpg",
+        "rutaImagen": "productos/img/porta17.jpg",
         "tipoProducto": "portatil",
     },
     # ITEM ACER 3
@@ -720,7 +718,7 @@ productos = [
         "caracteristicas": "El portátil Acer con procesador AMD Ryzen 7 5700U y 36 GB de RAM ofrece un rendimiento excepcional para multitarea intensiva y aplicaciones exigentes. Con una pantalla Full HD de 15.6 pulgadas y un rápido almacenamiento de 1TB SSD, es una opción potente para profesionales y usuarios avanzados.",
         "precio": 4818974,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta8.jpg",
+        "rutaImagen": "productos/img/porta8.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -730,7 +728,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire 5 con procesador AMD Ryzen 7 5700 ofrece un rendimiento sólido para tareas exigentes. Con una pantalla HD de 15.6 pulgadas y almacenamiento de 512GB SSD, es ideal para trabajo creativo y multitarea.",
         "precio": 3375900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta18.jpg",
+        "rutaImagen": "productos/img/porta18.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -740,7 +738,7 @@ productos = [
         "caracteristicas": "El portátil Acer A314 con procesador Celeron N4000 ofrece un rendimiento básico. Con una pantalla HD de 14 pulgadas y almacenamiento de 256GB SSD, es ideal para tareas escolares y navegación web.",
         "precio": 1232971,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta9.jpg",
+        "rutaImagen": "productos/img/porta9.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -750,7 +748,7 @@ productos = [
         "caracteristicas": "El portátil Acer Slim con procesador Intel Core i5 ofrece un rendimiento equilibrado. Con una pantalla Full HD de 14 pulgadas y almacenamiento de 512GB SSD, es adecuado para multitarea y productividad diaria.",
         "precio": 2539900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta19.jpg",
+        "rutaImagen": "productos/img/porta19.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -760,7 +758,7 @@ productos = [
         "caracteristicas": "El portátil Acer Aspire con procesador Intel Core i5 ofrece un rendimiento equilibrado. Con una pantalla Full HD de 15.6 pulgadas y almacenamiento de 512GB SSD, es adecuado para multitarea y productividad diaria.",
         "precio": 3358900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta20.jpg",
+        "rutaImagen": "productos/img/porta20.jpg",
         "tipoProducto": "portatil",
     },
     {
@@ -770,7 +768,7 @@ productos = [
         "caracteristicas": "El portátil Acer Swift X 557C con procesador Intel Core i5 y 16GB de RAM ofrece un rendimiento potente. Con una pantalla Full HD de 15.6 pulgadas y un rápido almacenamiento de 1TB SSD, es ideal para tareas exigentes y trabajo creativo.",
         "precio": 7999500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/porta21.jpg",
+        "rutaImagen": "productos/img/porta21.jpg",
         "tipoProducto": "portatil",
     },
     # ITEM PROCESADORES
@@ -781,7 +779,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 7 5800X es una potente CPU de 8 núcleos y 16 hilos. Con una frecuencia base de 3.8 GHz y una frecuencia máxima de 4.7 GHz, ofrece un rendimiento excepcional para tareas intensivas y gaming.",
         "precio": 2044990,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador1.png",
+        "rutaImagen": "productos/img/procesador1.png",
         "tipoProducto": "procesador",
     },
     {
@@ -791,7 +789,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 5 5600X es una CPU de 6 núcleos y 12 hilos. Con una frecuencia base de 3.7 GHz y una frecuencia máxima de 4.6 GHz, proporciona un excelente rendimiento para gaming y multitarea.",
         "precio": 1339990,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador2.png",
+        "rutaImagen": "productos/img/procesador2.png",
         "tipoProducto": "procesador",
     },
     {
@@ -801,7 +799,7 @@ productos = [
         "caracteristicas": "El procesador Intel Core i7-12700K es una CPU potente de 12 núcleos y 20 hilos. Con una frecuencia base de 3.6 GHz y una frecuencia máxima de 5.0 GHz, ofrece un excelente rendimiento para gaming y aplicaciones exigentes.",
         "precio": 1695000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador3.png",
+        "rutaImagen": "productos/img/procesador3.png",
         "tipoProducto": "procesador",
     },
     {
@@ -811,7 +809,7 @@ productos = [
         "caracteristicas": "El procesador Intel Core i9-13900K es una CPU de alto rendimiento con 16 núcleos y 24 hilos. Con una frecuencia base de 3.5 GHz y una frecuencia máxima de 5.2 GHz, ofrece un rendimiento excepcional para gaming y aplicaciones profesionales exigentes.",
         "precio": 3306000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador4.png",
+        "rutaImagen": "productos/img/procesador4.png",
         "tipoProducto": "procesador",
     },
     {
@@ -821,8 +819,8 @@ productos = [
         "caracteristicas": "El procesador gamer AMD Ryzen 9 7900X es una CPU de alto rendimiento con 12 núcleos y 24 hilos. Ofrece una frecuencia base de 3.3 GHz y una frecuencia máxima de 4.8 GHz, ideal para gaming y tareas exigentes.",
         "precio": 2299000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador5.png",
-        "tipoProducto": "procesador"
+        "rutaImagen": "productos/img/procesador5.png",
+        "tipoProducto": "procesador",
     },
     {
         "nombre": "Procesador gamer AMD Ryzen 5 3600 100-100000031BOX",
@@ -831,8 +829,8 @@ productos = [
         "caracteristicas": "El procesador gamer AMD Ryzen 5 3600 es una CPU de 6 núcleos y 12 hilos. Ofrece una frecuencia base de 3.6 GHz y una frecuencia máxima de 4.2 GHz, perfecto para gaming y multitarea.",
         "precio": 635000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador6.png",
-        "tipoProducto": "procesador"
+        "rutaImagen": "productos/img/procesador6.png",
+        "tipoProducto": "procesador",
     },
     {
         "nombre": "Procesador gamer Intel Core i5-10400 BX8070110400",
@@ -841,8 +839,8 @@ productos = [
         "caracteristicas": "El procesador gamer Intel Core i5-10400 es una CPU de 6 núcleos y 12 hilos. Ofrece una frecuencia base de 2.9 GHz y una frecuencia máxima de 4.3 GHz, brindando un buen rendimiento para juegos y multitarea.",
         "precio": 669900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador7.png",
-        "tipoProducto": "procesador"
+        "rutaImagen": "productos/img/procesador7.png",
+        "tipoProducto": "procesador",
     },
     {
         "nombre": "Procesador Intel Pentium G6400 BX80701G6400",
@@ -851,8 +849,8 @@ productos = [
         "caracteristicas": "El procesador Intel Pentium G6400 es una CPU de 2 núcleos y 4 hilos con una frecuencia base de 4.0 GHz. Es ideal para tareas cotidianas y sistemas básicos.",
         "precio": 370000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/procesador8.png",
-        "tipoProducto": "procesador"
+        "rutaImagen": "productos/img/procesador8.png",
+        "tipoProducto": "procesador",
     },
     # ITEM AMD
     {
@@ -862,7 +860,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 9 7950X3D ofrece un rendimiento excepcional con 16 núcleos y 32 hilos. Posee una frecuencia de 5.7 GHz, siendo una excelente opción para tareas intensivas y gaming de alto rendimiento.",
         "precio": 3637000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_1.png",
+        "rutaImagen": "productos/img/Amd_1.png",
         "tipoProducto": "procesador",
     },
     {
@@ -872,7 +870,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 9 7900 AM5 cuenta con 12 núcleos y 24 hilos. Ofrece un rendimiento sólido y eficiente, ideal para gaming y aplicaciones multitarea exigentes.",
         "precio": 2139000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_2.png",
+        "rutaImagen": "productos/img/Amd_2.png",
         "tipoProducto": "procesador",
     },
     {
@@ -882,7 +880,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 7 7800X3D cuenta con 8 núcleos y 16 hilos. Ofrece un buen equilibrio entre rendimiento y eficiencia energética, ideal para usuarios que buscan un rendimiento sólido.",
         "precio": 2096000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_3.png",
+        "rutaImagen": "productos/img/Amd_3.png",
         "tipoProducto": "procesador",
     },
     {
@@ -892,7 +890,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 7 7700 AM5 es una CPU con 8 núcleos y 16 hilos. Ofrece un rendimiento sólido para multitarea y aplicaciones exigentes, siendo una buena opción para gaming.",
         "precio": 1680000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_4.png",
+        "rutaImagen": "productos/img/Amd_4.png",
         "tipoProducto": "procesador",
     },
     {
@@ -902,7 +900,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 5 7600 AM5 cuenta con 6 núcleos y 12 hilos. Ofrece un buen rendimiento para tareas cotidianas y multitarea ligera.",
         "precio": 1195000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_5.png",
+        "rutaImagen": "productos/img/Amd_5.png",
         "tipoProducto": "procesador",
     },
     {
@@ -912,7 +910,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 5 5600G AM4 cuenta con 6 núcleos y 12 hilos. Incluye gráficos integrados Radeon, ideal para sistemas compactos y gaming ligero.",
         "precio": 898000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_6.png",
+        "rutaImagen": "productos/img/Amd_6.png",
         "tipoProducto": "procesador",
     },
     {
@@ -922,7 +920,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 3 4100 AM4 cuenta con 4 núcleos y 8 hilos. Ofrece un rendimiento básico para tareas del día a día.",
         "precio": 524964,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_7.png",
+        "rutaImagen": "productos/img/Amd_7.png",
         "tipoProducto": "procesador",
     },
     {
@@ -932,7 +930,7 @@ productos = [
         "caracteristicas": "El procesador AMD Ryzen 3 3200G incluye gráficos Radeon Vega integrados, ideal para sistemas compactos y aplicaciones que no requieren una tarjeta gráfica adicional.",
         "precio": 459900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Amd_8.png",
+        "rutaImagen": "productos/img/Amd_8.png",
         "tipoProducto": "procesador",
     },
     # ITEM INTEL
@@ -943,7 +941,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 6.0 GHz | Núcleos: 16 | Hilos: 24 | Caché: 24 MB | Socket: LGA 1700 | TDP: 125W",
         "precio": 3554000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Intel1.png",
+        "rutaImagen": "productos/img/Intel1.png",
         "tipoProducto": "procesador",
     },
     {
@@ -953,7 +951,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 5.8 GHz | Núcleos: 16 | Hilos: 24 | Caché: 24 MB | Socket: LGA 1700 | TDP: 125W",
         "precio": 2990000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Intel2.png",
+        "rutaImagen": "productos/img/Intel2.png",
         "tipoProducto": "procesador",
     },
     {
@@ -963,7 +961,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 4.6 GHz | Núcleos: 12 | Hilos: 20 | Caché: 20 MB | Socket: LGA 1700 | TDP: 65W",
         "precio": 2079000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Intel3.png",
+        "rutaImagen": "productos/img/Intel3.png",
         "tipoProducto": "procesador",
     },
     {
@@ -973,7 +971,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 2.9 GHz | Frecuencia turbo máx.: 4.8 GHz | Núcleos: 8 | Hilos: 16 | Caché: 16 MB | Socket: LGA 1200 | TDP: 65W",
         "precio": 1259900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Intel4.png",
+        "rutaImagen": "productos/img/Intel4.png",
         "tipoProducto": "procesador",
     },
     {
@@ -983,7 +981,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 3.9 GHz | Frecuencia turbo máx.: 5.1 GHz | Núcleos: 10 | Hilos: 16 | Caché: 20 MB | Socket: LGA 1700 | TDP: 125W",
         "precio": 1774800,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Intel5.png",
+        "rutaImagen": "productos/img/Intel5.png",
         "tipoProducto": "procesador",
     },
     {
@@ -993,7 +991,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 2.8 GHz | Frecuencia turbo máx.: 4.6 GHz | Núcleos: 12 | Hilos: 12 | Caché: 20 MB | Socket: LGA 1700 | TDP: 65W",
         "precio": 5120500,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Intel6.png",
+        "rutaImagen": "productos/img/Intel6.png",
         "tipoProducto": "procesador",
     },
     {
@@ -1003,7 +1001,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 3.0 GHz | Frecuencia turbo máx.: 4.50 GHz | Núcleos: 8 | Hilos: 8 | Caché: 12 MB | Socket: LGA 1700 | TDP: 65W",
         "precio": 855000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Intel7.png",
+        "rutaImagen": "productos/img/Intel7.png",
         "tipoProducto": "procesador",
     },
     {
@@ -1013,7 +1011,7 @@ productos = [
         "caracteristicas": "Frecuencia base: 2.9 GHz | Frecuencia turbo máx.: 4.30 GHz | Núcleos: 4 | Hilos: 8 | Caché: 6 MB | Socket: LGA 1700 | TDP: 65W",
         "precio": 679000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Intel8.png",
+        "rutaImagen": "productos/img/Intel8.png",
         "tipoProducto": "procesador",
     },
     # ITEM GRAFICAS
@@ -1024,7 +1022,7 @@ productos = [
         "caracteristicas": "Memoria: 16GB GDDR6 | Interfaz de memoria: 256-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 6144 | Reloj del núcleo: Base 1365MHz, Boost 1800MHz",
         "precio": 2641000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas1.png",
+        "rutaImagen": "productos/img/Tarjetas1.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1034,7 +1032,7 @@ productos = [
         "caracteristicas": "Memoria: 24GB GDDR6X | Interfaz de memoria: 384-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort, USB Type-C | Núcleos CUDA: 10,240 | Reloj del núcleo: Base 1400MHz, Boost 1800MHz",
         "precio": 8899000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas2.png",
+        "rutaImagen": "productos/img/Tarjetas2.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1044,7 +1042,7 @@ productos = [
         "caracteristicas": "Memoria: 16GB GDDR6 | Interfaz de memoria: 256-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 6144 | Reloj del núcleo: Base 1365MHz, Boost 1800MHz",
         "precio": 2641000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas3.jpg",
+        "rutaImagen": "productos/img/Tarjetas3.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -1054,7 +1052,7 @@ productos = [
         "caracteristicas": "Memoria: 16GB GDDR6 | Interfaz de memoria: 256-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 8192 | Reloj del núcleo: Base 1365MHz, Boost 1770MHz",
         "precio": 4849900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas4.jpg",
+        "rutaImagen": "productos/img/Tarjetas4.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -1064,7 +1062,7 @@ productos = [
         "caracteristicas": "Memoria: 8GB GDDR6 | Interfaz de memoria: 256-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 6144 | Reloj del núcleo: Base 1365MHz, Boost 1800MHz",
         "precio": 2136000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas5.jpg",
+        "rutaImagen": "productos/img/Tarjetas5.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -1074,7 +1072,7 @@ productos = [
         "caracteristicas": "Memoria: 16GB GDDR6 | Interfaz de memoria: 256-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 8192 | Reloj del núcleo: Base 1365MHz, Boost 1770MHz",
         "precio": 3499000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas6.jpg",
+        "rutaImagen": "productos/img/Tarjetas6.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -1084,7 +1082,7 @@ productos = [
         "caracteristicas": "Memoria: 4GB GDDR6 | Interfaz de memoria: 128-bit | Tipo de bus: PCI Express 3.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 896 | Reloj del núcleo: Base 1485MHz, Boost 1695MHz",
         "precio": 728000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas7.jpg",
+        "rutaImagen": "productos/img/Tarjetas7.jpg",
         "tipoProducto": "grafica",
     },
     {
@@ -1094,7 +1092,7 @@ productos = [
         "caracteristicas": "Memoria: 12GB GDDR6X | Interfaz de memoria: 192-bit | Tipo de bus: PCI Express 4.0 | Salidas: HDMI, DisplayPort | Núcleos CUDA: 5888 | Reloj del núcleo: Base 1605MHz, Boost 1815MHz",
         "precio": 3399000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/Tarjetas8.jpg",
+        "rutaImagen": "productos/img/Tarjetas8.jpg",
         "tipoProducto": "grafica",
     },
     # ITEM NVIDIA
@@ -1105,7 +1103,7 @@ productos = [
         "caracteristicas": "La ROG STRIX GEFORCE RTX 4090 presenta una arquitectura de memoria avanzada de 24GB GDDR6X, ofreciendo un ancho de banda increíble para rendimiento ultrarrápido en juegos AAA y aplicaciones de diseño. Su núcleo gráfico potenciado brinda una experiencia inmersiva en resoluciones 4K y 8K, junto con tecnologías de trazado de rayos y DLSS para gráficos realistas y una jugabilidad fluida. Además, su sistema de enfriamiento optimizado mantiene temperaturas bajo control incluso en sesiones de gaming prolongadas.",
         "precio": 9910000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea1.png",
+        "rutaImagen": "productos/img/Nvidea1.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1115,7 +1113,7 @@ productos = [
         "caracteristicas": "La INNO3D NVIDIA GEFORCE RTX 4090 ICHILL FROSTBITE ULTRA está diseñada con tecnología de enfriamiento Frostbite Ultra de vanguardia, que garantiza temperaturas óptimas durante sesiones intensivas de juego. Sus 24GB GDDR6X ofrecen una combinación perfecta de ancho de banda y velocidad para juegos de última generación y tareas de renderizado exigentes. Su overclocking avanzado permite un rendimiento superior en aplicaciones de renderizado y diseño 3D.",
         "precio": 9512000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea2.png",
+        "rutaImagen": "productos/img/Nvidea2.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1125,7 +1123,7 @@ productos = [
         "caracteristicas": "La INNO3D NVIDIA GEFORCE RTX 4090 X3 OC WHITE es una tarjeta gráfica que combina un diseño estilizado con un rendimiento poderoso. Sus 24GB GDDR6X con overclocking proporcionan una experiencia de juego fluida y eficiente en aplicaciones de alta demanda gráfica. Su sistema de refrigeración mejorado asegura un funcionamiento fresco y silencioso, incluso bajo cargas extremas.",
         "precio": 8528000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea3.png",
+        "rutaImagen": "productos/img/Nvidea3.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1135,7 +1133,7 @@ productos = [
         "caracteristicas": "La ASUS ROG STRIX GAMING RTX 4080 16G WHITE ofrece un rendimiento excepcional para juegos en alta resolución gracias a sus 16GB de memoria y una potencia de procesamiento mejorada. Su diseño de refrigeración avanzado mantiene las temperaturas bajo control incluso en sesiones prolongadas de juego, mientras que su estética blanca y detalles LED RGB la convierten en una opción atractiva para entusiastas del gaming.",
         "precio": 7489000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea4.png",
+        "rutaImagen": "productos/img/Nvidea4.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1145,7 +1143,7 @@ productos = [
         "caracteristicas": "La ASUS GEFORCE RTX 4080 NOCTUA OC EDITION ofrece un rendimiento excepcional en juegos y aplicaciones exigentes. Equipada con un sistema de enfriamiento Noctua de alto rendimiento, garantiza temperaturas óptimas incluso en condiciones de carga pesada. Su capacidad de overclocking asegura un rendimiento superior en comparación con modelos estándar.",
         "precio": 7693000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea5.png",
+        "rutaImagen": "productos/img/Nvidea5.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1155,7 +1153,7 @@ productos = [
         "caracteristicas": "La NVIDIA GEFORCE RTX 4080 XLR8 GAMING UPRISING es una opción ideal para los entusiastas del gaming. Su arquitectura avanzada y su memoria de alta velocidad ofrecen un rendimiento excepcional en juegos AAA y aplicaciones creativas. Equipada con tecnología de enfriamiento eficiente para un funcionamiento silencioso y estable incluso en cargas intensivas.",
         "precio": 6944000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea6.png",
+        "rutaImagen": "productos/img/Nvidea6.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1165,7 +1163,7 @@ productos = [
         "caracteristicas": "La INNO3D NVIDIA GEFORCE RTX 4070 TI X3 OC está diseñada para ofrecer un rendimiento sólido en juegos de alta demanda y tareas creativas. Su memoria de 12GB y su capacidad de overclocking proporcionan una experiencia fluida en resoluciones altas. Además, su diseño de triple ventilador garantiza un enfriamiento eficiente y silencioso.",
         "precio": 4375000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea7.png",
+        "rutaImagen": "productos/img/Nvidea7.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1175,7 +1173,7 @@ productos = [
         "caracteristicas": "La ASUS TUF GAMING RTX 4070 ofrece un rendimiento confiable para juegos de última generación. Con 12GB de memoria GDDR6X, proporciona una experiencia de juego fluida en configuraciones de alta resolución. Su robusta construcción y su sistema de enfriamiento eficiente la hacen ideal para sesiones de gaming prolongadas.",
         "precio": 3305000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Nvidea8.png",
+        "rutaImagen": "productos/img/Nvidea8.png",
         "tipoProducto": "grafica",
     },
     # ITEM GRAFICAS 2
@@ -1186,7 +1184,7 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce RTX 3070 Twin Edge ofrece un rendimiento excepcional en juegos de alta gama y aplicaciones creativas. Con su arquitectura avanzada y su memoria de alta velocidad, garantiza una experiencia de juego fluida en resoluciones altas. Su diseño compacto y eficiente en términos energéticos la hacen ideal para sistemas de tamaño reducido.",
         "precio": 2899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_1.png",
+        "rutaImagen": "productos/img/Tarjetas_1.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1196,8 +1194,8 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce RTX 4060 Ti Twin Edge proporciona un excelente equilibrio entre rendimiento y eficiencia energética. Con su capacidad de 8GB de memoria, ofrece un rendimiento sólido en juegos actuales y tareas de creación de contenido. Su diseño compacto y refrigeración eficiente la hacen una excelente opción para sistemas de gama media.",
         "precio": 2199000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_2.png",
-        "tipoProducto": "grafica"
+        "rutaImagen": "productos/img/Tarjetas_2.png",
+        "tipoProducto": "grafica",
     },
     {
         "nombre": "ZOTAC GAMING GeForce RTX 3060 Twin Edge 12GB G6",
@@ -1206,8 +1204,8 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce RTX 3060 Twin Edge ofrece un rendimiento sólido y versátil para juegos y aplicaciones de nivel medio. Con su memoria de 12GB y su diseño eficiente, proporciona un equilibrio entre rendimiento y ahorro energético. Ideal para jugadores que buscan un rendimiento respetable a un precio accesible.",
         "precio": 2079000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_3.png",
-        "tipoProducto": "grafica"
+        "rutaImagen": "productos/img/Tarjetas_3.png",
+        "tipoProducto": "grafica",
     },
     {
         "nombre": "ZOTAC GAMING GeForce RTX 3060 Twin Edge 8GB GDDR6",
@@ -1216,7 +1214,7 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce RTX 3060 Twin Edge de 8GB ofrece un excelente rendimiento en juegos de nivel medio y aplicaciones multimedia. Su diseño compacto y eficiente proporciona un rendimiento satisfactorio sin comprometer la eficiencia energética. Perfecta para sistemas gaming a un precio accesible.",
         "precio": 1499000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_4.png",
+        "rutaImagen": "productos/img/Tarjetas_4.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1226,7 +1224,7 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce RTX 3050 Twin Edge ofrece un excelente rendimiento en juegos de nivel medio y tareas multimedia. Con su memoria de 8GB GDDR6, proporciona una experiencia de juego satisfactoria en resoluciones moderadas. Su diseño compacto y eficiente la hacen ideal para sistemas gaming de tamaño medio.",
         "precio": 1299000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_5.png",
+        "rutaImagen": "productos/img/Tarjetas_5.png",
         "tipoProducto": "grafica",
     },
     {
@@ -1236,8 +1234,8 @@ productos = [
         "caracteristicas": "La ZOTAC GAMING GeForce GTX 1650 OC es una opción asequible para juegos y tareas básicas. Con 4GB de memoria GDDR6, ofrece un rendimiento decente en juegos de nivel medio y aplicaciones cotidianas. Su diseño compacto la hace adecuada para sistemas de perfil bajo.",
         "precio": 859000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_6.png",
-        "tipoProducto": "grafica"
+        "rutaImagen": "productos/img/Tarjetas_6.png",
+        "tipoProducto": "grafica",
     },
     {
         "nombre": "INNO3D GEFORCE GTX 1650 TWIN X2 OC 4GB GDDR6",
@@ -1246,8 +1244,8 @@ productos = [
         "caracteristicas": "La INNO3D GEFORCE GTX 1650 TWIN X2 OC es una opción económica para usuarios que buscan rendimiento básico en juegos y tareas de productividad. Su diseño compacto y eficiente en términos energéticos la hacen ideal para sistemas de bajo consumo.",
         "precio": 728000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_7.png",
-        "tipoProducto": "grafica"
+        "rutaImagen": "productos/img/Tarjetas_7.png",
+        "tipoProducto": "grafica",
     },
     {
         "nombre": "ZOTAC GeForce GT 1030 2GB GDDR5 HDMI/VGA Low Profile",
@@ -1256,8 +1254,8 @@ productos = [
         "caracteristicas": "La ZOTAC GeForce GT 1030 es una solución básica para gráficos y tareas de reproducción multimedia. Con 2GB de memoria GDDR5, proporciona un rendimiento decente para aplicaciones cotidianas y juegos ligeros. Su diseño de perfil bajo la hace ideal para sistemas compactos.",
         "precio": 459900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Tarjetas_8.png",
-        "tipoProducto": "grafica"
+        "rutaImagen": "productos/img/Tarjetas_8.png",
+        "tipoProducto": "grafica",
     },
     # ITEM LENOVO
     {
@@ -1267,7 +1265,7 @@ productos = [
         "caracteristicas": "El portátil IdeaPad Gaming 3 de Lenovo ofrece un rendimiento excepcional para juegos y tareas intensivas. Equipado con potentes especificaciones, incluyendo un procesador de alta velocidad y una tarjeta gráfica dedicada, brinda una experiencia de juego fluida y sin interrupciones. Su diseño robusto y enfocado en el gaming lo convierte en una opción ideal para jugadores exigentes.",
         "precio": 6676099,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo1.png",
+        "rutaImagen": "productos/img/lenovo1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1277,7 +1275,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad 1 ofrece un rendimiento sólido para tareas cotidianas. Con su procesador eficiente y memoria RAM adecuada, proporciona una experiencia fluida para uso diario, navegación web y reproducción multimedia. Su diseño compacto y ligero lo hace ideal para usuarios que buscan portabilidad y funcionalidad a un precio accesible.",
         "precio": 226163,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo2.png",
+        "rutaImagen": "productos/img/lenovo2.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1287,7 +1285,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad 3 ofrece un equilibrio entre rendimiento y portabilidad. Con su procesador potente y almacenamiento rápido, es capaz de manejar tareas intensivas y multitarea sin problemas. Su diseño delgado y ligero lo hace ideal para usuarios que buscan un rendimiento sólido en un formato portátil.",
         "precio": 2070428,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo3.png",
+        "rutaImagen": "productos/img/lenovo3.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1297,8 +1295,8 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad 3i es ideal para tareas básicas y portabilidad. Con su diseño compacto y ligero, es perfecto para la navegación web, uso de aplicaciones de oficina y reproducción multimedia. Adecuado para usuarios que buscan un dispositivo básico y asequible para uso diario.",
         "precio": 1550000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo4.png",
-        "tipoProducto": "portatil"
+        "rutaImagen": "productos/img/lenovo4.png",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Lenovo IdeaPad Gaming 3 15ACH6 AMD Ryzen 5 5600H/16 GB/512 GB SSD/RTX3050",
@@ -1307,7 +1305,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad Gaming 3 está diseñado para ofrecer un rendimiento superior en juegos y tareas exigentes. Equipado con un potente procesador Ryzen y una tarjeta gráfica RTX3050, proporciona una experiencia de juego inmersiva. Su diseño ergonómico y enfocado en el gaming lo convierte en una opción perfecta para jugadores ávidos.",
         "precio": 2804448,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo5.png",
+        "rutaImagen": "productos/img/lenovo5.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1317,7 +1315,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo ThinkPad E14 Gen 4 está diseñado para ofrecer rendimiento empresarial. Con un procesador potente y características de seguridad avanzadas, proporciona una experiencia confiable y productiva. Su diseño robusto y duradero lo convierte en una elección ideal para entornos profesionales exigentes.",
         "precio": 2799000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo6.png",
+        "rutaImagen": "productos/img/lenovo6.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1327,7 +1325,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad S340 ofrece un rendimiento sólido para tareas diarias y multitarea. Con un procesador i7 y almacenamiento SSD rápido, garantiza una experiencia de usuario ágil y sin problemas. Su diseño elegante y compacto lo hace ideal para usuarios que buscan rendimiento en un formato portátil.",
         "precio": 2928460,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo7.png",
+        "rutaImagen": "productos/img/lenovo7.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1337,7 +1335,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo Ideapad 3 ofrece un equilibrio entre rendimiento y portabilidad. Con su procesador Intel Core i7 y almacenamiento SSD, es capaz de manejar tareas intensivas y multitarea. Su diseño delgado y ligero lo hace ideal para usuarios que buscan rendimiento en un formato portátil.",
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo8.png",
+        "rutaImagen": "productos/img/lenovo8.png",
         "tipoProducto": "portatil",
     },
     # ITEM LENOVO 2
@@ -1348,7 +1346,7 @@ productos = [
         "caracteristicas": "Con un procesador potente y una tarjeta gráfica dedicada, el IdeaPad Gaming 3 proporciona una experiencia de juego fluida y sin interrupciones. Su diseño está orientado a la refrigeración para sesiones de juego prolongadas y cuenta con una pantalla de alta definición para inmersión total.",
         "precio": 6676099,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo1.png",
+        "rutaImagen": "productos/img/lenovo1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1358,7 +1356,7 @@ productos = [
         "caracteristicas": "Con un procesador eficiente y almacenamiento SSD, el IdeaPad 1 ofrece un rendimiento satisfactorio para tareas cotidianas como navegación web, reproducción multimedia y aplicaciones de oficina. Su diseño compacto y ligero lo hace perfecto para usuarios que buscan portabilidad y funcionalidad a un precio asequible.",
         "precio": 226163,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo2.png",
+        "rutaImagen": "productos/img/lenovo2.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1368,7 +1366,7 @@ productos = [
         "caracteristicas": "Con un procesador potente y almacenamiento SSD rápido, el IdeaPad 3 es capaz de manejar tareas intensivas y multitarea sin problemas. Su diseño delgado y ligero lo hace ideal para usuarios que buscan un rendimiento sólido en un formato portátil.",
         "precio": 2070428,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo3.png",
+        "rutaImagen": "productos/img/lenovo3.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1378,8 +1376,8 @@ productos = [
         "caracteristicas": "Con un diseño compacto y eficiente, el IdeaPad 3i es perfecto para la navegación web, uso de aplicaciones de oficina y reproducción multimedia básica. Es adecuado para usuarios que buscan un dispositivo básico y asequible para uso diario.",
         "precio": 1550000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo4.png",
-        "tipoProducto": "portatil"
+        "rutaImagen": "productos/img/lenovo4.png",
+        "tipoProducto": "portatil",
     },
     {
         "nombre": "Portátil Lenovo IdeaPad Gaming 3 15ACH6 AMD Ryzen 5 5600H/16 GB/512 GB SSD/RTX3050",
@@ -1388,7 +1386,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad Gaming 3 está diseñado para ofrecer un rendimiento superior en juegos. Equipado con un procesador Ryzen 5 5600H, 16 GB de RAM, y una potente tarjeta gráfica RTX3050, proporciona una experiencia de juego fluida y de alta calidad. Su pantalla de alta definición y su capacidad de almacenamiento SSD hacen que sea una opción ideal para jugadores exigentes.",
         "precio": 2804448,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo5.png",
+        "rutaImagen": "productos/img/lenovo5.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1398,7 +1396,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo ThinkPad E14 Gen 4 ofrece un rendimiento confiable y características de seguridad avanzadas para entornos empresariales. Equipado con un procesador Ryzen 5, garantiza una experiencia productiva y confiable. Su diseño robusto y duradero lo hace ideal para usuarios empresariales exigentes.",
         "precio": 2799000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo6.png",
+        "rutaImagen": "productos/img/lenovo6.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1408,7 +1406,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo IdeaPad S340 ofrece un rendimiento sólido con un procesador i7 y almacenamiento SSD rápido. Diseñado para manejar tareas intensivas y multitarea, es una opción ideal para usuarios que buscan rendimiento en un formato portátil. Su diseño elegante lo hace ideal para el uso diario.",
         "precio": 2928460,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo7.png",
+        "rutaImagen": "productos/img/lenovo7.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1418,7 +1416,7 @@ productos = [
         "caracteristicas": "El portátil Lenovo Ideapad 3 ofrece un equilibrio entre rendimiento y portabilidad. Con su procesador Intel Core i7 y almacenamiento SSD, es capaz de manejar tareas intensivas y multitarea. Su diseño delgado y ligero lo hace ideal para usuarios que buscan rendimiento en un formato portátil.",
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo8.png",
+        "rutaImagen": "productos/img/lenovo8.png",
         "tipoProducto": "portatil",
     },
     # ITEM LENOVO 3
@@ -1429,7 +1427,7 @@ productos = [
         "caracteristicas": "Con un procesador potente y una tarjeta gráfica dedicada, el IdeaPad Gaming 3 proporciona una experiencia de juego fluida y sin interrupciones. Su diseño está orientado a la refrigeración para sesiones de juego prolongadas y cuenta con una pantalla de alta definición para inmersión total.",
         "precio": 6676099,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo1.png",
+        "rutaImagen": "productos/img/lenovo1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1439,7 +1437,7 @@ productos = [
         "caracteristicas": "Con un procesador eficiente y almacenamiento SSD, el IdeaPad 1 ofrece un rendimiento satisfactorio para tareas cotidianas como navegación web, reproducción multimedia y aplicaciones de oficina. Su diseño compacto y ligero lo hace perfecto para usuarios que buscan portabilidad y funcionalidad a un precio asequible.",
         "precio": 226163,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo2.png",
+        "rutaImagen": "productos/img/lenovo2.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1449,7 +1447,7 @@ productos = [
         "caracteristicas": "Con un procesador potente y almacenamiento SSD rápido, el IdeaPad 3 es capaz de manejar tareas intensivas y multitarea sin problemas. Su diseño delgado y ligero lo hace ideal para usuarios que buscan un rendimiento sólido en un formato portátil.",
         "precio": 2070428,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo3.png",
+        "rutaImagen": "productos/img/lenovo3.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1459,7 +1457,7 @@ productos = [
         "caracteristicas": "Con un diseño compacto y eficiente, el IdeaPad 3i es perfecto para la navegación web, uso de aplicaciones de oficina y reproducción multimedia básica. Es adecuado para usuarios que buscan un dispositivo básico y asequible para uso diario.",
         "precio": 1550000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo4.png",
+        "rutaImagen": "productos/img/lenovo4.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1469,7 +1467,7 @@ productos = [
         "caracteristicas": "Con un procesador potente AMD Ryzen 5 5600H, 16 GB de RAM y la tarjeta gráfica RTX3050, este portátil proporciona una experiencia de juego fluida y de alta calidad. El almacenamiento SSD de 512 GB ofrece tiempos de carga rápidos. Su diseño está orientado a la refrigeración para sesiones prolongadas de juego.",
         "precio": 2804448,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo5.png",
+        "rutaImagen": "productos/img/lenovo5.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1479,7 +1477,7 @@ productos = [
         "caracteristicas": "Equipado con un procesador Ryzen 5, este portátil ofrece un rendimiento confiable para tareas empresariales. Con características de seguridad avanzadas y durabilidad, es ideal para entornos profesionales exigentes. Su diseño compacto y potente lo hace versátil para diferentes necesidades empresariales.",
         "precio": 2799000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo6.png",
+        "rutaImagen": "productos/img/lenovo6.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1489,7 +1487,7 @@ productos = [
         "caracteristicas": "Con un procesador i7 y almacenamiento SSD rápido, este portátil es ideal para tareas intensivas y multitarea. Su diseño delgado y elegante lo hace adecuado para usuarios que buscan un equilibrio entre rendimiento y portabilidad en un dispositivo.",
         "precio": 2928460,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo7.png",
+        "rutaImagen": "productos/img/lenovo7.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1499,7 +1497,7 @@ productos = [
         "caracteristicas": "Con un procesador Intel Core i7 y un SSD de 512 GB, este portátil proporciona un rendimiento sólido y tiempos de carga rápidos. Diseñado para la multitarea y tareas intensivas, es una opción versátil para usuarios exigentes.",
         "precio": 2935900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/lenovo8.png",
+        "rutaImagen": "productos/img/lenovo8.png",
         "tipoProducto": "portatil",
     },
     # ITEM HP
@@ -1510,7 +1508,7 @@ productos = [
         "caracteristicas": "Equipado con un procesador AMD Ryzen 5 y 8 GB de RAM, este portátil es ideal para tareas diarias y multitarea. Su diseño ofrece portabilidad y rendimiento para el uso cotidiano.",
         "precio": 3500086,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/hp1.png",
+        "rutaImagen": "productos/img/hp1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1591,7 +1589,7 @@ productos = [
         "caracteristicas": "Equipado con un procesador AMD Ryzen 5 y 8GB de RAM, este portátil es ideal para tareas diarias y multitarea ligera. Ofrece un buen rendimiento en un diseño portátil.",
         "precio": 3500086,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/hp1.png",
+        "rutaImagen": "productos/img/hp1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1672,7 +1670,7 @@ productos = [
         "caracteristicas": "Con una configuración equilibrada, este portátil es adecuado para usuarios que buscan un buen rendimiento en un dispositivo accesible.",
         "precio": 3500086,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/hp1.png",
+        "rutaImagen": "productos/img/hp1.png",
         "tipoProducto": "portatil",
     },
     {
@@ -1745,7 +1743,7 @@ productos = [
         "rutaImagen": "https://files.ekmcdn.com/hdewcameras/images/hp-255-g8-laptop-15.6-fhd-ryzen-5-3500u-8gb-256gb-ssd-no-optical-usb-c-windows-10-home-18492-p.jpg",
         "tipoProducto": "portatil",
     },
-    # ITEM REFRIGERACION LIQUIDA 
+    # ITEM REFRIGERACION LIQUIDA
     {
         "nombre": "Fuente Refrigeracion Liquida Coolmoon Fancooler Rgb Pc 120mm",
         "marca": "Coolmoon Fancooler",
@@ -1753,7 +1751,7 @@ productos = [
         "caracteristicas": "Experimenta un estilo impactante con la Fuente de Refrigeración Líquida Coolmoon Fancooler, equipada con un ventilador de 120 mm que ofrece una iluminación RGB personalizable, agregando un toque vibrante a tu configuración de PC.",
         "precio": 189900,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl0.png",
+        "rutaImagen": "productos/img/rl0.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1763,7 +1761,7 @@ productos = [
         "caracteristicas": "Destaca con un radiador de 240 mm para un rendimiento térmico eficiente y un espectro completo de iluminación RGB Rainbow, proporcionando una experiencia de refrigeración potente.",
         "precio": 309000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl2.png",
+        "rutaImagen": "productos/img/rl2.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1773,7 +1771,7 @@ productos = [
         "caracteristicas": "Destaca por su radiador de alta densidad, dos ventiladores PWM de 120 mm y una iluminación RGB dinámica, ofreciendo un enfriamiento eficiente y un atractivo visual impresionante para tu sistema.",
         "precio": 608000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl3.png",
+        "rutaImagen": "productos/img/rl3.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1783,7 +1781,7 @@ productos = [
         "caracteristicas": "Rendimiento térmico eficiente, una pantalla LCD integrada para monitorizar datos en tiempo real, y personalización completa a través de iCUE para una refrigeración avanzada y estética personalizada en tu PC.",
         "precio": 1200000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl4.png",
+        "rutaImagen": "productos/img/rl4.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1793,7 +1791,7 @@ productos = [
         "caracteristicas": "Control a través del software iCUE, y un potente rendimiento térmico, ofreciendo una solución de refrigeración líquida eficiente y estéticamente personalizable para tu CPU.",
         "precio": 958989,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl5.png",
+        "rutaImagen": "productos/img/rl5.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1803,7 +1801,7 @@ productos = [
         "caracteristicas": "Rendimiento térmico eficiente, una pantalla LCD integrada para monitorizar datos en tiempo real, y personalización completa a través de iCUE para una refrigeración avanzada y estética personalizada en tu PC.",
         "precio": 1770140,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl6.png",
+        "rutaImagen": "productos/img/rl6.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1813,7 +1811,7 @@ productos = [
         "caracteristicas": "Destaca con un radiador de 240 mm para una eficiente disipación de calor, y su iluminación RGB personalizable a través de iCUE, ofreciendo rendimiento térmico avanzado y un atractivo visual excepcional para tu sistema.",
         "precio": 605746,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl7.png",
+        "rutaImagen": "productos/img/rl7.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1823,7 +1821,7 @@ productos = [
         "caracteristicas": "Destaca con un radiador de 280 mm para un enfriamiento eficiente, control total mediante iCUE, y una iluminación RGB personalizable, ofreciendo rendimiento y estilo en un paquete compacto.",
         "precio": 1151311,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl8.png",
+        "rutaImagen": "productos/img/rl8.png",
         "tipoProducto": "refrigeracion liquida",
     },
     # ITEM REFRIGERACION LIQUIDA 1
@@ -1834,7 +1832,7 @@ productos = [
         "caracteristicas": "Presenta un radiador de 280 mm, iluminación RGB CAPELLIX brillante, y control total a través de iCUE para un rendimiento térmico superior y personalización estética avanzada en tu sistema de PC.",
         "precio": 1063654,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl9.png",
+        "rutaImagen": "productos/img/rl9.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1844,7 +1842,7 @@ productos = [
         "caracteristicas": "Destaca con eficiencia térmica avanzada, control total mediante una pantalla LCD integrada, personalización RGB con tecnología iCUE, y monitoreo en tiempo real para un rendimiento óptimo.",
         "precio": 431741,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl10.png",
+        "rutaImagen": "productos/img/rl10.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1854,7 +1852,7 @@ productos = [
         "caracteristicas": "Potente solución de enfriamiento y estética con tres ventiladores QX120, todos integrados y controlados de forma sincronizada mediante el software iCUE, proporcionando una experiencia de refrigeración y estilo excepcionales para tu sistema.",
         "precio": 1740049,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl11.png",
+        "rutaImagen": "productos/img/rl11.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1864,7 +1862,7 @@ productos = [
         "caracteristicas": "Garantiza un rendimiento térmico superior y personalización total con iluminación RGB, mientras el QX120 Triple Fan Kit Bundle proporciona una refrigeración eficiente y silenciosa para tu PC.",
         "precio": 1565608,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl12.png",
+        "rutaImagen": "productos/img/rl12.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1874,7 +1872,7 @@ productos = [
         "caracteristicas": "Combina un radiador de 360 mm para una eficiente disipación térmica con una iluminación RGB personalizable mediante el software iCUE.",
         "precio": 955064,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl13.png",
+        "rutaImagen": "productos/img/rl13.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1884,7 +1882,7 @@ productos = [
         "caracteristicas": "Garantiza un rendimiento térmico superior y personalización total con iluminación RGB, mientras el QX120 Triple Fan Kit Bundle proporciona una refrigeración eficiente y silenciosa para tu PC.",
         "precio": 1051007,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl14.png",
+        "rutaImagen": "productos/img/rl14.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1894,7 +1892,7 @@ productos = [
         "caracteristicas": "Presenta un diseño eficiente de 120 mm, bomba de alto rendimiento, ventilador PWM de 120 mm, iluminación RGB dinámica y facilidad de instalación, brindando un enfriamiento potente y estético para tu CPU.",
         "precio": 449185,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl15.png",
+        "rutaImagen": "productos/img/rl15.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1904,7 +1902,7 @@ productos = [
         "caracteristicas": "presenta una refrigeración eficiente y personalizable, con iluminación RGB dinámica, ofreciendo un rendimiento óptimo y un estilo vibrante para tu configuración de PC.",
         "precio": 501518,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl16.png",
+        "rutaImagen": "productos/img/rl16.png",
         "tipoProducto": "refrigeracion liquida",
     },
     # ITEM REFRIGERACION LIQUIDA 2
@@ -1915,7 +1913,7 @@ productos = [
         "caracteristicas": "Proporciona eficiente refrigeración líquida con radiador de 120 mm, bomba de doble cámara para un flujo constante, y espectacular iluminación RGB, fusionando rendimiento y estética en un diseño compacto para sistemas de PC.",
         "precio": 360000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl17.png",
+        "rutaImagen": "productos/img/rl17.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1925,10 +1923,9 @@ productos = [
         "caracteristicas": "Presenta un radiador eficiente de 240 mm para un óptimo rendimiento térmico, junto con una iluminación RGB personalizable que eleva la estética de tu sistema de PC con un diseño moderno y atractivo.",
         "precio": 299900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl18.png",
+        "rutaImagen": "productos/img/rl18.png",
         "tipoProducto": "refrigeracion liquida",
     },
-    
     {
         "nombre": "Refrigeración Liquida Cooler Master Ml240l V2 Rgb Master",
         "marca": "Cooler",
@@ -1936,7 +1933,7 @@ productos = [
         "caracteristicas": "Destaca con un sistema de doble ventilador de 240 mm para una eficiente disipación térmica y un llamativo sistema de iluminación RGB, proporcionando un rendimiento óptimo y una estética vibrante para tu configuración de PC.",
         "precio": 519000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl19.png",
+        "rutaImagen": "productos/img/rl19.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1946,7 +1943,7 @@ productos = [
         "caracteristicas": "Presenta un radiador de 240 mm para un óptimo rendimiento térmico, un atractivo diseño blanco, y efectos de iluminación ARGB personalizables, brindando una solución potente y estilizada para la refrigeración líquida de tu sistema.",
         "precio": 515000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl20.png",
+        "rutaImagen": "productos/img/rl20.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1956,7 +1953,7 @@ productos = [
         "caracteristicas": "Destaca con su radiador de 240 mm, iluminación ARGB para personalización visual, y compatibilidad específica con plataformas Intel, brindando un rendimiento de refrigeración eficiente y estético para tu sistema.",
         "precio": 516600,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl21.png",
+        "rutaImagen": "productos/img/rl21.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1966,7 +1963,7 @@ productos = [
         "caracteristicas": "Presenta un diseño eficiente con radiador de 120 mm, ventilador silencioso, y una estética mejorada gracias a la iluminación RGB, proporcionando un rendimiento térmico óptimo con un toque de estilo para tu PC.",
         "precio": 189000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl22.png",
+        "rutaImagen": "productos/img/rl22.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1976,7 +1973,7 @@ productos = [
         "caracteristicas": "Presenta una bomba de doble cámara para mayor eficiencia de enfriamiento, monitor OLED integrado, iluminación RGB personalizable y un radiador de 360 mm, proporcionando un rendimiento potente y un control visual avanzado para tu sistema.",
         "precio": 832000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/rl23.png",
+        "rutaImagen": "productos/img/rl23.png",
         "tipoProducto": "refrigeracion liquida",
     },
     {
@@ -1986,7 +1983,7 @@ productos = [
         "caracteristicas": "Presenta un radiador de 240 mm para una eficiente disipación térmica, iluminación RGB Rainbow personalizable, bomba de alta calidad y ventiladores silenciosos, ofreciendo un rendimiento óptimo y una estética visualmente atractiva para tu sistema de refrigeración.",
         "precio": 309000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/rl24.png",
+        "rutaImagen": "productos/img/rl24.png",
         "tipoProducto": "refrigeracion liquida",
     },
     # ITEM FUENTE DE PODER
@@ -1997,7 +1994,7 @@ productos = [
         "caracteristicas": "La HX1000i ofrece la potencia silenciosa y eficiente necesaria para alimentar sistemas de juego y estaciones de trabajo exigentes.",
         "precio": 1146513,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp1.png",
+        "rutaImagen": "productos/img/fp1.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2007,7 +2004,7 @@ productos = [
         "caracteristicas": "Fuente de alimentación SFX de 850 vatios con modularidad completa, diseño de bajo ruido y tamaño compacto, proporcionando eficiencia energética y versatilidad para sistemas exigentes en espacio y rendimiento.",
         "precio": 740938,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp2.png",
+        "rutaImagen": "productos/img/fp2.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2017,7 +2014,7 @@ productos = [
         "caracteristicas": "Modularidad total y un atractivo diseño con iluminación RGB para una fuente de alimentación versátil y visualmente llamativa.",
         "precio": 413861,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp3.png",
+        "rutaImagen": "productos/img/fp3.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2027,7 +2024,7 @@ productos = [
         "caracteristicas": "Totalmente modular, silenciosa y eficiente, con una potencia de 750 W para satisfacer las demandas de sistemas exigentes con versatilidad y rendimiento óptimo.",
         "precio": 653717,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp4.png",
+        "rutaImagen": "productos/img/fp4.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2037,7 +2034,7 @@ productos = [
         "caracteristicas": "Destacando por su certificación 80 PLUS Bronze, eficiencia energética y versatilidad en la gestión de cables para una construcción de PC ordenada y eficiente.",
         "precio": 392056,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp5.png",
+        "rutaImagen": "productos/img/fp5.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2047,7 +2044,7 @@ productos = [
         "caracteristicas": "Destaca con 1000W de potencia, diseño completamente modular y eficiencia energética para alimentar sistemas exigentes con versatilidad y rendimiento optimizados.",
         "precio": 902296,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp6.png",
+        "rutaImagen": "productos/img/fp6.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2057,7 +2054,7 @@ productos = [
         "caracteristicas": "HX1500i de 1500 vatios presenta certificación 80 PLUS Titanium para eficiencia energética excepcional, tecnología de control térmico para operación silenciosa y cables totalmente modulares para una instalación limpia y personalizada en tu PC.",
         "precio": 1591338,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp7.png",
+        "rutaImagen": "productos/img/fp7.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2067,7 +2064,7 @@ productos = [
         "caracteristicas": "Destaca con su total modularidad, certificación 80 PLUS Gold para eficiencia energética, y una potencia robusta, proporcionando un rendimiento fiable y una gestión de cables simplificada en tu configuración de PC.",
         "precio": 740938,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp8.png",
+        "rutaImagen": "productos/img/fp8.png",
         "tipoProducto": "fuente de poder",
     },
     # ITEM FUENTE DE PODER 1
@@ -2078,7 +2075,7 @@ productos = [
         "caracteristicas": "Ofrece modularidad completa para un cableado limpio y eficiente, y un diseño robusto que asegura un suministro de energía fiable para sistemas de alta exigencia.",
         "precio": 762743,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp9.png",
+        "rutaImagen": "productos/img/fp9.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2088,7 +2085,7 @@ productos = [
         "caracteristicas": "Se distingue por su eficiencia energética con certificación 80 PLUS, protecciones de voltaje y corriente, ventilador de 120 mm con control térmico para un funcionamiento silencioso y estable, y múltiples conectores para una versatilidad de hardware.",
         "precio": 900000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp10.png",
+        "rutaImagen": "productos/img/fp10.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2098,7 +2095,7 @@ productos = [
         "caracteristicas": "Ofrece modularidad completa para un cableado limpio y eficiente, y un diseño robusto que asegura un suministro de energía fiable para sistemas de alta exigencia.",
         "precio": 435000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp11.png",
+        "rutaImagen": "productos/img/fp11.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2108,7 +2105,7 @@ productos = [
         "caracteristicas": "Destaca por su monitorización digital, modulación de voltaje precisa, eficiencia energética 80 PLUS® Platinum, y conectividad avanzada para un suministro de energía fiable y personalizado en sistemas de alto rendimiento.",
         "precio": 1212278,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp12.png",
+        "rutaImagen": "productos/img/fp12.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2118,7 +2115,7 @@ productos = [
         "caracteristicas": "No solo garantiza 1000 vatios de potencia eficiente y modularidad, sino también una monitorización digital avanzada, Corsair Link™, para un control preciso de la energía y la temperatura, elevando la experiencia de gestión de energía a un nuevo nivel.",
         "precio": 1094792,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp13.png",
+        "rutaImagen": "productos/img/fp13.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2128,7 +2125,7 @@ productos = [
         "caracteristicas": "Vatios destaca por su certificación 80 PLUS® Gold, diseño modular para cableado personalizado, ventilador termorregulado para un funcionamiento silencioso y una construcción de alta calidad para un suministro de energía estable y eficiente.",
         "precio": 766319,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp14.png",
+        "rutaImagen": "productos/img/fp14.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2138,7 +2135,7 @@ productos = [
         "caracteristicas": "Proporciona una alimentación estable con protecciones integrales, ventilador de 120 mm de bajo ruido, y conectores sleeved para una construcción ordenada, asegurando un suministro de energía eficiente y confiable para tu PC.",
         "precio": 505000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp15.png",
+        "rutaImagen": "productos/img/fp15.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2148,7 +2145,7 @@ productos = [
         "caracteristicas": "Completamente modular y con certificación 80 PLUS® Gold, destaca por su diseño de bajo ruido, ventilador con control térmico, y cables planos para una gestión limpia y eficiente del cableado en sistemas de alta potencia.",
         "precio": 732216,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp16.png",
+        "rutaImagen": "productos/img/fp16.png",
         "tipoProducto": "fuente de poder",
     },
     # ITEM FUENTE DE PODER 2
@@ -2159,7 +2156,7 @@ productos = [
         "caracteristicas": "Con diseño totalmente modular, eficiencia energética certificada, y tecnología de ventilador inteligente, brinda un rendimiento confiable y una gestión de cables sin complicaciones para sistemas de alto rendimiento.",
         "precio": 799500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp17.png",
+        "rutaImagen": "productos/img/fp17.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2169,7 +2166,7 @@ productos = [
         "caracteristicas": "Combina eficiencia energética 80+ Gold, modularidad completa, y efectos RGB personalizables para proporcionar un suministro de energía confiable y estéticamente atractivo para tu sistema.",
         "precio": 690000,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp18.png",
+        "rutaImagen": "productos/img/fp18.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2179,7 +2176,7 @@ productos = [
         "caracteristicas": "PSU007 se destaca con su eficiencia energética Gold, diseño modular para una gestión de cables eficaz, protecciones avanzadas, y un rendimiento estable, ofreciendo confiabilidad y potencia para sistemas exigentes.",
         "precio": 665681,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp19.png",
+        "rutaImagen": "productos/img/fp19.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2189,7 +2186,7 @@ productos = [
         "caracteristicas": "Presenta un diseño modular, un avanzado sistema de refrigeración silenciosa, y opciones de iluminación RGB, ofreciendo un rendimiento eficiente y personalización estética para tu PC.",
         "precio": 897900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp20.png",
+        "rutaImagen": "productos/img/fp20.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2199,7 +2196,7 @@ productos = [
         "caracteristicas": "Ofrece una operación silenciosa con un ventilador de bajo ruido, asegurando un rendimiento eficiente y fresco sin comprometer la tranquilidad acústica de tu sistema.",
         "precio": 890000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp21.png",
+        "rutaImagen": "productos/img/fp21.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2209,7 +2206,7 @@ productos = [
         "caracteristicas": "Proporciona estabilidad energética con certificación 80 PLUS Gold, cables totalmente modulares para una gestión eficiente, y tecnología DC-DC para una entrega precisa de energía, elevando la calidad y personalización de tu suministro eléctrico de PC.",
         "precio": 588900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp22.png",
+        "rutaImagen": "productos/img/fp22.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2219,7 +2216,7 @@ productos = [
         "caracteristicas": "Presenta un diseño modular para gestionar eficientemente los cables, certificación 80 PLUS para eficiencia energética, y múltiples conexiones SATA y PCIe para una versatilidad óptima en tu configuración.",
         "precio": 359910,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/fp23.png",
+        "rutaImagen": "productos/img/fp23.png",
         "tipoProducto": "fuente de poder",
     },
     {
@@ -2229,10 +2226,10 @@ productos = [
         "caracteristicas": "Cuenta con un diseño silencioso, cables mallados para una gestión limpia, certificación 80 PLUS Bronze para eficiencia energética, y protecciones avanzadas, ofreciendo un rendimiento fiable y seguro para tu sistema.",
         "precio": 279900,
         "cantidad": 11,
-        "rutaImagen": "./media/productos/img/fp24.png",
+        "rutaImagen": "productos/img/fp24.png",
         "tipoProducto": "fuente de poder",
     },
-    # items Monitores 
+    # items Monitores
     {
         "nombre": "Monitor MSI Optix G241C4",
         "marca": "MSI",
@@ -2240,7 +2237,7 @@ productos = [
         "caracteristicas": "Monitor MSI Optix G241C4: Pantalla curva de 23.6 pulgadas con 165Hz de frecuencia de actualización, tiempo de respuesta de 1ms, y tecnología FreeSync para una experiencia inmersiva y sin tearing en juegos",
         "precio": 1350000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito1.png",
+        "rutaImagen": "productos/img/Monito1.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2250,7 +2247,7 @@ productos = [
         "caracteristicas": "Monitor Gamer Iron 24': Pantalla curva de 24 pulgadas con 144Hz de frecuencia de actualización, tiempo de respuesta de 1ms y tecnología FreeSync para una experiencia de juego fluida y envolvente.",
         "precio": 1400000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito2.png",
+        "rutaImagen": "productos/img/Monito2.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2260,7 +2257,7 @@ productos = [
         "caracteristicas": "Monitor HP 24fw: Pantalla de 23.8 pulgadas con 75Hz de frecuencia de actualización, tiempo de respuesta de 5ms y tecnología FreeSync para una visualización nítida y sin tearing en un entorno de trabajo o entretenimiento",
         "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito3.png",
+        "rutaImagen": "productos/img/Monito3.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2270,7 +2267,7 @@ productos = [
         "caracteristicas": "Pantalla de 27 pulgadas con 144Hz de frecuencia de actualización, tiempo de respuesta de 1ms y tecnología FreeSync para una experiencia de juego suave y sin interrupciones",
         "precio": 1250000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito4.png",
+        "rutaImagen": "productos/img/Monito4.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2280,7 +2277,7 @@ productos = [
         "caracteristicas": "Pantalla de 27 pulgadas con una sorprendente frecuencia de actualización de 165Hz para una experiencia visual fluida y envolvente",
         "precio": 2000000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito5.png",
+        "rutaImagen": "productos/img/Monito5.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2290,7 +2287,7 @@ productos = [
         "caracteristicas": "Pantalla de alta definición (HD) con una frecuencia de actualización de 144Hz para una visualización nítida y un rendimiento suave en aplicaciones y juegos",
         "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito6.png",
+        "rutaImagen": "productos/img/Monito6.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2298,9 +2295,9 @@ productos = [
         "marca": "Samsung",
         "detalles": "Monitor Samsung 24' Led FHD",
         "caracteristicas": "Pantalla LED Full HD para una experiencia visual vibrante y detallada",
-        "precio": 500 ,
+        "precio": 500,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito7.png",
+        "rutaImagen": "productos/img/Monito7.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2308,9 +2305,9 @@ productos = [
         "marca": "Asus",
         "detalles": "Monitor Asus VP349CGL 34' 5ms 4k",
         "caracteristicas": "Pantalla curva de 34 pulgadas con resolución 4K, tiempo de respuesta de 5ms para una visualización rápida, y tecnología que ofrece imágenes nítidas y envolventes",
-        "precio": 300 ,
+        "precio": 300,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito8.png",
+        "rutaImagen": "productos/img/Monito8.png",
         "tipoProducto": "monitor",
     },
     # items Monitores 1
@@ -2318,10 +2315,10 @@ productos = [
         "nombre": "Monitor AOC ",
         "marca": "AOC",
         "detalles": "Monitor AOC 24G2 31.5' 144Hz 1ms FreeSync",
-        "caracteristicas": " Pantalla de 31.5 pulgadas con 144Hz de frecuencia de actualización, tiempo de respuesta de 1ms, y tecnología FreeSync para una experiencia de juego suave", 
+        "caracteristicas": " Pantalla de 31.5 pulgadas con 144Hz de frecuencia de actualización, tiempo de respuesta de 1ms, y tecnología FreeSync para una experiencia de juego suave",
         "precio": 999000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor9.png",
+        "rutaImagen": "productos/img/Monitor9.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2329,9 +2326,9 @@ productos = [
         "marca": "Lenovo",
         "detalles": "Monitor Lenovo 23.8' 75Hz FHD",
         "caracteristicas": "Pantalla Full HD (FHD) con una frecuencia de actualización de 75Hz para una visualización clara y detallada en un formato compacto de 23.8 pulgadas",
-        "precio":1000000 ,
+        "precio": 1000000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito10.png",
+        "rutaImagen": "productos/img/Monito10.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2341,7 +2338,7 @@ productos = [
         "caracteristicas": "Pantalla curva de 27 pulgadas con 144Hz de frecuencia de actualización, tiempo de respuesta de 1ms y tecnología FreeSync para una experiencia de juego inmersiva y sin interrupciones.",
         "precio": 999000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito11.png",
+        "rutaImagen": "productos/img/Monito11.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2349,9 +2346,9 @@ productos = [
         "marca": "Gigabyte",
         "detalles": "Monitor Gigabyte 27' 144Hz 1ms ",
         "caracteristicas": "Pantalla con una frecuencia de actualización de 144Hz y tiempo de respuesta de 1ms para una experiencia de visualización rápida y fluida",
-        "precio":1499000 ,
+        "precio": 1499000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito12.png",
+        "rutaImagen": "productos/img/Monito12.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2361,7 +2358,7 @@ productos = [
         "caracteristicas": "Pantalla de 34 pulgadas con características de sonido integradas para una experiencia multimedia inmersiva y visualización envolvente",
         "precio": 2899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito13.png",
+        "rutaImagen": "productos/img/Monito13.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2371,7 +2368,7 @@ productos = [
         "caracteristicas": "Pantalla con una frecuencia de actualización de 144Hz para una experiencia de visualización suave y detallada en un formato de 23.8 pulgadas",
         "precio": 1399000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito14.png",
+        "rutaImagen": "productos/img/Monito14.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2381,7 +2378,7 @@ productos = [
         "caracteristicas": "Pantalla Full HD (FHD) con una frecuencia de actualización de 75Hz para una visualización clara y detallada en un formato compacto de 21.5 pulgadas",
         "precio": 600,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito15.png",
+        "rutaImagen": "productos/img/Monito15.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2391,7 +2388,7 @@ productos = [
         "caracteristicas": "Pantalla curva con 144Hz de frecuencia de actualización y tiempo de respuesta de 1ms para una experiencia inmersiva y sin desenfoques en juegos y aplicaciones",
         "precio": 250,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monito16.png",
+        "rutaImagen": "productos/img/Monito16.png",
         "tipoProducto": "monitor",
     },
     # items Monitores 2
@@ -2400,9 +2397,9 @@ productos = [
         "marca": "Dell",
         "detalles": "Monitor Dell 21.5' 60Hz FHD",
         "caracteristicas": "Pantalla Full HD (FHD) con una frecuencia de actualización de 60Hz para una visualización clara y detallada en un formato compacto de 21.5 pulgadas.",
-        "precio":741000 ,
+        "precio": 741000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor17.png",
+        "rutaImagen": "productos/img/Monitor17.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2410,9 +2407,9 @@ productos = [
         "marca": "HP",
         "detalles": "Monitor HP 27' Led FHD",
         "caracteristicas": " Pantalla LED Full HD (FHD) para una experiencia visual vibrante y detallada en un formato de 27 pulgadas.",
-        "precio":899000 ,
+        "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor18.png",
+        "rutaImagen": "productos/img/Monitor18.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2420,9 +2417,9 @@ productos = [
         "marca": "LG",
         "detalles": "Monitor LG 21.5' 60Hz FHD 75Hz",
         "caracteristicas": "Pantalla Full HD (FHD) con opciones de frecuencia de actualización de 60Hz y 75Hz para una visualización clara y versátil en un formato de 21.5 pulgadas.",
-        "precio":11990000 ,
+        "precio": 11990000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor19.png",
+        "rutaImagen": "productos/img/Monitor19.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2430,9 +2427,9 @@ productos = [
         "marca": "Necnon",
         "detalles": "Monitor Necnon 29.5' 200Hz 1ms Curvo",
         "caracteristicas": "Pantalla curva de 32 pulgadas con una sorprendente frecuencia de actualización de 200Hz y tiempo de respuesta de 1ms para una experiencia de juego inmersiva y sin desenfoques.",
-        "precio":1999000 ,
+        "precio": 1999000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor20.png",
+        "rutaImagen": "productos/img/Monitor20.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2440,9 +2437,9 @@ productos = [
         "marca": "Asus",
         "detalles": "Monitor Asus Tuf 24 IS FHD",
         "caracteristicas": " Pantalla Full HD (FHD) con tecnología TUF para durabilidad y rendimiento confiable, ideal para una experiencia de visualización nítida y detallada en un formato de 24 pulgadas.",
-        "precio":899000 ,
+        "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor21.png",
+        "rutaImagen": "productos/img/Monitor21.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2452,7 +2449,7 @@ productos = [
         "caracteristicas": "Pantalla OLED de 4K para una calidad de imagen excepcional, con tecnología ROG para juegos avanzados y una experiencia visual envolvente en un formato de 27 pulgadas.",
         "precio": 2899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor22.png",
+        "rutaImagen": "productos/img/Monitor22.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2462,7 +2459,7 @@ productos = [
         "caracteristicas": "Pantalla con una frecuencia de actualización de 144Hz para una experiencia de juego suave y envolvente en un formato de 27 pulgadas.",
         "precio": 800,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor23.png",
+        "rutaImagen": "productos/img/Monitor23.png",
         "tipoProducto": "monitor",
     },
     {
@@ -2470,20 +2467,20 @@ productos = [
         "marca": "MSI",
         "detalles": "Monitor MSI 17' 144Hz 1ms",
         "caracteristicas": " Pantalla con una frecuencia de actualización de 120Hz y tiempo de respuesta de 3ms, ofreciendo un equilibrio entre rendimiento y calidad visual en un formato de 25 pulgadas.",
-        "precio":400 ,
+        "precio": 400,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Monitor24.png",
+        "rutaImagen": "productos/img/Monitor24.png",
         "tipoProducto": "monitor",
     },
-    # items chasis 
+    # items chasis
     {
         "nombre": "Chasis Cruiser SRGB Black",
         "marca": "Cruiser",
         "detalles": "Chaiss Cruiser SRGB Black RGB personalizable",
         "caracteristicas": " Elegante diseño negro con iluminación RGB personalizable, ofreciendo una combinación de estilo y funcionalidad para ensamblajes de PC únicos.",
-        "precio":540000,
+        "precio": 540000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis1.png",
+        "rutaImagen": "productos/img/Chasis1.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2491,9 +2488,9 @@ productos = [
         "marca": "Caelum",
         "detalles": "Chasis Caelum con laterales de vidrio templado con mecanismo de cierre rápido.",
         "caracteristicas": " Elegante diseño con laterales de vidrio templado y mecanismo de cierre rápido, proporcionando fácil acceso y exhibición estilizada de los componentes internos de la PC.",
-        "precio":500000,
+        "precio": 500000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis2.png",
+        "rutaImagen": "productos/img/Chasis2.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2501,9 +2498,9 @@ productos = [
         "marca": "Gamemax",
         "detalles": "Chasis RockStart con Diseño ultrafino para configuraciones compactas.",
         "caracteristicas": " Diseño ultrafino ideal para configuraciones compactas, ofreciendo un perfil elegante y funcionalidad optimizada para sistemas de PC con espacio limitado.",
-        "precio":650000,
+        "precio": 650000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis3.png",
+        "rutaImagen": "productos/img/Chasis3.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2511,9 +2508,9 @@ productos = [
         "marca": "XPG",
         "detalles": "Chasis CRUISER con sistema de gestión de cables magnético para facilitar el montaje",
         "caracteristicas": "Diseñado con un sistema de gestión de cables magnético que simplifica el montaje, proporcionando una solución ordenada y eficiente para la organización de los cables en tu configuración.",
-        "precio":700000,
+        "precio": 700000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis4.png",
+        "rutaImagen": "productos/img/Chasis4.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2521,9 +2518,9 @@ productos = [
         "marca": "Redragon",
         "detalles": "Chasis Redragon con compartimentos modulares para una fácil organización de componentes",
         "caracteristicas": "Equipado con compartimentos modulares para una organización fácil y personalizada de componentes, ofreciendo versatilidad y comodidad en la disposición de los elementos de tu PC. ",
-        "precio":3000000,
+        "precio": 3000000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis5.png",
+        "rutaImagen": "productos/img/Chasis5.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2531,9 +2528,9 @@ productos = [
         "marca": "Corsair",
         "detalles": "Chasis Corsair con diseño silencioso con material aislante de ruido.",
         "caracteristicas": "Diseño silencioso con material aislante de ruido para una experiencia de usuario tranquila, asegurando un ambiente acústico reducido en configuraciones de PC exigentes.",
-        "precio":2700000,
+        "precio": 2700000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis6.png",
+        "rutaImagen": "productos/img/Chasis6.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2541,9 +2538,9 @@ productos = [
         "marca": "ATX",
         "detalles": "Chasis ATX con paneles frontales y laterales intercambiables para personalización",
         "caracteristicas": "Versátil y personalizable, cuenta con paneles frontales y laterales intercambiables que permiten una fácil personalización para adaptarse a tu estilo y preferencias en la estética de tu PC.",
-        "precio":650,
+        "precio": 650,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis7.png",
+        "rutaImagen": "productos/img/Chasis7.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2551,9 +2548,9 @@ productos = [
         "marca": "Cougar",
         "detalles": "Chasis Cougar con diseño de flujo de aire optimizado para una refrigeración eficiente",
         "caracteristicas": "Diseñado con un sistema de flujo de aire optimizado para garantizar una refrigeración eficiente, ofreciendo un entorno térmico favorable para los componentes internos de la PC y un rendimiento óptimo.",
-        "precio":200,
+        "precio": 200,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis8.png",
+        "rutaImagen": "productos/img/Chasis8.png",
         "tipoProducto": "chasis",
     },
     # items chasis 1
@@ -2562,9 +2559,9 @@ productos = [
         "marca": "Sharkoon",
         "detalles": "Chasis Sharkoon con forma angular y materiales metálicos para un aspecto futurista.",
         "caracteristicas": "Presenta una forma angular y utiliza materiales metálicos para lograr un aspecto futurista, combinando estilo y funcionalidad en un diseño distintivo para configuraciones de PC modernas.",
-        "precio":2641000,
+        "precio": 2641000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis9.png",
+        "rutaImagen": "productos/img/Chasis9.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2572,9 +2569,9 @@ productos = [
         "marca": "",
         "detalles": "",
         "caracteristicas": " ",
-        "precio":900000,
+        "precio": 900000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis10.png",
+        "rutaImagen": "productos/img/Chasis10.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2582,9 +2579,9 @@ productos = [
         "marca": "APX",
         "detalles": "Chasis APX con capacidad para múltiples unidades de almacenamiento en caliente. ",
         "caracteristicas": "Diseñado con capacidad para múltiples unidades de almacenamiento en caliente, proporciona una solución conveniente y accesible para la expansión y gestión eficiente de tus unidades de almacenamiento en una configuración de PC.",
-        "precio":899000,
+        "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis11.png",
+        "rutaImagen": "productos/img/Chasis11.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2592,9 +2589,9 @@ productos = [
         "marca": "MSI",
         "detalles": "Chasis MSI 400 con diseño sin herramientas para facilitar el mantenimiento",
         "caracteristicas": "Diseño sin herramientas para facilitar el mantenimiento, ofreciendo una solución conveniente y accesible para realizar cambios y actualizaciones en los componentes de la PC sin necesidad de herramientas adicionales.",
-        "precio":584000,
+        "precio": 584000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis12.png",
+        "rutaImagen": "productos/img/Chasis12.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2602,9 +2599,9 @@ productos = [
         "marca": "Aerocool",
         "detalles": "Chasis Aerocool con diseño sin ventiladores para una operación totalmente silenciosa.",
         "caracteristicas": "Diseñado sin ventiladores para una operación totalmente silenciosa, proporciona una solución ideal para configuraciones de PC que buscan minimizar el ruido, manteniendo al mismo tiempo un entorno térmico eficiente",
-        "precio":705000,
+        "precio": 705000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis13.png",
+        "rutaImagen": "productos/img/Chasis13.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2612,9 +2609,9 @@ productos = [
         "marca": "XPG",
         "detalles": "Chasis XPG 4090 con cerraduras electrónicas y físicas para mayor seguridad.",
         "caracteristicas": "diseño modular y sistema de iluminación RGB integrado para una combinación de personalización y estilo en configuraciones de PC avanzadas.",
-        "precio":899000,
+        "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis14.png",
+        "rutaImagen": "productos/img/Chasis14.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2622,9 +2619,9 @@ productos = [
         "marca": "Corsair",
         "detalles": "Chaiss Corsair 4000D con diseño sin ventiladores para una operación totalmente silenciosa.",
         "caracteristicas": "tecnología de supresión de ruido avanzada y diseño sin ventiladores para garantizar un funcionamiento totalmente silencioso, ofreciendo una experiencia de PC tranquila y eficiente.",
-        "precio":400,
+        "precio": 400,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis15.png",
+        "rutaImagen": "productos/img/Chasis15.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2632,9 +2629,9 @@ productos = [
         "marca": "Cougar",
         "detalles": "Chasis Couga MX670 con plataforma de carga inalámbrica integrada en la parte superior",
         "caracteristicas": "Incorpora una plataforma de carga inalámbrica integrada en la parte superior, ofreciendo comodidad y versatilidad para cargar dispositivos compatibles, combinando funcionalidad y estilo en una sola solución.",
-        "precio":850,
+        "precio": 850,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis16.png",
+        "rutaImagen": "productos/img/Chasis16.png",
         "tipoProducto": "chasis",
     },
     # items chasis 2
@@ -2643,9 +2640,9 @@ productos = [
         "marca": "Corsair ",
         "detalles": "Chasis Corsair Spec-04 con diseño elegante con líneas limpias y minimalistas.",
         "caracteristicas": " Diseño elegante con líneas limpias y minimalistas, proporcionando una estética moderna y ordenada para configuraciones de PC, combinando estilo y funcionalidad de manera armoniosa.",
-        "precio":2641000,
+        "precio": 2641000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis17.png",
+        "rutaImagen": "productos/img/Chasis17.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2653,9 +2650,9 @@ productos = [
         "marca": "Nzxt",
         "detalles": "Chasis Nzxt H5 Flow con fuente de alimentación de eficiencia energética",
         "caracteristicas": "diseño innovador y fuente de alimentación integrada de eficiencia energética, ofreciendo un estilo vanguardista y un rendimiento energético óptimo para configuraciones de PC avanzadas",
-        "precio":1899000,
+        "precio": 1899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis18.png",
+        "rutaImagen": "productos/img/Chasis18.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2663,9 +2660,9 @@ productos = [
         "marca": "Corsair",
         "detalles": "Chasis Corsair Carbine 175R con diseño compacto para montaje en la pared",
         "caracteristicas": "diseño compacto y específicamente creado para un fácil montaje en la pared, proporcionando una solución elegante y funcional para ahorrar espacio en configuraciones de PC creativas y modernas.",
-        "precio":1500000,
+        "precio": 1500000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis19.png",
+        "rutaImagen": "productos/img/Chasis19.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2673,19 +2670,19 @@ productos = [
         "marca": "Gamemax",
         "detalles": "Chasis Gamemax G541 con diseño que permite la configuración tanto vertical como horizontal.",
         "caracteristicas": " Diseño versátil que permite configuraciones tanto verticales como horizontales, brindando flexibilidad y opciones creativas para adaptarse a diferentes preferencias y entornos de espacio en configuraciones de PC",
-        "precio":1000000,
+        "precio": 1000000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis20.png",
+        "rutaImagen": "productos/img/Chasis20.png",
         "tipoProducto": "chasis",
     },
     {
         "nombre": "Chasis Bufferstock OEM",
-        "marca": "Bufferstock", 
+        "marca": "Bufferstock",
         "detalles": "Chasis Bufferstock OEM con estructura modular para fácil expansión y personalización",
         "caracteristicas": "Estructura modular que facilita la expansión y personalización, ofreciendo flexibilidad para adaptarse a las necesidades cambiantes de la configuración de la PC, combinando practicidad y versatilidad en un diseño único.",
-        "precio":899000,
+        "precio": 899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis21.png",
+        "rutaImagen": "productos/img/Chasis21.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2693,9 +2690,9 @@ productos = [
         "marca": "Conquer",
         "detalles": "Chasis Conquer 2 con construcción resistente al polvo y al agua.",
         "caracteristicas": "Construcción resistente al polvo y al agua, proporcionando una protección adicional para los componentes internos y asegurando un funcionamiento fiable incluso en entornos desafiantes, combinando durabilidad con un diseño vanguardista.",
-        "precio":4899000,
+        "precio": 4899000,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis22.png",
+        "rutaImagen": "productos/img/Chasis22.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2703,9 +2700,9 @@ productos = [
         "marca": "Storm",
         "detalles": "Chasis Storm con diseño exclusivo y materiales premium.",
         "caracteristicas": "Diseño exclusivo y materiales premium para una estética única y duradera, ofreciendo un chasis que combina estilo distintivo con calidad superior en su construcción.",
-        "precio":600,
+        "precio": 600,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis23.png",
+        "rutaImagen": "productos/img/Chasis23.png",
         "tipoProducto": "chasis",
     },
     {
@@ -2713,9 +2710,9 @@ productos = [
         "marca": "Fierce",
         "detalles": "Chasis Fierce con estación de carga rápida USB integrada en el panel frontal",
         "caracteristicas": "Equipado con una estación de carga rápida USB integrada en el panel frontal, proporcionando comodidad y eficiencia para cargar dispositivos de manera rápida y fácil, combinando funcionalidad moderna con un diseño elegante.",
-        "precio":400,
+        "precio": 400,
         "cantidad": random.randint(10, 30),
-        "rutaImagen": "./media/productos/img/Chasis24.png",
+        "rutaImagen": "productos/img/Chasis24.png",
         "tipoProducto": "chasis",
     },
 
@@ -2805,27 +2802,40 @@ productos = [
 ]
 
 
-
 if __name__ == "__main__":
-    # Crea los tipos de Rol
+    # Crea los tipos de Rol ---------------------------------------------------------
     # for rol in tiposUsuario:
     #   models.Rol.objects.create(tipoDeUsuario=rol['tipo'])
 
-    # Crea los usuario
+    # Crea los usuario  ---------------------------------------------------------
     # for usuario in usuarios:
     #   models.User.objects.create_user(username=usuario['nombreUsuario'], password=usuario['contraseña'],email=usuario['email'],rol_id=usuario['rol'])
 
-    # Crea los tipos de producto
+    # Crea los tipos de producto --------------------------------------------------
     # for tipoProducto in tiposProducto:
-    #   models.TipoProducto.objects.create(tipoProducto=tipoProducto['tipoProducto'], descripcion=tipoProducto['descripcion'])
+    #     models.TipoProducto.objects.create(
+    #         tipoProducto=tipoProducto["tipoProducto"],
+    #         descripcion=tipoProducto["descripcion"],
+    #     )
 
-    # Crea los productos
+    # Crea los metodos de pago --------------------------------------------------
+    # for metodoPago in metodosPago:
+    #     models.MetodoPago.objects.create(
+    #         nombre=metodoPago["nombre"],
+    #         descripcion=metodoPago["descripcion"],
+    #     )
+
+    # Crea los productos --------------------------------------------------------
     for producto in productos:
         models.Producto.objects.create(
             nombre=producto["nombre"],
+            marca=producto["marca"],
             detalles=producto["detalles"],
+            caracteristicas=producto["caracteristicas"],
             precio=producto["precio"],
             cantidad=producto["cantidad"],
-            imagen=producto["imagen"],
-            tipoProducto_id=producto["tipoProducto_id"],
+            imagen=producto["rutaImagen"],
+            tipoProducto=models.TipoProducto.objects.get(
+                tipoProducto=producto["tipoProducto"]
+            ),
         )
