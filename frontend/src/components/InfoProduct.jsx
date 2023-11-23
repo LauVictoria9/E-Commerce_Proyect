@@ -88,17 +88,7 @@ export default function InfoProduct({ producto }) {
             <div className="pb-6 flex  overflow-x-auto gap-6">
               {productosRelacionados &&
                 productosRelacionados.map((producto) => (
-                  <Card
-                    key={producto.id}
-                    infoCard={true}
-                    item={{
-                      id: producto.id,
-                      name: producto.nombre,
-                      category: tipoProducto.tipoProducto,
-                      price: `$${producto.precio}`,
-                      linking: producto.imagen,
-                    }}
-                  />
+                  <Card key={producto.id} infoCard={true} item={producto} />
                 ))}
             </div>
           </section>
