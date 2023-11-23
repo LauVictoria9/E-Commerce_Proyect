@@ -1,4 +1,5 @@
-from rest_framework import viewsets, permissions, generics
+from rest_framework import viewsets, permissions
+from rest_framework.pagination import PageNumberPagination
 from . import models
 from . import serializers
 
@@ -14,11 +15,19 @@ class ProductoViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.ProductoSerializer
     queryset = models.Producto.objects.all()
 
+    # Se modifica la siguiente funcion, esto para personalizar las respuestas a la hora de hacer una consulta
     def get_queryset(self):
         queryset = models.Producto.objects.all()
+        # pageSize almacena un argumento que viene desde la url y servira para definir cuantos registros se devolveran como respuesta
+        pageSize = self.request.query_params.get("page-size")
+        if pageSize is not None and pageSize != "0":
+            # el atributo pagination_class por defecto viene vacio, pero en este caso se le define una clase para manejar la paginacion
+            self.pagination_class = PageNumberPagination
+            self.pagination_class.page_size = pageSize
         tipoProducto = self.request.query_params.get("tipo-producto")
+        id = self.request.query_params.get("id")
         params = {
-            "marca": self.request.query_params.get("marca"),
+            "marca__icontains": self.request.query_params.get("marca"),
             "tipoProducto_id": models.TipoProducto.objects.get(
                 tipoProducto=tipoProducto
             ).id
@@ -33,7 +42,11 @@ class ProductoViewSet(viewsets.ModelViewSet):
                 paramsValue[clave] = valor
 
         if paramsValue:
-            queryset = queryset.filter(**paramsValue)
+            queryset = (
+                queryset.filter(**paramsValue).exclude(id=id)
+                if id is not None
+                else queryset.filter(**paramsValue)
+            )
 
         return queryset
 
