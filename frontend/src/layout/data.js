@@ -219,7 +219,14 @@ import Chasis22 from "../img/Chasis22.png";
 import Chasis23 from "../img/Chasis23.png";
 import Chasis24 from "../img/Chasis24.png";
 
-
+import ConvertibleAsus1 from "../img/ConvertibleAsus1.jpg";
+import ConvertibleAsus2 from "../img/ConvertibleAsus2.png";
+import ConvertibleAsus3 from "../img/ConvertibleAsus3.png";
+import ConvertibleAsus4 from "../img/ConvertibleAsus4.png";
+import ConvertibleAsus5 from "../img/ConvertibleAsus5.png";
+import ConvertibleAsus6 from "../img/ConvertibleAsus6.png";
+import ConvertibleAsus7 from "../img/ConvertibleAsus7.png";
+import ConvertibleAsus8 from "../img/ConvertibleAsus8.png";
 
 import Monitor1 from "../img/Monitor1.png";
 import Monitor2 from "../img/Monitor2.png";
@@ -2212,3 +2219,62 @@ export const itemDataChasis2 = [
 
 ]; 
 
+export const itemDataConvertibleAsus = [
+  {
+    id: 1,
+    name: "Portatil Asus Vivobook Flip 14 Convertible Tactil 14 Fhd 360",
+    category: "Portátil y convertible 2 en 1 con cuatro modos de visualización: tableta, tienda de campaña, soporte y portátil.",
+    price: "$2.009.990",
+    linking: ConvertibleAsus1,
+  },
+  {
+    id: 2,
+    name: "Portatil Asus Vivobook Go 14 Flip Convertible Tactil J1400ka",
+    category: "Procesador Intel Celeron N4500 de 1.1 GHz (caché de 13.1 ft, hasta 2.8 GHz, 2 núcleos) y gráficos Intel UHD, Windows 11 Home en modo S, Microsoft 365 Personal 1 año incluido, 64 GB eMMC y 4 GB DDR4X RAM",
+    price: "$2.279.403",
+    linking: ConvertibleAsus2,
+  },
+  {
+    id: 3,
+    name: "Asus VivoBook Flip 14 TP412UA",
+    category: "Asus VivoBook Flip 14, diseño delgado y versátil, modo tablet gracias a su pantalla giratoria, teclado retroiluminado, puerto USB-C, lector de tarjetas microSD, color plata estelar, modelo TP412UA-DB51T.",
+    price: "$2.600.000",
+    linking: ConvertibleAsus3,
+  },
+  {
+    id: 4,
+    name: "Asus ZenBook Flip 15 UX561UD",
+    category: "Asus ZenBook Flip 15, diseño premium en aluminio, lápiz óptico incluido, teclado retroiluminado, puertos USB-C con Thunderbolt 3, HDMI, lector de tarjetas SD, sonido Harman Kardon, color gris estrella, modelo UX561UD-E2024T.",
+    price: "$3.024.000",
+    linking: ConvertibleAsus4,
+  },
+  {
+    id: 5,
+    name: "Asus Chromebook Flip C434TA",
+    category: "Asus Chromebook Flip, diseño elegante y duradero en aluminio, larga duración de batería, puertos USB-C, soporte para lápiz óptico (se vende por separado), altavoces estéreo, color plata, modelo C434TA-DSM4T.",
+    price: "$2.774.000",
+    linking: ConvertibleAsus5,
+  },
+  {
+    id: 6,
+    name: "Asus ROG Flow X13",
+    category: "Asus ROG Flow X13, diseño ultraportátil y potente, compatible con eGPU ROG XG Mobile (vendido por separado), teclado retroiluminado RGB, puerto USB-C con carga rápida y DisplayPort 1.4, lector de tarjetas microSD, color blanco galáctico, modelo GX301.",
+    price: "$10.000.000",
+    linking: ConvertibleAsus6,
+  },
+  {
+    id: 7,
+    name: "Asus ZenBook Flip S UX371EA",
+    category: "Asus ZenBook Flip S, diseño ultradelgado y ligero de 1.2 kg, bisagra ErgoLift 360°, teclado retroiluminado, conectividad Thunderbolt 4, Wi-Fi 6, lector de tarjetas microSD, color jade negro, modelo UX371EA-XH77T.",
+    price: "$8.500.000",
+    linking: ConvertibleAsus7,
+  },
+  {
+    id: 8,
+    name: "Asus VivoBook Flip 14 TP470EA",
+    category: "Asus VivoBook Flip 14, diseño versátil con bisagra 360°, teclado retroiluminado, conectividad USB-C, HDMI, Wi-Fi 6, lector de tarjetas microSD, color plateado, modelo TP470EA-DB71T.",
+    price: "$5.500.000",
+    linking: ConvertibleAsus8,
+  },
+
+];

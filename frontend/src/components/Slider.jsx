@@ -31,7 +31,7 @@ const Slider = ({ sliderId, data }) => {
         className="flex flex-nowrap h-full gap-4 flex-grow overflow-x-scroll scroll-smooth scrollbar-none overflow-y-hidden relative z-[1]"
       >
         {data.map((item) => (
-          <Card item={item} />
+          <Card key={item.id} item={item} />
         ))}
       </div>
 

@@ -20,8 +20,9 @@ import SeccionRL from "./pages/SeccionRL";
 import ProductosEnsayo from "./pages/ProductosEnsayo";
 import SeccionChasis from "./pages/SeccionChasis";
 import SeccionMonitores from "./pages/SeccionMonitores";
-
-
+import SeccionConvertibleAsus from "./pages/SeccionConvertibleAsus";
+import SeccionConvertibleHP from "./pages/SeccionConvertibleHP";
+import SeccionAsusCopy from "./pages/SeccionAsus copy";
 
 const router = createBrowserRouter([
   {
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: "seccion-procesadores/",
-        element: <SeccionProcesadores/>,
+        element: <SeccionProcesadores />,
       },
       {
         path: "seccion-tarjetas-graficas/",
@@ -90,9 +91,16 @@ const router = createBrowserRouter([
         element: <SeccionChasis />,
       },
       {
+        path: "Seccion-Convertible-Asus/",
+        element: <SeccionAsusCopy />,
+      },
+      {
+        path: "Seccion-Convertible-HP/",
+        element: <SeccionConvertibleHP />,
+      },
+      {
         path: "productos/",
         element: <ProductosEnsayo />,
-
       },
     ],
   },
