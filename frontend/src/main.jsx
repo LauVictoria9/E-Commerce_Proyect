@@ -7,6 +7,18 @@ import Inicio from "./pages/Inicio";
 import Favoritos from "./pages/Favoritos";
 import Carrito from "./pages/Carrito";
 import User from "./pages/User";
+import RegistroU from "./pages/RegistroU";
+import RegistroTP from "./pages/RegistroTP";
+import RegistroP from "./pages/RegistroProd";
+import RegistroMP from "./pages/RegistroMPago";
+import EMUsuarios from "./pages/EMUsuarios";
+import EMTipoP from "./pages/EMTipoP";
+import EMProd from "./pages/EMProd";
+import EMMPago from "./pages/EMMPago";
+import ModificarU from "./pages/ModificarU";
+import ModificarTP from "./pages/ModificarTP";
+import ModificarProd from "./pages/ModificarProd";
+import ModificarMPago from "./pages/ModificarMpago";
 import "./index.css";
 import SeccionAsus from "./pages/SeccionAsus";
 import SeccionAcer from "./pages/SeccionAcer";
@@ -49,6 +61,54 @@ const router = createBrowserRouter([
       {
         path: "user/",
         element: <User />,
+      },
+      {
+        path: "registro/",
+        element: <RegistroU />,
+      },
+      {
+        path: "registro2/",
+        element: <RegistroTP />,
+      },
+      {
+        path: "registro3/",
+        element: <RegistroP />,
+      },
+      {
+        path: "registro4/",
+        element: <RegistroMP />,
+      },
+      {
+        path: "registro5/",
+        element: <EMUsuarios />,
+      },
+      {
+        path: "registro6/",
+        element: <EMTipoP />,
+      },
+      {
+        path: "registro7/",
+        element: <EMProd />,
+      },
+      {
+        path: "registro8/",
+        element: <EMMPago />,
+      },
+      {
+        path: "/modificar/:id",
+        element: <ModificarU />,
+      },
+      {
+        path: "/modificar1/:id",
+        element: <ModificarTP />,
+      },
+      {
+        path: "/modificar2/:id",
+        element: <ModificarProd />,
+      },
+      {
+        path: "/modificar3/:id",
+        element: <ModificarMPago />,
       },
       {
         path: "seccion-asus/",

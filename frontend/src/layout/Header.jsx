@@ -4,19 +4,66 @@ import Navbar from "../components/Navbar/Navbar";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
-import Destacado from "../components/Navbar/Destacado"
+import { AiOutlineUsergroupAdd } from "react-icons/ai";
+
+import Destacado from "../components/Navbar/Destacado";
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
-  function handleClick() {
-    setShowProfileOptions(!showProfileOptions);
+  const [showUsergroupOptions, setShowUsergroupOptions] = useState(false);
+
+  function handleClick(option) {
+    setShowProfileOptions(false);
+    setShowUsergroupOptions(false);
+
+    if (option === "profile") {
+      setShowProfileOptions(!showProfileOptions);
+    } else if (option === "usergroup") {
+      setShowUsergroupOptions(!showUsergroupOptions);
+    }
   }
+
   return (
     <header>
-        <section className="flex justify-end gap-x-4 py-2 px-5">
+      <section className="flex justify-end gap-x-4 py-2 px-5">
         <Link to="/">
-        <Destacado/>
+          <Destacado />
         </Link>
+        <p className="border-l-2 border-black"></p>
+        <button onClick={() => handleClick("usergroup")} className="relative">
+          <AiOutlineUsergroupAdd className="w-7 h-7"></AiOutlineUsergroupAdd>
+          <div
+            className={`${showUsergroupOptions ? "flex" : "hidden"} 
+            absolute right-0 z-10 bg-clr-one border-2 border-black flex-col py-4 mt-2 text-center   font-medium rounded-md whitespace-nowrap `}
+          >
+            <div className="absolute top-[-12px] right-[6px] w-0 h-0  border-l-[8px] border-r-[8px] border-b-[12px] border-transparent  border-b-black"></div>
+            <Link
+              to={"/registro5"}
+              className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Usuarios
+            </Link>
+            <Link
+              to={"/registro6"}
+              className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Tipo producto
+            </Link>
+            <Link
+              to={"/registro7"}
+              className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Producto
+            </Link>
+            <Link
+              to={"/registro8"}
+              className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            >
+              Metodo Pago
+            </Link>
+          </div>
+          <div></div>
+        </button>
         <p className="border-l-2 border-black"></p>
         <Link to="favoritos">
           <AiFillHeart className="w-7 h-7 my-2"></AiFillHeart>
@@ -26,7 +73,7 @@ export default function Header() {
           <AiOutlineShoppingCart className="w-7 h-7 my-2"></AiOutlineShoppingCart>
         </Link>
         <p className="border-l-2 border-black"></p>
-        <button onClick={handleClick} className="relative">
+        <button onClick={() => handleClick("profile")} className="relative">
           <BsFillPersonFill className="w-7 h-7"></BsFillPersonFill>
           <div
             className={`${showProfileOptions ? "flex" : "hidden"} 
@@ -34,11 +81,9 @@ export default function Header() {
           >
             <div className="absolute top-[-12px] right-[6px] w-0 h-0  border-l-[8px] border-r-[8px] border-b-[12px] border-transparent  border-b-black"></div>
             <Link
-              //to={"/iniciar sesion"}
-              //className="px-6 py-2 w-full hover:bg-black/25 transition-colors duration-200 ease-in-out"
-            >
-              
-            </Link>
+            //to={"/iniciar sesion"}
+            //className="px-6 py-2 w-full hover:bg-black/25 transition-colors duration-200 ease-in-out"
+            ></Link>
             <Link
               to={"/User"}
               className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"

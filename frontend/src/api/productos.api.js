@@ -17,8 +17,8 @@ export const obtenerProductosMarca = (marcaProducto, pageSize = 0) =>
   productosApi.get(`/?marca=${marcaProducto}&page-size=${pageSize}`);
 
 //Esta funcion permite obtener productos segun su tipo de producto y posibilidad de definir el numero de registros
-export const obtenerProductosTipo = (tipoProducto, pageSize = 0) =>
-  productosApi.get(`/?tipo-producto=${tipoProducto}&page-size=${pageSize}`);
+export const obtenerProductosTipo = (tipoProducto, pageSize = 0, page =1) =>
+  productosApi.get(`/?tipo-producto=${tipoProducto}&page-size=${pageSize}&page=${page}`);
 
 //Esta funcion permite obtener productos segun su marca y tipo de producto
 export const obtenerProductosMarcaTipo = (
