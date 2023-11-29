@@ -32,9 +32,8 @@ import SeccionRL from "./pages/SeccionRL";
 import ProductosEnsayo from "./pages/ProductosEnsayo";
 import SeccionChasis from "./pages/SeccionChasis";
 import SeccionMonitores from "./pages/SeccionMonitores";
-import SeccionConvertibleAsus from "./pages/SeccionConvertibleAsus";
-import SeccionConvertibleHP from "./pages/SeccionConvertibleHP";
-import SeccionAsusCopy from "./pages/SeccionAsus copy";
+import SeccionConvertiblesAsus from "./pages/SeccionConvertiblesAsus";
+import SeccionConvertiblesHP from "./pages/SeccionConvertiblesHp";
 
 const router = createBrowserRouter([
   {
@@ -152,11 +151,11 @@ const router = createBrowserRouter([
       },
       {
         path: "Seccion-Convertible-Asus/",
-        element: <SeccionAsusCopy />,
+        element: <SeccionConvertiblesAsus />,
       },
       {
         path: "Seccion-Convertible-HP/",
-        element: <SeccionConvertibleHP />,
+        element: <SeccionConvertiblesHP />,
       },
       {
         path: "productos/",
