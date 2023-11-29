@@ -4,8 +4,6 @@ import heroImage from "../img/Elementos.png";
 import comboOneImage from "../img/Componentes.jpg";
 import comboTwoImage from "../img/Tarjetas.jpg";
 import comboThreeImage from "../img/Procesadores.jpg";
-
-/* Components imports */
 import Slider from "../components/Slider";
 
 /* Item data temp */
