@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import Asus from "../img/asusImage.png";
-import AsusPortatilImage from "../img/asusPortatil.jpg";
+import HP from "../img/HPImage1.png";
+import HPPortatilImage from "../img/AsusPortatil.jpg";
 import Slider from "../components/Slider";
 import { obtenerProductosMarcaTipo } from "../api/productos.api";
 
-export default function SeccionAsusCopy() {
-  const [portatilesAsus, setPortatilesAsus] = useState([]);
+export default function SeccionHPCopy() {
+  const [portatilesHP, setPortatilesHP] = useState([]);
 
   //El siguiente hook funcion para hacer consultas a un sistema externo, como en este caso una API
   useEffect(() => {
@@ -14,11 +14,7 @@ export default function SeccionAsusCopy() {
       //Como se divide por secciones, se debe dividir por partes los registros, en este caso se van a dividir por paginas de a 8 registros, y el siguiente arreglo nos servira para almacenar cada una de esas divisiones
       const productosPorPagina = [];
       // la siguiente constante es la encargadar de obtener la respuesta de la api, la palabra reservada await signifita que para definir esa consonante se debe esperar a que la funcion obtenerProduc.... responda
-      const response = await obtenerProductosMarcaTipo(
-        "asus",
-        "convertibles",
-        8
-      );
+      const response = await obtenerProductosMarcaTipo("hp", "convertibles", 8);
       //Se guardar los datos de la primer pagina que devuelve 8 registros
       const portatilesPaginaActual = response.data;
       //Se agrega al arreglo que contendra las divisiones
@@ -34,7 +30,7 @@ export default function SeccionAsusCopy() {
       while (flag) {
         //Se vuelve hacer lo mismo que lo anterior, lo unico que cambia es el indice , el cual indica que pagina sigue a consultar
         const response = await obtenerProductosMarcaTipo(
-          "asus",
+          "hp",
           "convertibles",
           8,
           index
@@ -47,7 +43,7 @@ export default function SeccionAsusCopy() {
       }
 
       //Se almacena el arreglo en el estado del componenete para luego darle manejo
-      setPortatilesAsus(productosPorPagina);
+      setPortatilesHP(productosPorPagina);
     };
 
     //Se llama la funcion para poder que ejecute todo lo anterior
@@ -55,25 +51,25 @@ export default function SeccionAsusCopy() {
   }, []);
 
   //Las consultas pueden tardar, porque se hace un condicion, que si portatilesAsus ya tienen datos entonces muestre la interfaz, de lo contrario dira cargando
-  return portatilesAsus ? (
+  return portatilesHP ? (
     <main className="pt-8 pb-16 ">
       <section className="relative flex justify-center items-center">
         <div className="bg-clr-two w-full h-96" />
-        <img src={Asus} alt="" className="absolute max-w-auto w-1/2" />
+        <img src={HP} alt="" className="absolute max-w-auto w-1/2" />
       </section>
 
       <div className="h-8" />
 
       <section className="">
         {/* Se recorre el estado, el cual contiene todos los datos consultados */}
-        {portatilesAsus.map((portatilAsus, index) => (
+        {portatilesHP.map((portatilesHP, index) => (
           <>
-            {console.log(portatilAsus.id)}
+            {console.log(portatilesHP.id)}
             <div key={index} className="flex">
               {/* la siguiente condicion es para cuando sea la primera divisio de muestre la imagen que referencia las secciones */}
               {index == 0 ? (
                 <img
-                  src={AsusPortatilImage}
+                  src={HPPortatilImage}
                   alt="Components combo image."
                   className="w-1/3 hidden md:inline-block"
                 />
@@ -86,7 +82,7 @@ export default function SeccionAsusCopy() {
               >
                 <div className="bg-gradient-to-br from-clr-two absolute -z-10 to-clr-three w-full h-4/5" />
                 {/* Se envian los datos al componente slider y ya desde alli se maneja el resto */}
-                <Slider sliderId={index} data={portatilAsus} />
+                <Slider sliderId={index} data={portatilesHP} />
               </div>
             </div>
             <div className="h-16" />

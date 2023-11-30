@@ -8,6 +8,7 @@ from rest_framework import status
 from django.contrib.auth import authenticate
 from . import models
 from . import serializers
+import mercadopago
 
 
 class TipoProductoViewSet(viewsets.ModelViewSet):
@@ -40,6 +41,7 @@ class CarritoViewSet(viewsets.ModelViewSet):
         if producto_id:
             try:
                 carrito.productos.remove(producto_id)
+                print("entro")
                 return Response(
                     {"message": "Producto eliminado del carrito correctamente."},
                     status=204,
@@ -70,18 +72,18 @@ class CarritoViewSet(viewsets.ModelViewSet):
             return Response({"error": "ID del producto no proporcionado."}, status=400)
 
 
-class ProductosEnCarritoAPIView(APIView):
-    queryset = models.TipoProducto.objects.all()
-    permission_classes = [permissions.AllowAny]
-    serializer_class = serializers.TipoProductoSerializer
+# class ProductosEnCarritoAPIView(APIView):
+#     queryset = models.TipoProducto.objects.all()
+#     permission_classes = [permissions.AllowAny]
+#     serializer_class = serializers.TipoProductoSerializer
 
-    def get_queryset(self):
-        queryset = queryset.filter(usuario=userId)
-        key = self.request.headers.get("Authorization")
-        userId = Token.objects.get(key=key).user_id
-        productos = self.request.query_params.get("productos")
+#     def get_queryset(self):
+#         queryset = queryset.filter(usuario=userId)
+#         key = self.request.headers.get("Authorization")
+#         userId = Token.objects.get(key=key).user_id
+#         productos = self.request.query_params.get("productos")
 
-        return queryset
+#         return queryset
 
 
 class ProductoViewSet(viewsets.ModelViewSet):
@@ -199,3 +201,43 @@ class VentaViewSet(viewsets.ModelViewSet):
     queryset = models.Venta.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = serializers.VentaSerializer
+
+
+# class PaymentView(APIView):
+#     def post(
+#         self, request
+#     ):  # aqui se manejan las sollicitudes HTTP POS a la ruta de pago
+#         # se integra con  la instacia la llave de acceso que nos da la pagina
+#         sdk = mercadopago.SDK(
+#             "TEST-416579947128865-112820-0118d8a35783cd83ababcb2e9ee7838c-1570676804"
+#         )
+#         # informacion sobre los productos
+#         preference_data = {
+#             "items": [
+#                 {
+#                     "title": "Portátil HP 15-dw3505la",
+#                     "unit_price": 500000,
+#                     "currency_id": "COP",
+#                     "quantity": 1,
+#                 },
+#                 {
+#                     "title": "Portátil HP 15-dw3505la",
+#                     "unit_price": 500000,
+#                     "currency_id": "COP",
+#                     "quantity": 1,
+#                 },
+#                 {
+#                     "title": "Portátil HP 15-dw3505la",
+#                     "unit_price": 500000,
+#                     "currency_id": "COP",
+#                     "quantity": 1,
+#                 },
+#             ]
+#         }
+#         # se almacena la respuesta, se imprime y se devuelve al cliente con una respuesta HTTP_200_OK
+#         preference_response = sdk.preference().create(preference_data)
+#         preference = preference_response["response"]
+#         print(preference)
+#         return Response(
+#             preference, status=status.HTTP_200_OK
+#         )  # HTTP_200_OK signifca que esta bieeen

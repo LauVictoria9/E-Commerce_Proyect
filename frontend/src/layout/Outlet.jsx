@@ -7,12 +7,7 @@ import comboThreeImage from "../img/Procesadores.jpg";
 import { useEffect, useState } from "react";
 import { obtenerProductos } from "../api/productos.api";
 import { obtenerTiposProducto } from "../api/tipos_producto.api";
-
-/* Components imports */
 import Slider from "../components/Slider";
-
-/* Item data temp */
-import { itemData, itemData2, itemData3 } from "./data";
 
 export default function Outlet() {
   const [productos, setProductos] = useState([]);

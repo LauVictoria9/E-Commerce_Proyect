@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { obtenerProductosCarrito } from "../api/carrito.api";
 import CardProductoCarrito from "../components/CardProductoCarrito";
+import axios from "axios";
 
+{
+  /*Metodo de pago*/
+}
 export default function Carrito() {
   const [carrito, setCarrito] = useState([]);
   const [carritoID, setCarritoID] = useState();
+  const [paymentLink, setPaymentLink] = useState("");
 
   useEffect(() => {
     async function cargarProductosCarrito() {
@@ -23,6 +28,26 @@ export default function Carrito() {
     }
     cargarProductosCarrito();
   }, []);
+
+  // const handleRequest = async () => {
+  //   const response = await axios.post("http://127.0.0.1:8000/payment");
+  /*La función handleRequest realiza una solicitud HTTP POST a la URL utilizando la biblioteca Axios*/
+
+  //   console.log(response);
+
+  //   setPaymentLink(response.data.init_point);
+  // };
+  /*aqui es para cuando  la solicitud HTTP se completa con éxito, la función handleRequest establece el valor de paymentLink con el valor de init_point obtenido en la respuesta del servidor */
+
+  // useEffect(() => {
+  //   try {
+  //     handleRequest();
+  //   } catch (error) {
+  //     console.log(error);
+  /*pos por si sale algun error*/
+  //   }
+  // }, []);
+  /*useEffect se utiliza para llamar a la función handleRequest Esto permite que el pago se realice automáticamente*/
 
   return (
     <div className="font-sans flex flex-col items-center gap-y-10 py-8 ">
