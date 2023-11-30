@@ -1,6 +1,28 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import axios from "axios"; 
+
+{/*Metodo de pago*/}
 export default function Carrito() {
+  const [paymentLink, setPaymentLink] = useState(""); {/* aqui se almacena la ifnromacion del pago por medio del usestate "paymentlink*/}
+
+  const handleRequest = async () => {
+    const response = await axios.post("http://127.0.0.1:8000/payment"); {/*La función handleRequest realiza una solicitud HTTP POST a la URL utilizando la biblioteca Axios*/}
+
+    console.log(response);
+
+    setPaymentLink(response.data.init_point);
+  };{/*aqui es para cuando  la solicitud HTTP se completa con éxito, la función handleRequest establece el valor de paymentLink con el valor de init_point obtenido en la respuesta del servidor */}
+
+  useEffect(() => {
+    try {
+      handleRequest();
+    } catch (error) {
+      console.log(error);{/*pos por si sale algun error*/}
+    }
+  }, []);{/*useEffect se utiliza para llamar a la función handleRequest Esto permite que el pago se realice automáticamente*/}
+
   return (
     <div className="font-sans flex flex-col items-center gap-y-10 py-8 ">
       {/* Encabezado de articulos */}
@@ -37,7 +59,7 @@ export default function Carrito() {
         </div>
       </section>
 
-      {/*Lista de articulos en el carrito*/}
+      {/*/Lista de articulos en el carrito*/}
       <section className="w-[90vw] flex flex-col md:flex-row justify-center gap-x-8 items-center justify-self-center">
         {/* <div className="flex items-center justify-center p-5 md:w-1/2"> */}
         <section className="w-[85%] md:w-[62%]  flex flex-col gap-y-3">
@@ -217,7 +239,7 @@ export default function Carrito() {
 
         {/*Resumen de compra*/}
 
-        <section className="w-[75%] md:w-[30%] rounded-lg shadow-lg flex md:self-start justify-center p-5 my-16">
+        <section className="w-[75%] md:w-[30%] rounded-lg shadow-lg flex md:self-start justify-center p-20 my-20">
           <div className=" ">
             <div className="text-center">
               <h1 className="p-3 text-2xl font-bold text-[#6A61D9] mt-4">
@@ -245,10 +267,19 @@ export default function Carrito() {
 
             <Link
               to={"/"}
-              className="w-full text-white py-2 px-4 rounded-lg bg-clr-two hover:bg-gradient-to-br group from-clr-one via-clr-two to-clr-three font-semibold"
+              className=" flex w-full text-white py-2 px-4 rounded-lg bg-clr-two hover:bg-gradient-to-br group from-clr-one via-clr-two to-clr-three font-semibold"
             >
-              Continuar compra
+              Continuar compra 
             </Link>
+            <Link
+              to={paymentLink}
+              target="_blank"
+              className= " flex w-full text-white py-2 px-4 rounded-lg bg-clr-two hover:bg-gradient-to-br group from-clr-one via-clr-two to-clr-three font-semibold  mt-5 "
+            >
+              Finalizar compra{/*Boton para metodo de pago*/}
+            </Link>
+
+            
           </div>
         </section>
       </section>
