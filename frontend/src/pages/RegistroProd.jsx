@@ -11,7 +11,7 @@ export const RegistroProd = () => {
     precio: "",
     oferta: null,
     cantidad: "",
-    imagen: "",
+    imagen: null,
     tipoProducto: "",
   });
   const [image, setImagen] = useState("");
