@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
-
+import { AiFillHeart } from "react-icons/ai";
 import Destacado from "../components/Navbar/Destacado";
+import { cerrarUsuario } from "../api/usuarios";
 
 export default function Header() {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
   const [showUsergroupOptions, setShowUsergroupOptions] = useState(false);
+
+  const navigate = useNavigate();
 
   function handleClick(option) {
     setShowProfileOptions(false);
@@ -22,6 +24,20 @@ export default function Header() {
       setShowUsergroupOptions(!showUsergroupOptions);
     }
   }
+
+  const cerrarSesion = async () => {
+    const token = localStorage.getItem("tokenUser");
+    try {
+      const response = await cerrarUsuario(token);
+      alert(response.data.message);
+      if (response.data) {
+        localStorage.removeItem("tokenUser");
+        navigate("/");
+      }
+    } catch (error) {
+      alert("Error al cerrar sesion");
+    }
+  };
 
   return (
     <header>
@@ -84,15 +100,23 @@ export default function Header() {
             //to={"/iniciar sesion"}
             //className="px-6 py-2 w-full hover:bg-black/25 transition-colors duration-200 ease-in-out"
             ></Link>
-            <Link
-              to={"/User"}
-              className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
-            >
-              Acceder
-            </Link>
-            <button className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out">
-              Cerrar Sesion
-            </button>
+            {localStorage.getItem("tokenUser") && (
+              <button
+                className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+                onClick={cerrarSesion}
+              >
+                Cerrar Sesion
+              </button>
+            )}
+
+            {!localStorage.getItem("tokenUser") && (
+              <Link
+                to={"/user"}
+                className="px-6 py-2 hover:bg-black/25 transition-colors duration-200 ease-in-out"
+              >
+                Acceder
+              </Link>
+            )}
           </div>
           <div></div>
         </button>

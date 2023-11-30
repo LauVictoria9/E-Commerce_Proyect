@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const EMUsuarios = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center py-6">
       <div className="mt-4 ml-4">
         <Link to="/registro">
           <button className="bg-clr-three text-white p-1 rounded-md mr-2 mb-6 ">
@@ -37,7 +37,7 @@ const EMUsuarios = () => {
           </button>
         </Link>
 
-        <div className="bg-gray-300 rounded-xl py-6">
+        <div className="bg-gray-300 rounded-xl py-6 overflow-auto">
           <table className="ml-4 mr-4">
             <thead className="bg-clr-one text-white">
               <tr>

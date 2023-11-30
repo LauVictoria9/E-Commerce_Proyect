@@ -32,6 +32,7 @@ import SeccionRL from "./pages/SeccionRL";
 import ProductosEnsayo from "./pages/ProductosEnsayo";
 import SeccionChasis from "./pages/SeccionChasis";
 import SeccionMonitores from "./pages/SeccionMonitores";
+import Ofertas from "./pages/Ofertas";
 import SeccionConvertiblesAsus from "./pages/SeccionConvertiblesAsus";
 import SeccionConvertiblesHP from "./pages/SeccionConvertiblesHp";
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "producto/:id",
         element: <InfoProducto />,
+      },
+      {
+        path: "ofertas/",
+        element: <Ofertas />,
       },
       {
         path: "favoritos/",
