@@ -4,7 +4,7 @@ import AsusPortatilImage from "../img/asusPortatil.jpg";
 import Slider from "../components/Slider";
 import { obtenerProductosMarcaTipo } from "../api/productos.api";
 
-export default function SeccionAsusCopy() {
+export default function SeccionConvertiblesHp() {
   const [portatilesAsus, setPortatilesAsus] = useState([]);
 
   //El siguiente hook funcion para hacer consultas a un sistema externo, como en este caso una API
@@ -15,7 +15,7 @@ export default function SeccionAsusCopy() {
       const productosPorPagina = [];
       // la siguiente constante es la encargadar de obtener la respuesta de la api, la palabra reservada await signifita que para definir esa consonante se debe esperar a que la funcion obtenerProduc.... responda
       const response = await obtenerProductosMarcaTipo(
-        "asus",
+        "HP",
         "convertibles",
         8
       );
@@ -34,7 +34,7 @@ export default function SeccionAsusCopy() {
       while (flag) {
         //Se vuelve hacer lo mismo que lo anterior, lo unico que cambia es el indice , el cual indica que pagina sigue a consultar
         const response = await obtenerProductosMarcaTipo(
-          "asus",
+          "HP",
           "convertibles",
           8,
           index
