@@ -23,6 +23,9 @@ import SeccionMonitores from "./pages/SeccionMonitores";
 import SeccionConvertibleAsus from "./pages/SeccionConvertibleAsus";
 import SeccionConvertibleHP from "./pages/SeccionConvertibleHP";
 import SeccionAsusCopy from "./pages/SeccionAsus copy";
+import Ofertas from "./pages/Ofertas";
+
+const sesion = localStorage.getItem("tokenUser");
 
 const router = createBrowserRouter([
   {
@@ -37,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "producto/:id",
         element: <InfoProducto />,
+      },
+      {
+        path: "ofertas/",
+        element: <Ofertas />,
       },
       {
         path: "favoritos/",

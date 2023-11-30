@@ -33,8 +33,8 @@ class TipoProducto(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
     marca = models.CharField(max_length=100)
-    detalles = models.CharField(max_length=100)
-    caracteristicas = models.TextField(max_length=200)
+    detalles = models.CharField(max_length=200)
+    caracteristicas = models.TextField(max_length=500)
     precio = models.IntegerField()
     oferta = models.IntegerField(null=True)
     cantidad = models.IntegerField()
@@ -60,10 +60,20 @@ class MetodoPago(models.Model):
         return self.nombre + " " + self.descripcion
 
 
+class Carrito(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    fecha = models.DateField(auto_now_add=True)
+    productos = models.ManyToManyField(Producto)
+    finalizado = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.usuario.username + " " + self.finalizado
+
+
 class Venta(models.Model):
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
-    producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
-    cantidadTotal = models.IntegerField()
+    carrito = models.ForeignKey(Carrito, on_delete=models.CASCADE)
+    cantidadProductos = models.IntegerField()
     fecha = models.DateField()
     direccionEntrega = models.CharField(max_length=100)
     precioTotal = models.IntegerField()
@@ -71,11 +81,9 @@ class Venta(models.Model):
 
     def __str__(self):
         return (
-            self.usuario.first_name
+            self.usuario.username
             + " "
-            + Producto.nombre
-            + " "
-            + self.cantidadTotal
+            + self.cantidadProductos
             + " "
             + self.fecha
             + ""

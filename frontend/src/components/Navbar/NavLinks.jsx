@@ -8,7 +8,7 @@ const NavLinks = () => {
   return (
     <>
       {menu.map((menuPrincipal) => (
-        <div key={menuPrincipal.id} className="">
+        <div key={menuPrincipal.id} className="relative z-[999]">
           <div className=" group ">
             <h1
               className="py-7 flex justify-between items-center  md:pr-0 pr-5 "

@@ -17,7 +17,16 @@ const Card = ({ item }) => {
 
         <div className="h-2" />
 
-        <p className="font-bold text-lg">${item.precio}</p>
+        {item.oferta ? (
+          <>
+            <p className="font-bold text-lg text-[#9b71b2] line-through">
+              ${item.precio}
+            </p>
+            <p className="font-bold text-lg">${item.oferta}</p>
+          </>
+        ) : (
+          <p className="font-bold text-lg">${item.precio.toLocaleString()}</p>
+        )}
 
         <div className="h-8" />
 

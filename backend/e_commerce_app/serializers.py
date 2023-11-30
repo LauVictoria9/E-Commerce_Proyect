@@ -26,6 +26,12 @@ class ProductoSerializer(serializers.ModelSerializer):
         )
 
 
+class CarritoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Carrito
+        fields = "__all__"
+
+
 class RolSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Rol
@@ -35,7 +41,15 @@ class RolSerializer(serializers.ModelSerializer):
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.User
-        fields = ("id", "password", "username", "last_name", "email", "first_name")
+        fields = (
+            "id",
+            "first_name",
+            "last_name",
+            "username",
+            "direccion",
+            "email",
+            "password",
+        )
 
 
 class MetodoPagoSerializer(serializers.ModelSerializer):

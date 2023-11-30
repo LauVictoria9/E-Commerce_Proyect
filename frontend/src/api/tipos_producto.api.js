@@ -5,5 +5,7 @@ const tipoProductosApi = axios.create({
   baseURL: "http://127.0.0.1:8000/api/tipo-productos/",
 });
 
+export const obtenerTiposProducto = () => tipoProductosApi.get("/");
+
 export const obtenerTipoProducto = (idTipoProducto) =>
   tipoProductosApi.get(`/${idTipoProducto}/`);
