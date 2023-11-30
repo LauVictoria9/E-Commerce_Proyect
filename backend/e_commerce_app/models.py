@@ -12,7 +12,7 @@ class Rol(models.Model):
 
 class User(AbstractUser):
     telefonoUser = models.CharField(max_length=100)
-    direccion = models.CharField(max_length=100)
+    direccion = models.CharField(max_length=100, blank=True)
     email = models.EmailField(max_length=151, unique=True)
     rol = models.ForeignKey(Rol, on_delete=models.CASCADE, null=True)
     USERNAME_FIELD = "email"
@@ -44,8 +44,9 @@ class Producto(models.Model):
     tipoProducto = models.ForeignKey(TipoProducto, on_delete=models.CASCADE)
 
     def delete(self, *args, **kwargs):
-        if os.path.isfile(self.imagen.path):
-            os.remove(self.imagen.path)
+        if self.imagen != "":
+            if os.path.isfile(self.imagen.path):
+                os.remove(self.imagen.path)
         super(Producto, self).delete(*args, **kwargs)
 
     def __str__(self):

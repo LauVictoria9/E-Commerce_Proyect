@@ -39,7 +39,7 @@ export default function InfoProduct({ producto }) {
     let token = localStorage.getItem("tokenUser");
     if (token) {
       try {
-        const response = await agregarProductoCarrito(5, producto.id);
+        const response = await agregarProductoCarrito(token, producto.id);
         if (response.data) {
           alert("Producto agregado correctamente");
           navigate("/carrito");

@@ -14,5 +14,7 @@ export const borrarProductoCarrito = (carritoID, productoID) =>
     `/${carritoID}/eliminar_producto/?producto_id=${productoID}`
   );
 
-export const agregarProductoCarrito = (carritoID, productoID) =>
-  carritosApi.post(`/${carritoID}/agregar_producto/?producto_id=${productoID}`);
+export const agregarProductoCarrito = (token, productoID) =>
+  carritosApi.post(`/agregar_producto/?producto_id=${productoID}`, null, {
+    headers: { Authorization: `${token}` },
+  });

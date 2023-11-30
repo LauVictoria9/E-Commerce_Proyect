@@ -16,9 +16,9 @@ router.register("api/ventas", api.VentaViewSet, "ventas")
 urlpatterns = [
     path("api/usuarios/autenticacion/", api.LoginView.as_view(), name="autenticacion"),
     path("api/usuarios/cerrar-sesion/", api.LogoutView.as_view(), name="cerrar-sesion"),
-    # path(
-    #     "payment", api.PaymentView.as_view(), name="payment"
-    # ),  # aqui se define una ruta para el pago
+    path(
+        "payment", api.PaymentView.as_view(), name="payment"
+    ),  # aqui se define una ruta para el pago
 ]
 
 urlpatterns += router.urls

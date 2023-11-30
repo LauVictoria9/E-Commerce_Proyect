@@ -29,24 +29,24 @@ export default function Carrito() {
     cargarProductosCarrito();
   }, []);
 
-  // const handleRequest = async () => {
-  //   const response = await axios.post("http://127.0.0.1:8000/payment");
-  /*La función handleRequest realiza una solicitud HTTP POST a la URL utilizando la biblioteca Axios*/
+  const handleRequest = async () => {
+    const response = await axios.post("http://127.0.0.1:8000/payment");
+    /*La función handleRequest realiza una solicitud HTTP POST a la URL utilizando la biblioteca Axios*/
 
-  //   console.log(response);
+    console.log(response);
 
-  //   setPaymentLink(response.data.init_point);
-  // };
+    setPaymentLink(response.data.init_point);
+  };
   /*aqui es para cuando  la solicitud HTTP se completa con éxito, la función handleRequest establece el valor de paymentLink con el valor de init_point obtenido en la respuesta del servidor */
 
-  // useEffect(() => {
-  //   try {
-  //     handleRequest();
-  //   } catch (error) {
-  //     console.log(error);
-  /*pos por si sale algun error*/
-  //   }
-  // }, []);
+  useEffect(() => {
+    try {
+      handleRequest();
+    } catch (error) {
+      console.log(error);
+      /*pos por si sale algun error*/
+    }
+  }, []);
   /*useEffect se utiliza para llamar a la función handleRequest Esto permite que el pago se realice automáticamente*/
 
   return (

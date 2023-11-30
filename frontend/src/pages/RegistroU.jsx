@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, redirect } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
@@ -11,6 +11,8 @@ const RegistroU = () => {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const handleInput = (event) => {
     setUser({ ...user, [event.target.name]: event.target.value });
@@ -26,7 +28,7 @@ const RegistroU = () => {
       );
 
       if (response) {
-        return redirect("/");
+        return navigate("/");
       }
 
       console.log("Usuario registrado:", response.data);
@@ -34,8 +36,6 @@ const RegistroU = () => {
       console.error("Error al registrar usuario:", error.response.data);
     }
   };
-
-  console.log(user);
 
   return (
     <div className="flex flex-col md:flex-row justify-evenly gap-y-10 md:gap-x-12 items-center">

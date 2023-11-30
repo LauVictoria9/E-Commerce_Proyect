@@ -51,25 +51,36 @@ class CarritoViewSet(viewsets.ModelViewSet):
         else:
             return Response({"error": "ID del producto no proporcionado."}, status=400)
 
-    @action(detail=True, methods=["post"])
+    @action(detail=False, methods=["post"])
     def agregar_producto(self, request, pk=None):
-        carrito = self.get_object()
+        key = self.request.headers.get("Authorization")
         producto_id = request.query_params.get("producto_id")
+        try:
+            producto = models.Producto.objects.get(pk=producto_id)
+        except models.Producto.DoesNotExist:
+            return Response({"error": "El producto no existe."}, status=400)
 
-        if producto_id:
+        if key:
+            userID = Token.objects.get(key=key).user_id
             try:
-                producto = models.Producto.objects.get(pk=producto_id)
+                carrito = models.Carrito.objects.get(
+                    usuario_id=userID, finalizado=False
+                )
                 carrito.productos.add(producto)
                 return Response(
                     {"message": "Producto agregado al carrito correctamente."},
                     status=201,
                 )
-            except models.Producto.DoesNotExist:
-                return Response({"error": "El producto no existe."}, status=400)
-            except Exception as e:
-                return Response({"error": str(e)}, status=400)
+            except models.Carrito.DoesNotExist:
+                carritoNuevo = models.Carrito.objects.create(usuario_id=userID)
+                models.Producto.objects.get(pk=producto_id)
+                carritoNuevo.productos.add(producto)
+                return Response(
+                    {"message": "Producto agregado al carrito correctamente."},
+                    status=201,
+                )
         else:
-            return Response({"error": "ID del producto no proporcionado."}, status=400)
+            return Response({"error": "No autorizado"}, status=400)
 
 
 # class ProductosEnCarritoAPIView(APIView):
@@ -203,41 +214,41 @@ class VentaViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.VentaSerializer
 
 
-# class PaymentView(APIView):
-#     def post(
-#         self, request
-#     ):  # aqui se manejan las sollicitudes HTTP POS a la ruta de pago
-#         # se integra con  la instacia la llave de acceso que nos da la pagina
-#         sdk = mercadopago.SDK(
-#             "TEST-416579947128865-112820-0118d8a35783cd83ababcb2e9ee7838c-1570676804"
-#         )
-#         # informacion sobre los productos
-#         preference_data = {
-#             "items": [
-#                 {
-#                     "title": "Portátil HP 15-dw3505la",
-#                     "unit_price": 500000,
-#                     "currency_id": "COP",
-#                     "quantity": 1,
-#                 },
-#                 {
-#                     "title": "Portátil HP 15-dw3505la",
-#                     "unit_price": 500000,
-#                     "currency_id": "COP",
-#                     "quantity": 1,
-#                 },
-#                 {
-#                     "title": "Portátil HP 15-dw3505la",
-#                     "unit_price": 500000,
-#                     "currency_id": "COP",
-#                     "quantity": 1,
-#                 },
-#             ]
-#         }
-#         # se almacena la respuesta, se imprime y se devuelve al cliente con una respuesta HTTP_200_OK
-#         preference_response = sdk.preference().create(preference_data)
-#         preference = preference_response["response"]
-#         print(preference)
-#         return Response(
-#             preference, status=status.HTTP_200_OK
-#         )  # HTTP_200_OK signifca que esta bieeen
+class PaymentView(APIView):
+    def post(
+        self, request
+    ):  # aqui se manejan las sollicitudes HTTP POS a la ruta de pago
+        # se integra con  la instacia la llave de acceso que nos da la pagina
+        sdk = mercadopago.SDK(
+            "TEST-416579947128865-112820-0118d8a35783cd83ababcb2e9ee7838c-1570676804"
+        )
+        # informacion sobre los productos
+        preference_data = {
+            "items": [
+                {
+                    "title": "Portátil HP 15-dw3505la",
+                    "unit_price": 500000,
+                    "currency_id": "COP",
+                    "quantity": 1,
+                },
+                {
+                    "title": "Portátil HP 15-dw3505la",
+                    "unit_price": 500000,
+                    "currency_id": "COP",
+                    "quantity": 1,
+                },
+                {
+                    "title": "Portátil HP 15-dw3505la",
+                    "unit_price": 500000,
+                    "currency_id": "COP",
+                    "quantity": 1,
+                },
+            ]
+        }
+        # se almacena la respuesta, se imprime y se devuelve al cliente con una respuesta HTTP_200_OK
+        preference_response = sdk.preference().create(preference_data)
+        preference = preference_response["response"]
+        print(preference)
+        return Response(
+            preference, status=status.HTTP_200_OK
+        )  # HTTP_200_OK signifca que esta bieeen
